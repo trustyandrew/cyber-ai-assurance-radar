@@ -16,16 +16,16 @@ The theme this week is **ASD / ACSC cyber assurance expectations**. Below are th
 ## Top developments
 
 1. **[CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability)** — ASD ACSC — Alerts & advisories · 2026-05-01
-   Bears on ASD/ACSC expectations (ISM, Essential Eight); check the impact on baseline controls and audit evidence.
+   Internet-facing administration interfaces under active exploitation are a direct Essential Eight 'patch applications' priority and a likely gap against ISO/IEC 27001 Annex A technical vulnerability management controls.
 
 2. **[Preparing for a ‘vulnerability patch wave’](https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave)** — UK NCSC — All updates · 2026-05-01
-   Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
+   Sustained patch volume tests vulnerability and change management maturity against ISO/IEC 27001 and the Essential Eight patching benchmarks.
 
 3. **[Preparing for severe cyber threat: why leaders must act now](https://www.ncsc.gov.uk/blogs/preparing-for-severe-cyber-threat-why-leaders-must-act-now)** — UK NCSC — All updates · 2026-04-20
-   Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
+   Board-level ownership of cyber resilience aligns with ISO/IEC 27001 leadership clauses and APRA CPS 234 accountability expectations for Australian regulated entities.
 
 4. **[HIGH ALERT: Ongoing targeting of online code repositories](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories)** — ASD ACSC — Alerts & advisories · 2025-09-19
-   Bears on ASD/ACSC expectations (ISM, Essential Eight); check the impact on baseline controls and audit evidence.
+   Source code and secret management map to ISO/IEC 27001 Annex A controls and the Essential Eight; compromised repositories enable supply chain attacks that affect many parties.
 
 ## Responsible AI watch
 
@@ -48,7 +48,7 @@ The theme this week is **ASD / ACSC cyber assurance expectations**. Below are th
 
 ## Practical takeaway
 
-Bears on ASD/ACSC expectations (ISM, Essential Eight); check the impact on baseline controls and audit evidence.
+Internet-facing administration interfaces under active exploitation are a direct Essential Eight 'patch applications' priority and a likely gap against ISO/IEC 27001 Annex A technical vulnerability management controls.
 
 ---
 
