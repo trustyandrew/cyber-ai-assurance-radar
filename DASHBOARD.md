@@ -1,11 +1,22 @@
 # Cyber & Responsible AI Assurance Radar
 
-_Updated 2026-06-26T12:19:57+10:00 (Australia/Melbourne)._  
-**37** signals · **0** new · **4** newsletter candidates · **32** standards tracked · sources 5/21 ok (1 failed).
+_Updated 2026-06-26T12:40:39+10:00 (Australia/Melbourne)._  
+**49** signals · **12** new · **4** newsletter candidates · **32** standards tracked · sources 9/21 ok (1 failed).
 
 ## 🆕 New since last run
 
-_Nothing new since the last run — all current signals carried over._
+- 🆕 **[Have your say on the CCA discussion paper](https://www.digital.gov.au/have-your-say/consultation-CCA)** — digital.gov.au — digital, data & AI policy · PublicSector · Medium (3/5)
+- 🆕 **[DTA’s new look site now live](https://www.dta.gov.au/media-releases/dtas-new-look-site-now-live)** — Digital Transformation Agency — news · PublicSector · Watch (2/5)
+- 🆕 **[Proposed apparatus licensing arrangements for rail services in the 1800 MHz band](https://www.acma.gov.au/consultations/2026-06/proposed-apparatus-licensing-arrangements-rail-services-1800-mhz-band)** — ACMA — News & media · Regulation · Watch (2/5)
+- 🆕 **[Cost recovery arrangements for marine radio](https://www.acma.gov.au/consultations/2026-06/cost-recovery-arrangements-marine-radio)** — ACMA — News & media · Regulation · Watch (2/5)
+- 🆕 **[Proposal to remake the Radiocommunications (Aircraft and Aeronautical Mobile Stations) Class Licence 2016](https://www.acma.gov.au/consultations/2026-06/proposal-remake-radiocommunications-aircraft-and-aeronautical-mobile-stations-class-licence-2016)** — ACMA — News & media · Regulation · Watch (2/5)
+- 🆕 **[Review of the 2.5 GHz band spectrum licence technical framework](https://www.acma.gov.au/consultations/2026-06/review-25-ghz-band-spectrum-licence-technical-framework)** — ACMA — News & media · Regulation · Watch (2/5)
+- 🆕 **[Remaking the emergency locating devices class licence](https://www.acma.gov.au/consultations/2026-06/remaking-emergency-locating-devices-class-licence)** — ACMA — News & media · Regulation · Watch (2/5)
+- 🆕 **[Extending the Customer Service Guarantee rules](https://www.acma.gov.au/consultations/2026-05/extending-customer-service-guarantee-rules)** — ACMA — News & media · Regulation · Watch (2/5)
+- 🆕 **[Proposal to vary the Horsham licence area plan](https://www.acma.gov.au/consultations/2026-05/proposal-vary-horsham-licence-area-plan)** — ACMA — News & media · Regulation · Watch (2/5)
+- 🆕 **[Proposed updates to numbering charges](https://www.acma.gov.au/consultations/2026-04/proposed-updates-numbering-charges)** — ACMA — News & media · Regulation · Watch (2/5)
+- 🆕 **[Variation to the CB class licence](https://www.acma.gov.au/consultations/2026-04/variation-cb-class-licence)** — ACMA — News & media · Regulation · Watch (2/5)
+- 🆕 **[Proposed 2026–27 fees for services](https://www.acma.gov.au/consultations/2026-04/proposed-2026-27-fees-services)** — ACMA — News & media · Regulation · Watch (2/5)
 
 ## Current signals
 
@@ -41,6 +52,10 @@ _Nothing new since the last run — all current signals carried over._
   UK NCSC warns that attackers are compromising open-source packages to spread malware and asks defenders to review their dependencies to reduce risk.
   *Why it matters:* Dependency integrity is core to ISO/IEC 27001 supplier and secure development controls and to managing software supply chain risk in regulated environments.
   *Action:* Inventory and verify third-party dependencies, pinning and monitoring trusted versions.
+- 🆕 **[Have your say on the CCA discussion paper](https://www.digital.gov.au/have-your-say/consultation-CCA)** — digital.gov.au — digital, data & AI policy · 2026-05-26 · Medium (3/5)
+  Have your say on the CCA discussion paper Consultation on the CCA discussion paper Have your say on the discussion paper created by the Digital Transformation Agency (DTA) to establish seller eligibility for consideration of future coordinated contracting arrangements (CCAs), also known as single seller arrangements (SSAs). 2/06/2026 - 16/06/26 The consultation carley.frost Tue, 2026-05-26 18:10…
+  *Why it matters:* Australian public sector AI assurance relevance; check DTA standards, AI impact assessment and procurement.
+  *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
 - **[Thinking carefully before adopting agentic AI](https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai)** — UK NCSC — All updates · 2026-05-15 · Medium (3/5)
   UK NCSC advises organisations to proceed cautiously with agentic AI, ensuring foundational capability and controls are in place before deploying autonomous AI systems.
   *Why it matters:* Agentic AI governance maps directly to ISO/IEC 42001 AI management system controls around risk, human oversight and accountability.
@@ -53,10 +68,6 @@ _Nothing new since the last run — all current signals carried over._
   UK NCSC published new cross domain guidance to help government, industry and the wider security community understand and more easily deploy cross domain technologies across sectors.
   *Why it matters:* Cross domain solutions enable secure information transfer between security domains, relevant to Australian public sector protective security and classified-data handling.
   *Action:* Review cross domain transfer requirements against the new guidance before architecting data flows.
-- **[The AI shift in cyber risk: why leaders must act now](https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now)** — UK NCSC — All updates · 2026-06-22 · Watch (2/5)
-  UK NCSC discusses how artificial intelligence is shifting the cyber risk landscape and argues that leaders must act now to adapt their defences.
-  *Why it matters:* AI-driven changes to threat and defence affect both ISO/IEC 27001 risk assessment and ISO/IEC 42001 AI governance obligations.
-  *Action:* Refresh your risk assessment to account for AI-enabled threats and defensive opportunities.
 
 ## SC 27 / 27000 family register
 
@@ -114,14 +125,14 @@ _Nothing new since the last run — all current signals carried over._
 - OK — NIST — Cybersecurity news: 0 items
 - FAIL — CISA — Cybersecurity advisories: <HTTPError 403: 'Forbidden'>
 - OK — APRA — News & publications: 10 items
-- MANUAL — OAIC — News & privacy guidance: manual source — not auto-fetched
+- OK — OAIC — News & privacy guidance: 0 items
 - MANUAL — ASIC — Media & guidance: manual source — not auto-fetched
 - MANUAL — ACCC — News: manual source — not auto-fetched
-- MANUAL — ACMA — News & media: manual source — not auto-fetched
+- OK — ACMA — News & media: 10 items
 - MANUAL — Home Affairs — Critical infrastructure / cyber: manual source — not auto-fetched
 - MANUAL — Attorney-General's Department — Privacy reform: manual source — not auto-fetched
-- MANUAL — Digital Transformation Agency — AI in government: manual source — not auto-fetched
-- MANUAL — Dept of Finance / DTA — AI assurance framework: manual source — not auto-fetched
+- OK — Digital Transformation Agency — news: 1 items
+- OK — digital.gov.au — digital, data & AI policy: 1 items
 - MANUAL — ISO/IEC JTC 1/SC 27 — Information security: manual source — not auto-fetched
 - MANUAL — ISO/IEC JTC 1/SC 42 — Artificial intelligence: manual source — not auto-fetched
 - MANUAL — ISO/IEC 42001 — AI management system: manual source — not auto-fetched

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-06-26T11:34:46+10:00",
+  "checked_at": "2026-06-26T12:40:02+10:00",
   "sources": [
     {
       "id": "acsc-alerts",
@@ -57,8 +57,8 @@
       "tier": 1,
       "source_type": "regulator",
       "lens": "Privacy",
-      "status": "manual",
-      "detail": "manual source — not auto-fetched",
+      "status": "ok",
+      "detail": "0 items",
       "items": 0
     },
     {
@@ -87,9 +87,9 @@
       "tier": 1,
       "source_type": "regulator",
       "lens": "Regulation",
-      "status": "manual",
-      "detail": "manual source — not auto-fetched",
-      "items": 0
+      "status": "ok",
+      "detail": "10 items",
+      "items": 10
     },
     {
       "id": "homeaffairs-ci",
@@ -113,23 +113,23 @@
     },
     {
       "id": "dta-ai",
-      "name": "Digital Transformation Agency — AI in government",
+      "name": "Digital Transformation Agency — news",
       "tier": 1,
       "source_type": "government",
       "lens": "PublicSector",
-      "status": "manual",
-      "detail": "manual source — not auto-fetched",
-      "items": 0
+      "status": "ok",
+      "detail": "1 items",
+      "items": 1
     },
     {
-      "id": "finance-ai-assurance",
-      "name": "Dept of Finance / DTA — AI assurance framework",
+      "id": "digital-gov-au",
+      "name": "digital.gov.au — digital, data & AI policy",
       "tier": 1,
       "source_type": "government",
       "lens": "PublicSector",
-      "status": "manual",
-      "detail": "manual source — not auto-fetched",
-      "items": 0
+      "status": "ok",
+      "detail": "1 items",
+      "items": 1
     },
     {
       "id": "iso-sc27",
@@ -213,9 +213,9 @@
     }
   ],
   "summary": {
-    "ok": 5,
+    "ok": 9,
     "fail": 1,
-    "manual": 15,
+    "manual": 11,
     "total": 21
   }
 }

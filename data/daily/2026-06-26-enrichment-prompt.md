@@ -75,6 +75,14 @@ ITEMS:
     "context": "Attackers are compromising open-source packages to spread malware. Cyber defenders are asked to review dependencies to reduce risks"
   },
   {
+    "id": "e3cf8ffebab07a87",
+    "title": "Have your say on the CCA discussion paper",
+    "source": "digital.gov.au — digital, data & AI policy",
+    "lens": "PublicSector",
+    "url": "https://www.digital.gov.au/have-your-say/consultation-CCA",
+    "context": "Have your say on the CCA discussion paper Consultation on the CCA discussion paper Have your say on the discussion paper created by the Digital Transformation Agency (DTA) to establish seller eligibility for consideration of future coordinated contracting arrangements (CCAs), also known as single seller arrangements (SSAs). 2/06/2026 - 16/06/26 The consultation carley.frost Tue, 2026-05-26 18:10…"
+  },
+  {
     "id": "395560d6009eee7a",
     "title": "Thinking carefully before adopting agentic AI",
     "source": "UK NCSC — All updates",
@@ -163,6 +171,46 @@ ITEMS:
     "context": "On 14 April, the Trump administration quietly acknowledged the widespread use of AI to automate government processes. The office of management and budget (OMB) disclosed a staggering 3,611 active or planned use cases for AI across the federal government. The list has ballooned by 70% from the one published in the final year of the Biden administration, and includes many disturbing-seeming plans…"
   },
   {
+    "id": "72c95cc1ca5f710a",
+    "title": "Proposed apparatus licensing arrangements for rail services in the 1800 MHz band",
+    "source": "ACMA — News & media",
+    "lens": "Regulation",
+    "url": "https://www.acma.gov.au/consultations/2026-06/proposed-apparatus-licensing-arrangements-rail-services-1800-mhz-band",
+    "context": "Proposed apparatus licensing arrangements for rail services in the 1800 MHz band Andrew.Wallace… Tue, 2026-06-16 14:55 Status Open Closing in 27 days ( 22 July 2026 ) In progress Key documents download pdf Consultation paper: New apparatus licensing arrangements for 1800 MHz band rail services [pdf, 319.49 KB] download docx Draft RALI MS34 [docx, 667.31 KB] The issue As part of the expiring…"
+  },
+  {
+    "id": "db030d1451835fef",
+    "title": "Cost recovery arrangements for marine radio",
+    "source": "ACMA — News & media",
+    "lens": "Regulation",
+    "url": "https://www.acma.gov.au/consultations/2026-06/cost-recovery-arrangements-marine-radio",
+    "context": "Cost recovery arrangements for marine radio Andrew.Wallace… Thu, 2026-06-11 09:39 Status Open Closing in 11 days ( 06 July 2026 ) In progress Key documents download pdf Draft Cost Recovery Implementation Statement: Maritime certificates of proficiency, handbooks and associated administrative services for the calendar year 2026 [pdf, 305.73 KB] The issue We have prepared a draft Cost Recovery…"
+  },
+  {
+    "id": "4209ded7f2318687",
+    "title": "Proposal to remake the Radiocommunications (Aircraft and Aeronautical Mobile Stations) Class Licence 2016",
+    "source": "ACMA — News & media",
+    "lens": "Regulation",
+    "url": "https://www.acma.gov.au/consultations/2026-06/proposal-remake-radiocommunications-aircraft-and-aeronautical-mobile-stations-class-licence-2016",
+    "context": "Proposal to remake the Radiocommunications (Aircraft and Aeronautical Mobile Stations) Class Licence 2016 peter.watts Tue, 2026-06-09 10:09 Status Open Closing in 26 days ( 21 July 2026 ) In progress Key documents download pdf Consultation paper: Proposal to remake the Radiocommunications (Aircraft and Aeronautical Mobile Stations) Class Licence 2016 [pdf, 239.74 KB] download pdf Draft…"
+  },
+  {
+    "id": "b1afd7ff1062b817",
+    "title": "Review of the 2.5 GHz band spectrum licence technical framework",
+    "source": "ACMA — News & media",
+    "lens": "Regulation",
+    "url": "https://www.acma.gov.au/consultations/2026-06/review-25-ghz-band-spectrum-licence-technical-framework",
+    "context": "Review of the 2.5 GHz band spectrum licence technical framework Andrew.Wallace… Thu, 2026-06-04 11:55 Status Open Closing in 13 days ( 08 July 2026 ) In progress Key documents download pdf Consultation paper: Review of the 2.5 GHz band spectrum licence technical framework [pdf, 1.02 MB] download pdf Draft Radiocommunications Advisory Guidelines (Managing Interference from Spectrum Licensed…"
+  },
+  {
+    "id": "0e020e8b8d921b41",
+    "title": "Remaking the emergency locating devices class licence",
+    "source": "ACMA — News & media",
+    "lens": "Regulation",
+    "url": "https://www.acma.gov.au/consultations/2026-06/remaking-emergency-locating-devices-class-licence",
+    "context": "Remaking the emergency locating devices class licence Andrew.Wallace… Wed, 2026-06-03 10:56 Status Open Closing in 26 days ( 21 July 2026 ) In progress Key documents download pdf Consultation paper: Remaking the emergency locating devices class licence [pdf, 219.31 KB] download pdf Draft Radiocommunications (Emergency Locating Devices) Class Licence 2026 [pdf, 377.75 KB] download pdf Notice to…"
+  },
+  {
     "id": "82ddfcc8f5334bc2",
     "title": "Quarterly private health insurance performance statistics",
     "source": "APRA — News & publications",
@@ -201,53 +249,5 @@ ITEMS:
     "lens": "Regulation",
     "url": "https://www.apra.gov.au/news-and-publications/monthly-authorised-deposit-taking-institution-statistics",
     "context": "Breadcrumb Home Statistical Publication Monthly Authorised Deposit-taking Institution Statistics Banking Published 29 May 2026 Print On this page On this page The Monthly Authorised Deposit-taking Institution Statistics (MADIS) publication provides selected information on the banking business of individual banks within the domestic market. Monthly authorised deposit-taking institution statistics…"
-  },
-  {
-    "id": "ec85bef7dd58a151",
-    "title": "Quarterly superannuation statistics",
-    "source": "APRA — News & publications",
-    "lens": "Regulation",
-    "url": "https://www.apra.gov.au/news-and-publications/quarterly-superannuation-statistics",
-    "context": "Breadcrumb Home Statistical Publication Quarterly superannuation statistics Superannuation Published 28 May 2026 Print On this page On this page APRA publishes statistics on the superannuation industry on a quarterly basis. The industry performance statistics contains aggregate summaries of financial performance and position, asset allocation and key performance ratios. Statistics relating to…"
-  },
-  {
-    "id": "619dd774b9976035",
-    "title": "Designing secure access with ZTNA",
-    "source": "UK NCSC — All updates",
-    "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/blogs/designing-secure-access-with-ztna",
-    "context": "New guidance explains how to design Zero Trust Network Access architectures aligned with zero trust principles and not built on old trust assumptions."
-  },
-  {
-    "id": "a34e5bfa96fafa05",
-    "title": "10 questions to ask when using AI models to find vulnerabilities",
-    "source": "UK NCSC — All updates",
-    "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/blogs/10-questions-ask-using-ai-models-find-vulnerabilities",
-    "context": "Using Artificial Intelligence to find vulnerabilities can bring added security considerations."
-  },
-  {
-    "id": "66f1b08410ca4e21",
-    "title": "Life insurance claims and disputes statistics",
-    "source": "APRA — News & publications",
-    "lens": "Regulation",
-    "url": "https://www.apra.gov.au/news-and-publications/life-insurance-claims-and-disputes-statistics",
-    "context": "Breadcrumb Home Statistical Publication Life insurance claims and disputes statistics Life insurance Published 29 April 2026 Print On this page On this page APRA publishes life insurance claims and disputes statistics on a biannual basis. These statistics contains industry and insurer-level data on life insurance claims and disputes, and a selection of the published data is also made available in…"
-  },
-  {
-    "id": "dbc0e3f164b2e239",
-    "title": "Could your choice of metrics be harming your SOC?",
-    "source": "UK NCSC — All updates",
-    "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/blogs/could-your-choice-of-metrics-be-harming-your-soc",
-    "context": "Poor metrics can render a well-intentioned security operation centre entirely ineffective."
-  },
-  {
-    "id": "5419f3a314e214b7",
-    "title": "HIGH ALERT: New steps for organisations running Cisco Firepower and Secure Firewall products",
-    "source": "ASD ACSC — Alerts & advisories",
-    "lens": "ASD",
-    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/new-steps-for-organisations-running-cisco-firepower-and-secure-firewall-products",
-    "context": "ASD partners CISA and NCSC have identified new malware affecting Cisco Firepower and Secure Firewall products."
   }
 ]

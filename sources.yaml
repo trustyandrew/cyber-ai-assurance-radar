@@ -95,12 +95,12 @@ sources:
 
   - id: oaic
     name: OAIC — News & privacy guidance
-    fetch: manual
-    url: https://www.oaic.gov.au/newsroom
+    fetch: rss
+    url: https://www.oaic.gov.au/rss
     tier: 1
     source_type: regulator
     lens: Privacy
-    verified: false
+    verified: true
     enabled: true
 
   - id: asic
@@ -123,11 +123,12 @@ sources:
 
   - id: acma
     name: ACMA — News & media
-    fetch: manual
-    url: https://www.acma.gov.au/news-and-media
+    fetch: rss
+    url: https://www.acma.gov.au/rss.xml
     tier: 1
     source_type: regulator
     lens: Regulation
+    verified: true
     enabled: true
 
   - id: homeaffairs-ci
@@ -150,21 +151,23 @@ sources:
 
   # --- Tier 1: Australian Government AI assurance ---------------------------
   - id: dta-ai
-    name: Digital Transformation Agency — AI in government
-    fetch: manual
-    url: https://www.dta.gov.au/our-projects/artificial-intelligence
+    name: Digital Transformation Agency — news
+    fetch: rss
+    url: https://www.dta.gov.au/rss.xml
     tier: 1
     source_type: government
     lens: PublicSector
+    verified: true
     enabled: true
 
-  - id: finance-ai-assurance
-    name: Dept of Finance / DTA — AI assurance framework
-    fetch: manual
-    url: https://www.digital.gov.au/policy/ai
+  - id: digital-gov-au
+    name: digital.gov.au — digital, data & AI policy
+    fetch: rss
+    url: https://www.digital.gov.au/rss.xml
     tier: 1
     source_type: government
     lens: PublicSector
+    verified: true
     enabled: true
 
   # --- Tier 1: Standards bodies (no usable RSS -> manual) --------------------

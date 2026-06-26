@@ -8,30 +8,49 @@ Claude subscription (no paid API), then pushes to the **private** repo.
 
 Run from the repo root: `C:\Users\AndrewRobinson\source\repos\cyber-ai-assurance-radar`
 
-1. **Collect + score (deterministic):**
+1. **Research the feedless ("manual") sources.** Some important sources have no usable
+   RSS (ISO committees bot-block; several AU bodies have no feed). For these, use web
+   search / WebFetch to find genuinely NEW, material assurance developments since the
+   last run, and maintain `data/manual_items.json`:
+   - Read the existing file (a JSON array).
+   - Append items not already present (dedup by URL), each shaped as:
+     ```json
+     {"title": "", "url": "", "source": "", "source_type": "regulator|government|standard_body",
+      "lens": "ASD|SC27|SC42|ISO27000|ISO42000|ResponsibleAI|Regulation|Privacy|CyberResilience|PublicSector",
+      "published_date": "YYYY-MM-DD", "summary": "", "found_at": "YYYY-MM-DD"}
+     ```
+   - Australian English. **Never fabricate** — only add items you can tie to a real URL.
+   - Prune entries whose `found_at` is older than 30 days, then save.
+   - Be efficient: a focused pass of a few targeted searches; finding nothing is fine.
+
+   **Feedless sources to check:** ISO/IEC SC 27 & SC 42 work programmes (new or changed
+   work items / stage moves), ASIC, ACCC, Attorney-General's Department (privacy reform),
+   Home Affairs / CISC (critical infrastructure), ENISA, OECD.AI, Standards Australia.
+   (OAIC, ACMA, DTA and digital.gov.au are now auto-fetched via RSS — no manual work.)
+
+2. **Collect + score (deterministic):**
    ```bash
    python src/run.py daily
    ```
-   Produces `data/dashboard.json`, `DASHBOARD.md`, the dated brief, history snapshot,
-   and `data/daily/<date>-enrichment-prompt.md`.
+   Fetches the RSS sources, **merges `data/manual_items.json`**, scores everything, and
+   writes `data/dashboard.json`, `DASHBOARD.md`, the dated brief, a history snapshot, and
+   `data/daily/<date>-enrichment-prompt.md`.
 
-2. **Enrich with the LLM (Claude, on the subscription):**
-   - Read `data/daily/<date>-enrichment-prompt.md` (it contains the analyst task spec
-     and the day's top items as JSON).
-   - Write the JSON reply — an array of `{id, summary, why_it_matters,
-     suggested_action}` — to `data/_cache/enrichment-in.json`. Australian English,
-     assurance-framed, never fabricate standards or publication facts.
+3. **Enrich with the LLM (Claude, on the subscription):**
+   - Read `data/daily/<date>-enrichment-prompt.md` (task spec + the day's top items as JSON).
+   - Write the JSON reply — an array of `{id, summary, why_it_matters, suggested_action}` —
+     to `data/_cache/enrichment-in.json`. Australian English, assurance-framed, no fabrication.
    - Apply and re-render:
      ```bash
      python src/apply_enrichment.py
      ```
 
-3. **On Fridays, also build the newsletter:**
+4. **On Fridays, also build the newsletter:**
    ```bash
    python src/run.py weekly
    ```
 
-4. **Commit + push (private repo):**
+5. **Commit + push (private repo):**
    ```bash
    git add -A && git commit -m "Daily radar update <date>" && git push
    ```
@@ -43,9 +62,6 @@ Run from the repo root: `C:\Users\AndrewRobinson\source\repos\cyber-ai-assurance
 
 ## Scheduling
 
-Wire steps 1–4 into the same local scheduler you use for the reference-vault refresh,
-to fire at **08:00 Australia/Melbourne**. The Claude invocation must run in a context
-that can do step 2 (i.e. Claude Code, so enrichment uses the subscription).
-
-> No GitHub Actions and no API key are involved. The `RADAR_USE_API` path exists but
-> stays off.
+Registered as the built-in scheduled task `daily-assurance-radar` (cron `0 8 * * *`,
+fires ~08:10 Australia/Melbourne, or on next app launch if missed). No GitHub Actions,
+no API key.

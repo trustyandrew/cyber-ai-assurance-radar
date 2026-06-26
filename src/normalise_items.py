@@ -4,7 +4,7 @@ Output: data/_cache/normalised.json (list of items, deduped by id within the run
 """
 from __future__ import annotations
 
-from radar_common import CACHE, load_json, log, now_iso, save_json, stable_id, truncate
+from radar_common import CACHE, DATA, load_json, log, now_iso, save_json, stable_id, truncate
 
 
 def normalise() -> list[dict]:
@@ -35,9 +35,36 @@ def normalise() -> list[dict]:
                 "tags": [],
             }
 
+    # Merge manually-curated items — researched by the daily routine for sources that
+    # have no usable feed (ISO committees, ASIC/ACCC/AGD/Home Affairs, ENISA, OECD.AI).
+    manual = load_json(DATA / "manual_items.json", [])
+    merged = 0
+    for e in manual:
+        url = (e.get("url") or "").strip()
+        title = (e.get("title") or "").strip()
+        if not (url and title):
+            continue
+        iid = stable_id(url, title)
+        if iid in items:
+            continue
+        items[iid] = {
+            "id": iid,
+            "title": title,
+            "source": e.get("source", "Manual source"),
+            "source_type": e.get("source_type", "government"),
+            "tier": e.get("tier", 1),
+            "published_date": e.get("published_date", ""),
+            "retrieved_at": retrieved_at,
+            "url": url,
+            "lens": e.get("lens", "Regulation"),
+            "summary": truncate(e.get("summary", ""), 400),
+            "tags": [],
+        }
+        merged += 1
+
     out = list(items.values())
     save_json(CACHE / "normalised.json", out)
-    log(f"Normalised {len(out)} unique items")
+    log(f"Normalised {len(out)} unique items ({merged} from manual research)")
     return out
 
 
