@@ -69,11 +69,25 @@ the term lists at the top of `src/score_items.py` (machine).
 `manual` and surface in **source health** as review prompts. When a source shows
 `fail`, fix its URL or switch it to `manual`.
 
-## Automation
+## Automation & hosting (free tier)
 
-`.github/workflows/` runs the daily build (08:00 Melbourne) and weekly newsletter
-(Friday 08:00 Melbourne) once the repo is on GitHub. Add `ANTHROPIC_API_KEY` as a
-repo secret to enable enrichment. See the DST note in the workflow files.
+`.github/workflows/` does three things once the repo is on GitHub, all on the **free
+tier** (a **public** repo — free Pages requires public):
+
+- **daily-dashboard.yml** — rebuilds the dashboard at 08:00 Melbourne and commits it.
+- **weekly-newsletter.yml** — builds the newsletter Friday 08:00 Melbourne.
+- **pages.yml** — publishes `dashboard/` to GitHub Pages on every push and after each
+  daily build, so the bookmark stays current.
+
+Runs are deterministic and free — no API key, no secrets. See the DST note in the
+workflow files.
+
+### Bookmark
+After pushing, in **Settings → Pages** set **Source = GitHub Actions**, then bookmark:
+
+```
+https://trustyandrew.github.io/cyber-ai-assurance-radar/
+```
 
 ## Design
 
