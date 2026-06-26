@@ -1,0 +1,221 @@
+{
+  "checked_at": "2026-06-26T10:05:36+10:00",
+  "sources": [
+    {
+      "id": "acsc-alerts",
+      "name": "ASD ACSC — Alerts & advisories",
+      "tier": 1,
+      "source_type": "government",
+      "lens": "ASD",
+      "status": "ok",
+      "detail": "4 items",
+      "items": 4
+    },
+    {
+      "id": "ncsc-uk",
+      "name": "UK NCSC — All updates",
+      "tier": 1,
+      "source_type": "government",
+      "lens": "CyberResilience",
+      "status": "ok",
+      "detail": "20 items",
+      "items": 20
+    },
+    {
+      "id": "nist-cyber",
+      "name": "NIST — Cybersecurity news",
+      "tier": 1,
+      "source_type": "standard_body",
+      "lens": "CyberResilience",
+      "status": "ok",
+      "detail": "0 items",
+      "items": 0
+    },
+    {
+      "id": "cisa-advisories",
+      "name": "CISA — Cybersecurity advisories",
+      "tier": 1,
+      "source_type": "government",
+      "lens": "CyberResilience",
+      "status": "fail",
+      "detail": "<HTTPError 403: 'Forbidden'>",
+      "items": 0
+    },
+    {
+      "id": "apra",
+      "name": "APRA — News & publications",
+      "tier": 1,
+      "source_type": "regulator",
+      "lens": "Regulation",
+      "status": "ok",
+      "detail": "10 items",
+      "items": 10
+    },
+    {
+      "id": "oaic",
+      "name": "OAIC — News & privacy guidance",
+      "tier": 1,
+      "source_type": "regulator",
+      "lens": "Privacy",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "asic",
+      "name": "ASIC — Media & guidance",
+      "tier": 1,
+      "source_type": "regulator",
+      "lens": "Regulation",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "accc",
+      "name": "ACCC — News",
+      "tier": 1,
+      "source_type": "regulator",
+      "lens": "Regulation",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "acma",
+      "name": "ACMA — News & media",
+      "tier": 1,
+      "source_type": "regulator",
+      "lens": "Regulation",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "homeaffairs-ci",
+      "name": "Home Affairs — Critical infrastructure / cyber",
+      "tier": 1,
+      "source_type": "government",
+      "lens": "CyberResilience",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "agd-privacy",
+      "name": "Attorney-General's Department — Privacy reform",
+      "tier": 1,
+      "source_type": "government",
+      "lens": "Privacy",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "dta-ai",
+      "name": "Digital Transformation Agency — AI in government",
+      "tier": 1,
+      "source_type": "government",
+      "lens": "PublicSector",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "finance-ai-assurance",
+      "name": "Dept of Finance / DTA — AI assurance framework",
+      "tier": 1,
+      "source_type": "government",
+      "lens": "PublicSector",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "iso-sc27",
+      "name": "ISO/IEC JTC 1/SC 27 — Information security",
+      "tier": 1,
+      "source_type": "standard_body",
+      "lens": "SC27",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "iso-sc42",
+      "name": "ISO/IEC JTC 1/SC 42 — Artificial intelligence",
+      "tier": 1,
+      "source_type": "standard_body",
+      "lens": "SC42",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "iso-42001",
+      "name": "ISO/IEC 42001 — AI management system",
+      "tier": 1,
+      "source_type": "standard_body",
+      "lens": "ISO42000",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "iso-27001",
+      "name": "ISO/IEC 27001 — ISMS",
+      "tier": 1,
+      "source_type": "standard_body",
+      "lens": "ISO27000",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "standards-australia",
+      "name": "Standards Australia — Updates",
+      "tier": 1,
+      "source_type": "standard_body",
+      "lens": "SC27",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "enisa",
+      "name": "ENISA — News & publications",
+      "tier": 1,
+      "source_type": "government",
+      "lens": "CyberResilience",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    },
+    {
+      "id": "schneier",
+      "name": "Schneier on Security",
+      "tier": 2,
+      "source_type": "research",
+      "lens": "CyberResilience",
+      "status": "ok",
+      "detail": "10 items",
+      "items": 10
+    },
+    {
+      "id": "oecd-ai",
+      "name": "OECD.AI — Policy observatory",
+      "tier": 2,
+      "source_type": "research",
+      "lens": "ResponsibleAI",
+      "status": "manual",
+      "detail": "manual source — not auto-fetched",
+      "items": 0
+    }
+  ],
+  "summary": {
+    "ok": 5,
+    "fail": 1,
+    "manual": 15,
+    "total": 21
+  }
+}

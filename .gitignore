@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets / local env
+.env
+*.local
+
+# Pipeline working files (regenerated each run)
+data/_cache/

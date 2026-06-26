@@ -1,0 +1,244 @@
+# Cyber & Responsible AI Assurance Radar — source configuration
+#
+# fetch:        rss | atom | manual   (manual = tracked in source health, not auto-fetched yet)
+# tier:         1 = primary/authoritative, 2 = high-value research, 3 = low priority
+# source_type:  primary | regulator | standard_body | government | research | media | vendor
+# lens:         ASD | SC27 | SC42 | ISO27000 | ISO42000 | ResponsibleAI | Regulation |
+#               Privacy | CyberResilience | PublicSector
+# verified:     true only where the feed URL has been confirmed to return a feed.
+#
+# Standards bodies (ISO/IEC, SC 27, SC 42) publish no usable RSS, so they are 'manual'
+# and appear in source_health.json as review prompts. RSS discovery is ongoing — when a
+# source shows 'fail' or 'manual' in source health, fix the URL or switch it to manual.
+
+meta:
+  name: Cyber & Responsible AI Assurance Radar
+  timezone: Australia/Melbourne
+  owner: Andrew Robinson
+
+# Source queue & search strategy — rendered as the dashboard's source-strategy table.
+search_strategy:
+  - family: ASD / ACSC
+    terms: "ISM, Essential Eight, AI, secure by design, critical infrastructure, posture report, alerts"
+    priority: High
+  - family: ISO / SC 27
+    terms: "27000 family, 27001, 27002, 27005, 27006, 27017, 27018, 27701, 275xx privacy, 15408"
+    priority: High
+  - family: ISO / SC 42
+    terms: "42001, 42003, 42005, 42006, 42007, 421xx, 5259, 12792, 25568, 25864, 25870"
+    priority: High
+  - family: DTA / digital.gov.au
+    terms: "AI technical standard, AI impact assessment tool, agentic AI addendum, AI transparency statements"
+    priority: High
+  - family: OAIC / privacy
+    terms: "AI privacy, automated decisions, privacy reform, data breach, APP guidance"
+    priority: Medium
+  - family: APRA / ASIC / ACCC
+    terms: "operational risk, CPS 230/234, AI governance, cyber resilience, enforcement"
+    priority: Medium
+  - family: NIST / CISA / ENISA / UK NCSC
+    terms: "AI RMF, SSDF, KEV, AI cyber, secure AI, resilience, vulnerability exploitation"
+    priority: Medium
+
+sources:
+  # --- Tier 1: ASD / ACSC and allied cyber authorities ----------------------
+  - id: acsc-alerts
+    name: ASD ACSC — Alerts & advisories
+    fetch: rss
+    url: https://www.cyber.gov.au/rss/alerts
+    tier: 1
+    source_type: government
+    lens: ASD
+    verified: true
+    enabled: true
+
+  - id: ncsc-uk
+    name: UK NCSC — All updates
+    fetch: rss
+    url: https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml
+    tier: 1
+    source_type: government
+    lens: CyberResilience
+    verified: true
+    enabled: true
+
+  - id: nist-cyber
+    name: NIST — Cybersecurity news
+    fetch: rss
+    url: https://www.nist.gov/news-events/cybersecurity/rss.xml
+    tier: 1
+    source_type: standard_body
+    lens: CyberResilience
+    verified: true
+    enabled: true
+
+  - id: cisa-advisories
+    name: CISA — Cybersecurity advisories
+    fetch: rss
+    url: https://www.cisa.gov/cybersecurity-advisories/all.xml
+    tier: 1
+    source_type: government
+    lens: CyberResilience
+    verified: false   # bot-blocked from plain Python; will show as 'fail' in health
+    enabled: true
+
+  # --- Tier 1: Australian regulators ----------------------------------------
+  - id: apra
+    name: APRA — News & publications
+    fetch: rss
+    url: https://www.apra.gov.au/rss.xml
+    tier: 1
+    source_type: regulator
+    lens: Regulation
+    verified: true
+    enabled: true
+
+  - id: oaic
+    name: OAIC — News & privacy guidance
+    fetch: manual
+    url: https://www.oaic.gov.au/newsroom
+    tier: 1
+    source_type: regulator
+    lens: Privacy
+    verified: false
+    enabled: true
+
+  - id: asic
+    name: ASIC — Media & guidance
+    fetch: manual
+    url: https://asic.gov.au/about-asic/news-centre/
+    tier: 1
+    source_type: regulator
+    lens: Regulation
+    enabled: true
+
+  - id: accc
+    name: ACCC — News
+    fetch: manual
+    url: https://www.accc.gov.au/news-centre
+    tier: 1
+    source_type: regulator
+    lens: Regulation
+    enabled: true
+
+  - id: acma
+    name: ACMA — News & media
+    fetch: manual
+    url: https://www.acma.gov.au/news-and-media
+    tier: 1
+    source_type: regulator
+    lens: Regulation
+    enabled: true
+
+  - id: homeaffairs-ci
+    name: Home Affairs — Critical infrastructure / cyber
+    fetch: manual
+    url: https://www.cisc.gov.au/
+    tier: 1
+    source_type: government
+    lens: CyberResilience
+    enabled: true
+
+  - id: agd-privacy
+    name: Attorney-General's Department — Privacy reform
+    fetch: manual
+    url: https://www.ag.gov.au/rights-and-protections/privacy
+    tier: 1
+    source_type: government
+    lens: Privacy
+    enabled: true
+
+  # --- Tier 1: Australian Government AI assurance ---------------------------
+  - id: dta-ai
+    name: Digital Transformation Agency — AI in government
+    fetch: manual
+    url: https://www.dta.gov.au/our-projects/artificial-intelligence
+    tier: 1
+    source_type: government
+    lens: PublicSector
+    enabled: true
+
+  - id: finance-ai-assurance
+    name: Dept of Finance / DTA — AI assurance framework
+    fetch: manual
+    url: https://www.digital.gov.au/policy/ai
+    tier: 1
+    source_type: government
+    lens: PublicSector
+    enabled: true
+
+  # --- Tier 1: Standards bodies (no usable RSS -> manual) --------------------
+  - id: iso-sc27
+    name: ISO/IEC JTC 1/SC 27 — Information security
+    fetch: manual
+    url: https://www.iso.org/committee/45306.html
+    tier: 1
+    source_type: standard_body
+    lens: SC27
+    enabled: true
+
+  - id: iso-sc42
+    name: ISO/IEC JTC 1/SC 42 — Artificial intelligence
+    fetch: manual
+    url: https://www.iso.org/committee/6794475.html
+    tier: 1
+    source_type: standard_body
+    lens: SC42
+    enabled: true
+
+  - id: iso-42001
+    name: ISO/IEC 42001 — AI management system
+    fetch: manual
+    url: https://www.iso.org/standard/81230.html
+    tier: 1
+    source_type: standard_body
+    lens: ISO42000
+    enabled: true
+
+  - id: iso-27001
+    name: ISO/IEC 27001 — ISMS
+    fetch: manual
+    url: https://www.iso.org/standard/27001
+    tier: 1
+    source_type: standard_body
+    lens: ISO27000
+    enabled: true
+
+  - id: standards-australia
+    name: Standards Australia — Updates
+    fetch: manual
+    url: https://www.standards.org.au/news
+    tier: 1
+    source_type: standard_body
+    lens: SC27
+    enabled: true
+
+  # --- Tier 1: International cyber authorities --------------------------------
+  - id: enisa
+    name: ENISA — News & publications
+    fetch: manual
+    url: https://www.enisa.europa.eu/news
+    tier: 1
+    source_type: government
+    lens: CyberResilience
+    enabled: true
+
+  # --- Tier 2: high-value research ------------------------------------------
+  - id: schneier
+    name: Schneier on Security
+    fetch: atom
+    url: https://www.schneier.com/feed/atom/
+    tier: 2
+    source_type: research
+    lens: CyberResilience
+    verified: false
+    enabled: true
+
+  - id: oecd-ai
+    name: OECD.AI — Policy observatory
+    fetch: manual
+    url: https://oecd.ai/en/
+    tier: 2
+    source_type: research
+    lens: ResponsibleAI
+    enabled: true

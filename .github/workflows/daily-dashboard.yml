@@ -1,0 +1,39 @@
+# Daily dashboard build. Activates once this repo is on GitHub.
+# Schedule note: cron is UTC and does not follow DST. 22:00 UTC = 08:00 AEST
+# (Melbourne winter). During AEDT (summer) it runs at 09:00 Melbourne — adjust to
+# 21:00 UTC if you want a fixed 08:00 local time year-round.
+name: Daily dashboard
+
+on:
+  schedule:
+    - cron: "0 22 * * *"   # 08:00 Australia/Melbourne (AEST)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run daily pipeline
+        # Deterministic + free by default (no paid API). Richer summaries come from
+        # the Pro-plan prompt pack written to data/daily/<date>-enrichment-prompt.md.
+        run: python src/run.py daily
+
+      - name: Commit updated dashboard
+        run: |
+          git config user.name  "assurance-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/ dashboard/dashboard-data.js
+          git diff --cached --quiet || git commit -m "Daily radar update $(date -u +%Y-%m-%d)"
+          git push
