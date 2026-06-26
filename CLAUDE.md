@@ -58,6 +58,7 @@ python src/run.py weekly     # weekly newsletter
 
 ## Open item
 
-`standards.yaml` was seeded from the mock-up and is a manually maintained register.
-Editions/stages are **not independently verified** — confirm at iso.org before relying
-on any status. The pipeline renders this register; it must not assert publication facts.
+`standards.yaml` is a manually maintained register, **verified against iso.org / IEC
+webstore on 2026-06-26**. ISO stages move quickly — re-check any DIS/FDIS/CD/AWI item
+before external publication. The pipeline renders this register; it must not assert
+publication facts of its own.

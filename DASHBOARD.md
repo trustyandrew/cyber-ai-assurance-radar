@@ -1,7 +1,7 @@
 # Cyber & Responsible AI Assurance Radar
 
-_Updated 2026-06-26T10:54:45+10:00 (Australia/Melbourne)._  
-**37** signals · **0** new · **4** newsletter candidates · **24** standards tracked · sources 5/21 ok (1 failed).
+_Updated 2026-06-26T11:28:46+10:00 (Australia/Melbourne)._  
+**37** signals · **0** new · **4** newsletter candidates · **32** standards tracked · sources 5/21 ok (1 failed).
 
 ## Current signals
 
@@ -58,35 +58,43 @@ _Updated 2026-06-26T10:54:45+10:00 (Australia/Melbourne)._
 
 | Standard / work item | Area | Status | Why watch it |
 |---|---|---|---|
-| [ISO/IEC 27001:2022 + Amd 1:2024](https://www.iso.org/standard/27001) | ISMS requirements | Published | Core assurance anchor; the climate-action amendment is useful context for integrated management systems. |
-| [ISO/IEC 27002:2022](https://www.iso.org/standard/75652.html) | Information security controls | Published | Control library for ISO 27001 Annex A interpretation, policy rationalisation and audit evidence. |
-| [ISO/IEC 27005:2022](https://www.iso.org/standard/80585.html) | Information security risk management | Published | Risk-process bridge between the ISMS, cyber resilience, supplier risk and AI-enabled system risk. |
-| [ISO/IEC 27006-1:2024](https://www.iso.org/standard/82908.html) | ISMS certification bodies | Published | Important for certification integrity, audit bodies and assurance-market commentary. |
-| [ISO/IEC 27017](https://www.iso.org/standard/43757.html) | Cloud information security controls | Under development (revision) | Watch for alignment to current cloud, SaaS, shared-responsibility and sovereign-cloud assurance. |
-| [ISO/IEC 27018:2025](https://www.iso.org/standard/76559.html) | PII protection in public clouds | Published | Useful for SaaS privacy, processor obligations and customer assurance packs. |
-| [ISO/IEC 27701:2025](https://www.iso.org/standard/85819.html) | Privacy information management systems | Published | Bridge between the ISMS, privacy, Australian Privacy Act reform and AI data governance. |
-| [ISO/IEC 27565:2026](https://www.iso.org/committee/45306.html) | Privacy preservation / zero-knowledge proofs | Published | Niche but relevant to PETs, digital identity, verifiable credentials and sensitive AI use cases. |
-| [ISO/IEC 15408 series:2026](https://www.iso.org/standard/72891.html) | IT security evaluation / Common Criteria | Published | Not 27000, but SC 27-relevant for formal product/security assurance conversations. |
+| [ISO/IEC 27000:2018](https://www.iso.org/standard/73906.html) | ISMS overview and vocabulary | Published | Defines the vocabulary for the whole ISMS family — the normative terms used in 27001 audits and certification scope statements (free from ISO). |
+| [ISO/IEC 27001:2022 (+ Amd 1:2024)](https://www.iso.org/standard/27001) | ISMS requirements | Published | Core assurance anchor. Amendment 1 (2024) adds climate-action considerations to clauses 4.1/4.2; base edition remains 2022. |
+| [ISO/IEC 27002:2022](https://www.iso.org/standard/75652.html) | Information security controls | Published | Control library (93 controls, 4 themes) for ISO 27001 Annex A interpretation, policy rationalisation and audit evidence. |
+| [ISO/IEC 27004:2016](https://www.iso.org/standard/64120.html) | ISMS monitoring, measurement, analysis and evaluation | Published (revision underway) | Guidance for ISO 27001 clause 9.1 performance evaluation — the metrics and effectiveness evidence auditors look for. A DIS revision is in progress. |
+| [ISO/IEC 27005:2022](https://www.iso.org/standard/80585.html) | Information security risk management | Published | Risk-process bridge between the ISMS, cyber resilience, supplier risk and AI-enabled system risk; aligned to 27001:2022 and ISO 31000. |
+| [ISO/IEC 27006-1:2024](https://www.iso.org/standard/82908.html) | Requirements for ISMS certification bodies | Published | Certification-integrity baseline for audit bodies; the two-year transition concluded around March 2026. |
+| [ISO/IEC 27007:2020](https://www.iso.org/standard/77802.html) | Guidelines for ISMS auditing | Published | How-to for planning and conducting ISMS audits (first/second party); complements the 27006-1 third-party certification requirements. |
+| [ISO/IEC 27017:2015](https://www.iso.org/standard/43757.html) | Cloud information security controls | Published (2nd ed. at FDIS) | Current in-force edition is 2015; the 2nd edition is at FDIS (publication expected 2026). Watch for alignment to current cloud/SaaS/sovereign-cloud assurance. |
+| [ISO/IEC 27018:2025](https://www.iso.org/standard/88150.html) | PII protection in public clouds | Published | 3rd edition (Aug 2025), aligned to 27002:2022 with a new Annex B; useful for SaaS privacy, processor obligations and customer assurance packs. |
+| [ISO/IEC 27035-1:2023](https://www.iso.org/standard/78973.html) | Information security incident management (principles and process) | Published | Underpins 27001/27002 incident controls; the detect/report/respond/learn process assessed in audits and expected under DORA, GDPR and APRA CPS 234. |
+| [ISO/IEC 27701:2025](https://www.iso.org/standard/27701.html) | Privacy information management systems (PIMS) | Published | 2nd edition (Oct 2025) — now a standalone, independently certifiable PIMS (no longer a 27001 extension). Bridges ISMS, privacy and Privacy Act reform. Transition ~Oct 2028. |
+| [ISO/IEC 27565:2026](https://www.iso.org/standard/80398.html) | Privacy preservation using zero-knowledge proofs | Published | Edition 1 (Feb 2026). Relevant to PETs, digital identity, verifiable credentials and sensitive AI use cases. |
+| [ISO/IEC 15408 series:2026](https://www.iso.org/standard/88134.html) | IT security evaluation / Common Criteria (parts 1-5) | Published | 5th edition, parts published Apr-May 2026 (superseding the 2022 edition). SC 27-relevant for formal product/security assurance and Common Criteria certificates. |
 
 ## SC 42 / 42000 & AI assurance register
 
 | Standard / work item | Area | Status | Why watch it |
 |---|---|---|---|
-| [ISO/IEC 42001:2023](https://www.iso.org/standard/81230.html) | AI management system | Published | Anchor for responsible AI governance, internal audit, management review and continual improvement. |
-| [ISO/IEC AWI 42003](https://www.iso.org/committee/6794475.html) | Implementation guidance for 42001 | Under development | Potentially important for practical AIMS implementation playbooks. |
-| [ISO/IEC 42005:2025](https://www.iso.org/standard/44545.html) | AI system impact assessment | Published | Maps directly to use-case triage, impact assessment, benefits/harms and risk evidence. |
-| [ISO/IEC 42006:2025](https://www.iso.org/standard/44546.html) | AIMS audit and certification bodies | Published | Turns AI management systems into a certification and assessor-competence conversation. |
-| [ISO/IEC DIS 42007](https://www.iso.org/committee/6794475.html) | AI conformity assessment schemes | Under development | Watch closely; may shape AI assurance market models beyond management-system certification. |
-| [ISO/IEC TS 42119-2:2025](https://www.iso.org/committee/6794475.html) | Testing of AI systems | Published | Relevant to model/system validation, AI testing, QA, safety, robustness and assurance evidence. |
-| [ISO/IEC DTS 42119-3.2](https://www.iso.org/committee/6794475.html) | Verification and validation analysis | Under development | Likely high value for model assurance and AI lifecycle testing once published. |
-| [ISO/IEC 5259-5:2025](https://www.iso.org/committee/6794475.html) | Data quality governance | Published | Useful for AI data governance, training-data quality and auditability. |
-| [ISO/IEC TR 5259-6:2026](https://www.iso.org/committee/6794475.html) | Data quality visualisation | Published | Useful but niche; score higher where AI data observability or reporting is in scope. |
-| [ISO/IEC 12792:2025](https://www.iso.org/committee/6794475.html) | Transparency taxonomy of AI systems | Published | Relevant to explainability, transparency statements, public-sector AI and user-facing disclosure. |
-| [ISO/IEC TS 6254:2025](https://www.iso.org/committee/6794475.html) | Explainability and interpretability | Published | Useful for responsible AI control design and assurance language. |
-| [ISO/IEC FDIS 42105](https://www.iso.org/committee/6794475.html) | Human oversight of AI systems | Under development | High newsletter value; aligns with public-sector responsible AI and EU-style control expectations. |
-| [ISO/IEC CD TS 25568](https://www.iso.org/committee/6794475.html) | Generative AI system risk guidance | Under development | Track for agentic AI, public LLMs, prompt injection, model governance and procurement advice. |
-| [ISO/IEC AWI 25870](https://www.iso.org/committee/6794475.html) | AI incident reporting data elements | Under development | Connects AI governance with incident, breach, safety and regulator reporting. |
-| [ISO/IEC AWI TS 25864](https://www.iso.org/committee/6794475.html) | AI system resilience assessment | Under development | Useful for model/system resilience and assurance framing alongside cyber resilience. |
+| [ISO/IEC 22989:2022](https://www.iso.org/standard/74296.html) | AI concepts and terminology | Published | Foundational AI vocabulary normatively referenced across SC 42 (incl. 42001); consistent definitions for AI assurance. (Gen-AI amendment in progress.) |
+| [ISO/IEC 23894:2023](https://www.iso.org/standard/77304.html) | AI risk management guidance | Published | The AI-specific companion to ISO 31000 and the de-facto reference for AI risk management; underpins risk treatment in ISO/IEC 42001 audits. |
+| [ISO/IEC 5338:2023](https://www.iso.org/standard/81118.html) | AI system life cycle processes | Published | Defines the AI system life cycle (built on 15288/12207) — the process backbone that V&V, data-quality and impact-assessment work hang off. |
+| [ISO/IEC 42001:2023](https://www.iso.org/standard/42001) | AI management system | Published | Anchor for responsible AI governance — internal audit, management review and continual improvement. World's first AI management system standard. |
+| [ISO/IEC AWI 42003](https://www.iso.org/standard/91021.html) | Implementation guidance for ISO/IEC 42001 | Under development (AWI) | Practical AIMS implementation guidance; early stage (preparatory). Likely a key implementation playbook once published. |
+| [ISO/IEC 42005:2025](https://www.iso.org/standard/42005) | AI system impact assessment | Published | Maps directly to use-case triage, impact assessment, benefits/harms and risk evidence; Annex A maps to ISO/IEC 42001. |
+| [ISO/IEC 42006:2025](https://www.iso.org/standard/42006) | Requirements for bodies auditing/certifying AIMS | Published | Published (Jul 2025) — turns AI management systems into a certification and assessor-competence conversation. Builds on ISO/IEC 17021-1. |
+| [ISO/IEC DIS 42007](https://www.iso.org/standard/89967.html) | AI conformity assessment schemes | Under development (DIS) | DIS ballot registered Jun 2026. May shape AI assurance market models beyond management-system certification; supplementary to ISO/IEC 17067. |
+| [ISO/IEC TS 42119-2:2025](https://www.iso.org/standard/84127.html) | Testing of AI systems (overview) | Published | First publication in the AI-testing series; relevant to model/system validation, QA, safety, robustness and assurance evidence. |
+| [ISO/IEC DTS 42119-3.2](https://www.iso.org/standard/85072.html) | Verification and validation analysis of AI systems | Under development (DTS) | High value for model assurance and AI lifecycle testing once published; currently at draft TS ballot. |
+| [ISO/IEC 5259-5:2025](https://www.iso.org/standard/84150.html) | Data quality governance framework (analytics/ML) | Published | Useful for AI data governance, training-data quality and auditability. |
+| [ISO/IEC TR 5259-6:2026](https://www.iso.org/standard/86532.html) | Data quality visualisation framework | Published | Technical Report (May 2026); useful where AI data observability or reporting is in scope. |
+| [ISO/IEC 12792:2025](https://www.iso.org/standard/84111.html) | Transparency taxonomy of AI systems | Published | Relevant to explainability, transparency statements, public-sector AI and user-facing disclosure (e.g. EU AI Act Art. 13). |
+| [ISO/IEC TS 6254:2025](https://www.iso.org/standard/82148.html) | Explainability and interpretability of ML/AI | Published | Technical Specification (Sep 2025); objectives and approaches for explainability — useful for responsible AI control design and assurance language. |
+| [ISO/IEC TR 5469:2024](https://www.iso.org/standard/81283.html) | Functional safety and AI systems | Published | Bridges AI with classical functional safety (IEC 61508, ISO 26262); high value for clients deploying AI in safety-related functions. |
+| [ISO/IEC DIS 42105](https://www.iso.org/standard/86902.html) | Guidance for human oversight of AI systems | Under development (DIS) | High newsletter value; aligns with public-sector responsible AI and EU-style control expectations. (iso.org shows DIS; a national mirror shows FDIS — re-check.) |
+| [ISO/IEC CD TS 25568](https://www.iso.org/standard/90754.html) | Guidance on risks in generative AI systems | Under development (CD) | Track for agentic AI, public LLMs, prompt injection, model governance and procurement advice. |
+| [ISO/IEC AWI 25870](https://www.iso.org/standard/91804.html) | Data elements for reporting AI system incidents | Under development (AWI) | Connects AI governance with incident, breach, safety and regulator reporting; early stage. |
+| [ISO/IEC AWI TS 25864](https://www.iso.org/standard/91831.html) | Resilience assessment of AI systems | Under development (AWI) | Model/system resilience framing alongside cyber resilience; early stage (SC 42/WG 3). |
 
 ## Newsletter candidates
 

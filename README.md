@@ -97,9 +97,10 @@ no stock cyber imagery. Sidebar navigation, hero + KPI tiles, signal cards, SC 2
 register tables, source queue, source health and newsletter callouts. Theme tokens live
 in `dashboard/styles.css`.
 
-> **Verify the standards register.** `standards.yaml` was seeded from the mock-up and is a
-> manually maintained watch-list. Confirm each edition/stage at iso.org — the pipeline
-> renders this register, it does not assert publication facts.
+> **Standards register.** `standards.yaml` is a manually maintained watch-list, verified
+> against iso.org / IEC on 2026-06-26. ISO stages move quickly — re-check DIS/FDIS/CD/AWI
+> items before external publication. The pipeline renders this register; it does not
+> assert publication facts of its own.
 
 ## Roadmap
 
