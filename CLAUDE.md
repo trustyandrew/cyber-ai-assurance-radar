@@ -11,11 +11,17 @@ Do not include something just because it mentions "AI" or "cyber".
 
 ## Architecture
 
-Hybrid, **LLM-optional** Python pipeline (stdlib + PyYAML only):
-`fetch → normalise → score → summarise → render → validate`, orchestrated by
-`src/run.py`. Runs deterministically with no API key; enriches the top items via the
-Claude API when `ANTHROPIC_API_KEY` is set. Daily and weekly GitHub Actions in
-`.github/workflows/`.
+Python pipeline (stdlib + PyYAML only): `fetch → normalise → score → summarise →
+render → validate`, orchestrated by `src/run.py`. **Deterministic and free by
+default — do NOT add paid-API calls to the default path.** Andrew uses a Claude
+Pro/Max subscription, not pay-per-token API. Richer summaries come via the Pro-plan
+prompt pack (`data/daily/<date>-enrichment-prompt.md` → paste into Claude Desktop →
+`data/_cache/enrichment-in.json` → `python src/apply_enrichment.py`). The paid API
+path only runs if BOTH `RADAR_USE_API=1` and `ANTHROPIC_API_KEY` are set. Daily and
+weekly GitHub Actions in `.github/workflows/`.
+
+SC 27 / SC 42 are a curated standards register (`standards.yaml`), separate from the
+live signals — keep "news" and "standards radar" distinct.
 
 ## Run / verify
 
@@ -46,5 +52,6 @@ python src/run.py weekly     # weekly newsletter
 
 ## Open item
 
-Dashboard visual identity is **provisional** pending Andrew's design mock-up. Keep
-structure stable; retheme via CSS variables in `dashboard/styles.css`.
+`standards.yaml` was seeded from the mock-up and is a manually maintained register.
+Editions/stages are **not independently verified** — confirm at iso.org before relying
+on any status. The pipeline renders this register; it must not assert publication facts.

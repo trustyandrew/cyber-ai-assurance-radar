@@ -28,17 +28,18 @@ python src/run.py weekly                  # build the weekly newsletter
 start dashboard/index.html                # Windows  (or just open the file)
 ```
 
-### Optional: smarter summaries
+### Smarter summaries — without paid API billing
 
-The pipeline is **hybrid and LLM-optional**. Without a key it runs fully
-deterministically (keyword/rubric scoring + template summaries). Set an Anthropic
-API key to enrich the top items with assurance-framed analysis:
+The daily run is **deterministic and free** by default. For richer, assurance-framed
+analysis using a **Claude Pro/Max subscription** (no per-token API charge):
 
-```bash
-export ANTHROPIC_API_KEY=sk-...           # Windows: setx ANTHROPIC_API_KEY sk-...
-export RADAR_MODEL=claude-sonnet-4-6      # optional (default)
-python src/run.py daily
-```
+1. `python src/run.py daily` → writes `data/daily/<date>-enrichment-prompt.md`.
+2. Paste that prompt into **Claude Desktop** (Pro/Max). Copy its JSON reply.
+3. Save the reply to `data/_cache/enrichment-in.json`.
+4. `python src/apply_enrichment.py` → merges it in and re-renders.
+
+> Paid API path (off by default, billed separately from a subscription): set
+> `RADAR_USE_API=1` **and** `ANTHROPIC_API_KEY`. Only then does the pipeline call the API.
 
 ## How it works
 
@@ -50,7 +51,12 @@ python src/run.py daily
 | 4 | `summarise_items.py` | LLM enrichment if key present, else deterministic |
 | 5 | `render_dashboard.py` | `dashboard.json`, daily brief, history snapshot, `dashboard-data.js` |
 | — | `render_newsletter.py` | Weekly curation → newsletter outputs |
+| — | `apply_enrichment.py` | Merge a Pro-plan JSON reply back into the dashboard |
 | — | `validate_outputs.py` | URLs present, no dupes, no empty titles, word limit |
+
+The SC 27 / SC 42 sections are a **curated standards register** (`standards.yaml`),
+deliberately separate from the live news signals so the dashboard stays a
+standards-led radar rather than a news dump.
 
 Scoring is transparent and editable — see `prompts/relevance-rubric.md` (human) and
 the term lists at the top of `src/score_items.py` (machine).
@@ -69,11 +75,16 @@ the term lists at the top of `src/score_items.py` (machine).
 (Friday 08:00 Melbourne) once the repo is on GitHub. Add `ANTHROPIC_API_KEY` as a
 repo secret to enable enrichment. See the DST note in the workflow files.
 
-## Design status
+## Design
 
-The dashboard styling is **provisional/neutral** pending the design mock-up. The
-intended identity (crisp, professional, black/white/lime, no stock cyber imagery)
-drops into the CSS variables in `dashboard/styles.css` without structural change.
+The dashboard is built to the approved mock-up: crisp, standards-led, black/white/lime,
+no stock cyber imagery. Sidebar navigation, hero + KPI tiles, signal cards, SC 27 / SC 42
+register tables, source queue, source health and newsletter callouts. Theme tokens live
+in `dashboard/styles.css`.
+
+> **Verify the standards register.** `standards.yaml` was seeded from the mock-up and is a
+> manually maintained watch-list. Confirm each edition/stage at iso.org — the pipeline
+> renders this register, it does not assert publication facts.
 
 ## Roadmap
 
