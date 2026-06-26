@@ -1,28 +1,5 @@
 [
   {
-    "id": "26bcb636d6619c8f",
-    "title": "CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability",
-    "source": "ASD ACSC — Alerts & advisories",
-    "source_type": "government",
-    "published_date": "2026-05-01",
-    "retrieved_at": "2026-06-26T12:40:04+10:00",
-    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability",
-    "priority": "High",
-    "relevance_score": 4,
-    "lens": "ASD",
-    "summary": "ASD's ACSC reports active exploitation of a critical cPanel/WHM vulnerability (CVE-2026-4194, CVSS 4.0 base score 9.3) affecting the administration control interfaces used for website and server management.",
-    "why_it_matters": "Internet-facing administration interfaces under active exploitation are a direct Essential Eight 'patch applications' priority and a likely gap against ISO/IEC 27001 Annex A technical vulnerability management controls.",
-    "suggested_action": "Identify cPanel/WHM instances, apply the vendor patch immediately and restrict exposure of admin interfaces.",
-    "newsletter_candidate": true,
-    "tags": [
-      "acsc",
-      "vulnerability"
-    ],
-    "is_new": false,
-    "enriched_by": "pro-plan",
-    "vote": ""
-  },
-  {
     "id": "78e47568529ad914",
     "title": "Preparing for a ‘vulnerability patch wave’",
     "source": "UK NCSC — All updates",
@@ -43,7 +20,7 @@
     ],
     "is_new": false,
     "enriched_by": "pro-plan",
-    "vote": ""
+    "vote": "up"
   },
   {
     "id": "d0bc636fd27fbc36",
@@ -66,7 +43,7 @@
     ],
     "is_new": false,
     "enriched_by": "pro-plan",
-    "vote": ""
+    "vote": "up"
   },
   {
     "id": "e96386b842920f36",
@@ -89,7 +66,7 @@
     ],
     "is_new": false,
     "enriched_by": "pro-plan",
-    "vote": ""
+    "vote": "up"
   },
   {
     "id": "1e995fdeb15ded28",
@@ -105,36 +82,14 @@
     "summary": "A Schneier commentary uses Anthropic's Fable model to argue that AI export and access controls are structurally limited, struggling to distinguish domestic from foreign users and so failing to achieve their intended security aims.",
     "why_it_matters": "AI export and access controls shape governance obligations under ISO/IEC 42001 and influence how Australian organisations source and assure third-party AI models.",
     "suggested_action": "Track AI export-control developments that could affect model availability within your AI management system.",
-    "newsletter_candidate": false,
+    "newsletter_candidate": true,
     "tags": [
       "generative ai",
       "government"
     ],
     "is_new": false,
     "enriched_by": "pro-plan",
-    "vote": ""
-  },
-  {
-    "id": "e9d757e534f1f0d2",
-    "title": "CRITICAL ALERT: Reported widespread credential exposure affecting Fortinet Firewalls and VPN Gateways",
-    "source": "ASD ACSC — Alerts & advisories",
-    "source_type": "government",
-    "published_date": "2026-06-18",
-    "retrieved_at": "2026-06-26T12:40:04+10:00",
-    "url": "https://www.cyber.gov.au/about-us/view-all-content/Reported-widespread-credential-exposure-affecting-Fortinet-Firewalls-and-VPN-Gateways",
-    "priority": "Medium",
-    "relevance_score": 3,
-    "lens": "ASD",
-    "summary": "ASD's ACSC is aware of public reporting of a malicious campaign causing widespread credential exposure affecting Fortinet firewalls and VPN gateways.",
-    "why_it_matters": "Edge devices and VPN credentials are high-value targets; exposure engages ISO/IEC 27001 access control and Essential Eight MFA and patching priorities for Australian entities.",
-    "suggested_action": "Reset Fortinet credentials, enforce multi-factor authentication and review VPN logs for unauthorised access.",
-    "newsletter_candidate": false,
-    "tags": [
-      "acsc"
-    ],
-    "is_new": false,
-    "enriched_by": "pro-plan",
-    "vote": ""
+    "vote": "up"
   },
   {
     "id": "6c75dee5fc404218",
@@ -178,28 +133,6 @@
     ],
     "is_new": false,
     "enriched_by": "pro-plan",
-    "vote": ""
-  },
-  {
-    "id": "e3cf8ffebab07a87",
-    "title": "Have your say on the CCA discussion paper",
-    "source": "digital.gov.au — digital, data & AI policy",
-    "source_type": "government",
-    "published_date": "2026-05-26",
-    "retrieved_at": "2026-06-26T12:40:04+10:00",
-    "url": "https://www.digital.gov.au/have-your-say/consultation-CCA",
-    "priority": "Medium",
-    "relevance_score": 3,
-    "lens": "PublicSector",
-    "summary": "Have your say on the CCA discussion paper Consultation on the CCA discussion paper Have your say on the discussion paper created by the Digital Transformation Agency (DTA) to establish seller eligibility for consideration of future coordinated contracting arrangements (CCAs), also known as single seller arrangements (SSAs). 2/06/2026 - 16/06/26 The consultation carley.frost Tue, 2026-05-26 18:10…",
-    "why_it_matters": "Australian public sector AI assurance relevance; check DTA standards, AI impact assessment and procurement.",
-    "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
-    "newsletter_candidate": false,
-    "tags": [
-      "digital transformation"
-    ],
-    "is_new": true,
-    "enriched_by": "deterministic",
     "vote": ""
   },
   {

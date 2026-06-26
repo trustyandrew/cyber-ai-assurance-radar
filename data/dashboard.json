@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T13:15:21+10:00",
+  "generated_at": "2026-06-26T14:02:09+10:00",
   "generated_date": "2026-06-26",
   "timezone": "Australia/Melbourne",
   "run_type": "daily",
@@ -9,36 +9,13 @@
     "sources_failed": 1,
     "sources_research": 11,
     "items_scored": 56,
-    "items_material": 49,
-    "items_new": 12,
+    "items_material": 46,
+    "items_new": 11,
     "items_ignored": 7,
     "newsletter_candidates": 4,
     "standards_tracked": 32
   },
   "current_signals": [
-    {
-      "id": "26bcb636d6619c8f",
-      "title": "CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability",
-      "source": "ASD ACSC — Alerts & advisories",
-      "source_type": "government",
-      "published_date": "2026-05-01",
-      "retrieved_at": "2026-06-26T12:40:04+10:00",
-      "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability",
-      "priority": "High",
-      "relevance_score": 4,
-      "lens": "ASD",
-      "summary": "ASD's ACSC reports active exploitation of a critical cPanel/WHM vulnerability (CVE-2026-4194, CVSS 4.0 base score 9.3) affecting the administration control interfaces used for website and server management.",
-      "why_it_matters": "Internet-facing administration interfaces under active exploitation are a direct Essential Eight 'patch applications' priority and a likely gap against ISO/IEC 27001 Annex A technical vulnerability management controls.",
-      "suggested_action": "Identify cPanel/WHM instances, apply the vendor patch immediately and restrict exposure of admin interfaces.",
-      "newsletter_candidate": true,
-      "tags": [
-        "acsc",
-        "vulnerability"
-      ],
-      "is_new": false,
-      "enriched_by": "pro-plan",
-      "vote": ""
-    },
     {
       "id": "78e47568529ad914",
       "title": "Preparing for a ‘vulnerability patch wave’",
@@ -60,7 +37,7 @@
       ],
       "is_new": false,
       "enriched_by": "pro-plan",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "d0bc636fd27fbc36",
@@ -83,7 +60,7 @@
       ],
       "is_new": false,
       "enriched_by": "pro-plan",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "e96386b842920f36",
@@ -106,7 +83,7 @@
       ],
       "is_new": false,
       "enriched_by": "pro-plan",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "1e995fdeb15ded28",
@@ -122,35 +99,155 @@
       "summary": "A Schneier commentary uses Anthropic's Fable model to argue that AI export and access controls are structurally limited, struggling to distinguish domestic from foreign users and so failing to achieve their intended security aims.",
       "why_it_matters": "AI export and access controls shape governance obligations under ISO/IEC 42001 and influence how Australian organisations source and assure third-party AI models.",
       "suggested_action": "Track AI export-control developments that could affect model availability within your AI management system.",
-      "newsletter_candidate": false,
+      "newsletter_candidate": true,
       "tags": [
         "generative ai",
         "government"
       ],
       "is_new": false,
       "enriched_by": "pro-plan",
+      "vote": "up"
+    },
+    {
+      "id": "049c8ea23448cce1",
+      "title": "Quarterly Superannuation Product Statistics",
+      "source": "APRA — News & publications",
+      "source_type": "regulator",
+      "published_date": "2026-06-22",
+      "retrieved_at": "2026-06-26T12:40:04+10:00",
+      "url": "https://www.apra.gov.au/news-and-publications/quarterly-superannuation-product-statistics",
+      "priority": "Watch",
+      "relevance_score": 2,
+      "lens": "Regulation",
+      "summary": "APRA published its Quarterly Superannuation Product Statistics (22 June 2026), leveraging new reporting standards implemented in Phase 1 of the Superannuation Data Transformation project.",
+      "why_it_matters": "APRA's data transformation reflects regulatory reporting and data governance expectations relevant to CPS 234 and data integrity assurance for superannuation entities.",
+      "suggested_action": "Confirm superannuation reporting pipelines meet APRA's current data standards.",
+      "newsletter_candidate": false,
+      "tags": [],
+      "is_new": false,
+      "enriched_by": "pro-plan",
       "vote": ""
     },
     {
-      "id": "e9d757e534f1f0d2",
-      "title": "CRITICAL ALERT: Reported widespread credential exposure affecting Fortinet Firewalls and VPN Gateways",
-      "source": "ASD ACSC — Alerts & advisories",
-      "source_type": "government",
-      "published_date": "2026-06-18",
+      "id": "7149933a07e4fd46",
+      "title": "Quarterly Fund-Level Statistics",
+      "source": "APRA — News & publications",
+      "source_type": "regulator",
+      "published_date": "2026-06-22",
       "retrieved_at": "2026-06-26T12:40:04+10:00",
-      "url": "https://www.cyber.gov.au/about-us/view-all-content/Reported-widespread-credential-exposure-affecting-Fortinet-Firewalls-and-VPN-Gateways",
-      "priority": "Medium",
-      "relevance_score": 3,
-      "lens": "ASD",
-      "summary": "ASD's ACSC is aware of public reporting of a malicious campaign causing widespread credential exposure affecting Fortinet firewalls and VPN gateways.",
-      "why_it_matters": "Edge devices and VPN credentials are high-value targets; exposure engages ISO/IEC 27001 access control and Essential Eight MFA and patching priorities for Australian entities.",
-      "suggested_action": "Reset Fortinet credentials, enforce multi-factor authentication and review VPN logs for unauthorised access.",
+      "url": "https://www.apra.gov.au/news-and-publications/quarterly-fund-level-statistics",
+      "priority": "Watch",
+      "relevance_score": 2,
+      "lens": "Regulation",
+      "summary": "APRA published its Quarterly Fund-Level Statistics (22 June 2026), part of a suite of publications leveraging Phase 1 Superannuation Data Transformation reporting standards.",
+      "why_it_matters": "Reliable regulatory reporting depends on data governance and control assurance aligned with APRA CPS 234 expectations.",
+      "suggested_action": "Validate fund-level data submissions against APRA reporting standards.",
+      "newsletter_candidate": false,
+      "tags": [],
+      "is_new": false,
+      "enriched_by": "pro-plan",
+      "vote": ""
+    },
+    {
+      "id": "ad8704866c5f4a17",
+      "title": "Professional Athletes and Wearables",
+      "source": "Schneier on Security",
+      "source_type": "research",
+      "published_date": "2026-06-22",
+      "retrieved_at": "2026-06-26T12:40:04+10:00",
+      "url": "https://www.schneier.com/blog/archives/2026/06/professional-athletes-and-wearables.html",
+      "priority": "Watch",
+      "relevance_score": 2,
+      "lens": "Privacy",
+      "summary": "A Schneier blog post examines the heightened privacy risks of wearables for professional athletes, whose biometric data carries livelihood-level stakes well beyond those facing ordinary consumers.",
+      "why_it_matters": "Biometric data handling engages the Australian Privacy Principles and ISO/IEC 27001 personal-data protection controls, with elevated sensitivity for high-value individuals.",
+      "suggested_action": "Treat biometric data as sensitive information with stricter consent and protection controls.",
       "newsletter_candidate": false,
       "tags": [
-        "acsc"
+        "privacy"
       ],
       "is_new": false,
       "enriched_by": "pro-plan",
+      "vote": ""
+    },
+    {
+      "id": "72c95cc1ca5f710a",
+      "title": "Proposed apparatus licensing arrangements for rail services in the 1800 MHz band",
+      "source": "ACMA — News & media",
+      "source_type": "regulator",
+      "published_date": "2026-06-16",
+      "retrieved_at": "2026-06-26T12:40:04+10:00",
+      "url": "https://www.acma.gov.au/consultations/2026-06/proposed-apparatus-licensing-arrangements-rail-services-1800-mhz-band",
+      "priority": "Watch",
+      "relevance_score": 2,
+      "lens": "Regulation",
+      "summary": "Proposed apparatus licensing arrangements for rail services in the 1800 MHz band Andrew.Wallace… Tue, 2026-06-16 14:55 Status Open Closing in 27 days ( 22 July 2026 ) In progress Key documents download pdf Consultation paper: New apparatus licensing arrangements for 1800 MHz band rail services [pdf, 319.49 KB] download docx Draft RALI MS34 [docx, 667.31 KB] The issue As part of the expiring…",
+      "why_it_matters": "Regulatory / operational-resilience signal; assess obligations, CPS 230/234 alignment and board reporting.",
+      "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
+      "newsletter_candidate": false,
+      "tags": [],
+      "is_new": true,
+      "enriched_by": "deterministic",
+      "vote": ""
+    },
+    {
+      "id": "db030d1451835fef",
+      "title": "Cost recovery arrangements for marine radio",
+      "source": "ACMA — News & media",
+      "source_type": "regulator",
+      "published_date": "2026-06-10",
+      "retrieved_at": "2026-06-26T12:40:04+10:00",
+      "url": "https://www.acma.gov.au/consultations/2026-06/cost-recovery-arrangements-marine-radio",
+      "priority": "Watch",
+      "relevance_score": 2,
+      "lens": "Regulation",
+      "summary": "Cost recovery arrangements for marine radio Andrew.Wallace… Thu, 2026-06-11 09:39 Status Open Closing in 11 days ( 06 July 2026 ) In progress Key documents download pdf Draft Cost Recovery Implementation Statement: Maritime certificates of proficiency, handbooks and associated administrative services for the calendar year 2026 [pdf, 305.73 KB] The issue We have prepared a draft Cost Recovery…",
+      "why_it_matters": "Regulatory / operational-resilience signal; assess obligations, CPS 230/234 alignment and board reporting.",
+      "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
+      "newsletter_candidate": false,
+      "tags": [],
+      "is_new": true,
+      "enriched_by": "deterministic",
+      "vote": ""
+    },
+    {
+      "id": "5419f3a314e214b7",
+      "title": "HIGH ALERT: New steps for organisations running Cisco Firepower and Secure Firewall products",
+      "source": "ASD ACSC — Alerts & advisories",
+      "source_type": "government",
+      "published_date": "2026-04-24",
+      "retrieved_at": "2026-06-26T12:40:04+10:00",
+      "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/new-steps-for-organisations-running-cisco-firepower-and-secure-firewall-products",
+      "priority": "Watch",
+      "relevance_score": 2,
+      "lens": "ASD",
+      "summary": "ASD's ACSC, with partners CISA and NCSC, identified new malware affecting Cisco Firepower and Secure Firewall products and outlined new steps for affected organisations.",
+      "why_it_matters": "Edge security device compromise engages ISO/IEC 27001 technical vulnerability management and Essential Eight patching priorities for Australian entities.",
+      "suggested_action": "Apply the ASD steps for Cisco Firepower and Secure Firewall and hunt for the identified malware.",
+      "newsletter_candidate": false,
+      "tags": [],
+      "is_new": false,
+      "enriched_by": "pro-plan",
+      "vote": ""
+    },
+    {
+      "id": "58e8a99997d1d6a5",
+      "title": "DTA’s new look site now live",
+      "source": "Digital Transformation Agency — news",
+      "source_type": "government",
+      "published_date": "2025-09-02",
+      "retrieved_at": "2026-06-26T12:40:04+10:00",
+      "url": "https://www.dta.gov.au/media-releases/dtas-new-look-site-now-live",
+      "priority": "Watch",
+      "relevance_score": 2,
+      "lens": "PublicSector",
+      "summary": "DTA’s new look site now live emily.farrelly Tue, 2025-09-02 11:29 The DTA has published a new look corporate site that shares details on our team, our culture, and our latest achievements. We have launched our new look corporate site. It delivers concise details about who we are, our reporting requirements, and our latest achievements. As part of this update, we have separated our corporate…",
+      "why_it_matters": "Australian public sector AI assurance relevance; check DTA standards, AI impact assessment and procurement.",
+      "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
+      "newsletter_candidate": false,
+      "tags": [],
+      "is_new": true,
+      "enriched_by": "deterministic",
       "vote": ""
     },
     {
@@ -174,143 +271,10 @@
       "is_new": false,
       "enriched_by": "pro-plan",
       "vote": ""
-    },
-    {
-      "id": "d1230fe571401997",
-      "title": "Software supply chain attacks: check your dependencies",
-      "source": "UK NCSC — All updates",
-      "source_type": "government",
-      "published_date": "2026-06-04",
-      "retrieved_at": "2026-06-26T12:40:04+10:00",
-      "url": "https://www.ncsc.gov.uk/blogs/software-supply-chain-attacks-check-your-dependencies",
-      "priority": "Medium",
-      "relevance_score": 3,
-      "lens": "CyberResilience",
-      "summary": "UK NCSC warns that attackers are compromising open-source packages to spread malware and asks defenders to review their dependencies to reduce risk.",
-      "why_it_matters": "Dependency integrity is core to ISO/IEC 27001 supplier and secure development controls and to managing software supply chain risk in regulated environments.",
-      "suggested_action": "Inventory and verify third-party dependencies, pinning and monitoring trusted versions.",
-      "newsletter_candidate": false,
-      "tags": [
-        "supply chain"
-      ],
-      "is_new": false,
-      "enriched_by": "pro-plan",
-      "vote": ""
-    },
-    {
-      "id": "e3cf8ffebab07a87",
-      "title": "Have your say on the CCA discussion paper",
-      "source": "digital.gov.au — digital, data & AI policy",
-      "source_type": "government",
-      "published_date": "2026-05-26",
-      "retrieved_at": "2026-06-26T12:40:04+10:00",
-      "url": "https://www.digital.gov.au/have-your-say/consultation-CCA",
-      "priority": "Medium",
-      "relevance_score": 3,
-      "lens": "PublicSector",
-      "summary": "Have your say on the CCA discussion paper Consultation on the CCA discussion paper Have your say on the discussion paper created by the Digital Transformation Agency (DTA) to establish seller eligibility for consideration of future coordinated contracting arrangements (CCAs), also known as single seller arrangements (SSAs). 2/06/2026 - 16/06/26 The consultation carley.frost Tue, 2026-05-26 18:10…",
-      "why_it_matters": "Australian public sector AI assurance relevance; check DTA standards, AI impact assessment and procurement.",
-      "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
-      "newsletter_candidate": false,
-      "tags": [
-        "digital transformation"
-      ],
-      "is_new": true,
-      "enriched_by": "deterministic",
-      "vote": ""
-    },
-    {
-      "id": "395560d6009eee7a",
-      "title": "Thinking carefully before adopting agentic AI",
-      "source": "UK NCSC — All updates",
-      "source_type": "government",
-      "published_date": "2026-05-15",
-      "retrieved_at": "2026-06-26T12:40:04+10:00",
-      "url": "https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai",
-      "priority": "Medium",
-      "relevance_score": 3,
-      "lens": "ResponsibleAI",
-      "summary": "UK NCSC advises organisations to proceed cautiously with agentic AI, ensuring foundational capability and controls are in place before deploying autonomous AI systems.",
-      "why_it_matters": "Agentic AI governance maps directly to ISO/IEC 42001 AI management system controls around risk, human oversight and accountability.",
-      "suggested_action": "Define oversight, guardrails and rollback controls before piloting agentic AI.",
-      "newsletter_candidate": false,
-      "tags": [
-        "agentic"
-      ],
-      "is_new": false,
-      "enriched_by": "pro-plan",
-      "vote": ""
-    },
-    {
-      "id": "1736b123361f4d57",
-      "title": "Executive Summary: Defending against China-nexus covert networks of compromised devices",
-      "source": "UK NCSC — All updates",
-      "source_type": "government",
-      "published_date": "2026-04-23",
-      "retrieved_at": "2026-06-26T12:40:04+10:00",
-      "url": "https://www.ncsc.gov.uk/news/executive-summary-defending-against-china-nexus-covert-networks-of-compromised-devices",
-      "priority": "Medium",
-      "relevance_score": 3,
-      "lens": "CyberResilience",
-      "summary": "UK NCSC's executive summary advises organisations to map and baseline edge device traffic, especially VPN and remote access, and adopt dynamic threat feeds covering covert-network indicators to defend against China-nexus networks of compromised devices.",
-      "why_it_matters": "Edge device visibility supports ISO/IEC 27001 monitoring controls and the Essential Eight, countering infrastructure used to obscure state-linked intrusions.",
-      "suggested_action": "Baseline edge and VPN traffic and integrate covert-network threat indicators into monitoring.",
-      "newsletter_candidate": false,
-      "tags": [
-        "threat"
-      ],
-      "is_new": false,
-      "enriched_by": "pro-plan",
-      "vote": ""
-    },
-    {
-      "id": "f20549bc96ecdc16",
-      "title": "New cross domain guidance for government, industry and the wider security community",
-      "source": "UK NCSC — All updates",
-      "source_type": "government",
-      "published_date": "2026-04-21",
-      "retrieved_at": "2026-06-26T12:40:04+10:00",
-      "url": "https://www.ncsc.gov.uk/blogs/new-cross-domain-guidance-for-government-industry-and-the-wider-security-community",
-      "priority": "Medium",
-      "relevance_score": 3,
-      "lens": "PublicSector",
-      "summary": "UK NCSC published new cross domain guidance to help government, industry and the wider security community understand and more easily deploy cross domain technologies across sectors.",
-      "why_it_matters": "Cross domain solutions enable secure information transfer between security domains, relevant to Australian public sector protective security and classified-data handling.",
-      "suggested_action": "Review cross domain transfer requirements against the new guidance before architecting data flows.",
-      "newsletter_candidate": false,
-      "tags": [
-        "government"
-      ],
-      "is_new": false,
-      "enriched_by": "pro-plan",
-      "vote": ""
     }
   ],
   "sections": {
     "asd_acsc": [
-      {
-        "id": "26bcb636d6619c8f",
-        "title": "CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability",
-        "source": "ASD ACSC — Alerts & advisories",
-        "source_type": "government",
-        "published_date": "2026-05-01",
-        "retrieved_at": "2026-06-26T12:40:04+10:00",
-        "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability",
-        "priority": "High",
-        "relevance_score": 4,
-        "lens": "ASD",
-        "summary": "ASD's ACSC reports active exploitation of a critical cPanel/WHM vulnerability (CVE-2026-4194, CVSS 4.0 base score 9.3) affecting the administration control interfaces used for website and server management.",
-        "why_it_matters": "Internet-facing administration interfaces under active exploitation are a direct Essential Eight 'patch applications' priority and a likely gap against ISO/IEC 27001 Annex A technical vulnerability management controls.",
-        "suggested_action": "Identify cPanel/WHM instances, apply the vendor patch immediately and restrict exposure of admin interfaces.",
-        "newsletter_candidate": true,
-        "tags": [
-          "acsc",
-          "vulnerability"
-        ],
-        "is_new": false,
-        "enriched_by": "pro-plan",
-        "vote": ""
-      },
       {
         "id": "78e47568529ad914",
         "title": "Preparing for a ‘vulnerability patch wave’",
@@ -332,7 +296,7 @@
         ],
         "is_new": false,
         "enriched_by": "pro-plan",
-        "vote": ""
+        "vote": "up"
       },
       {
         "id": "d0bc636fd27fbc36",
@@ -355,7 +319,7 @@
         ],
         "is_new": false,
         "enriched_by": "pro-plan",
-        "vote": ""
+        "vote": "up"
       },
       {
         "id": "e96386b842920f36",
@@ -378,29 +342,7 @@
         ],
         "is_new": false,
         "enriched_by": "pro-plan",
-        "vote": ""
-      },
-      {
-        "id": "e9d757e534f1f0d2",
-        "title": "CRITICAL ALERT: Reported widespread credential exposure affecting Fortinet Firewalls and VPN Gateways",
-        "source": "ASD ACSC — Alerts & advisories",
-        "source_type": "government",
-        "published_date": "2026-06-18",
-        "retrieved_at": "2026-06-26T12:40:04+10:00",
-        "url": "https://www.cyber.gov.au/about-us/view-all-content/Reported-widespread-credential-exposure-affecting-Fortinet-Firewalls-and-VPN-Gateways",
-        "priority": "Medium",
-        "relevance_score": 3,
-        "lens": "ASD",
-        "summary": "ASD's ACSC is aware of public reporting of a malicious campaign causing widespread credential exposure affecting Fortinet firewalls and VPN gateways.",
-        "why_it_matters": "Edge devices and VPN credentials are high-value targets; exposure engages ISO/IEC 27001 access control and Essential Eight MFA and patching priorities for Australian entities.",
-        "suggested_action": "Reset Fortinet credentials, enforce multi-factor authentication and review VPN logs for unauthorised access.",
-        "newsletter_candidate": false,
-        "tags": [
-          "acsc"
-        ],
-        "is_new": false,
-        "enriched_by": "pro-plan",
-        "vote": ""
+        "vote": "up"
       },
       {
         "id": "6c75dee5fc404218",
@@ -765,14 +707,14 @@
         "summary": "A Schneier commentary uses Anthropic's Fable model to argue that AI export and access controls are structurally limited, struggling to distinguish domestic from foreign users and so failing to achieve their intended security aims.",
         "why_it_matters": "AI export and access controls shape governance obligations under ISO/IEC 42001 and influence how Australian organisations source and assure third-party AI models.",
         "suggested_action": "Track AI export-control developments that could affect model availability within your AI management system.",
-        "newsletter_candidate": false,
+        "newsletter_candidate": true,
         "tags": [
           "generative ai",
           "government"
         ],
         "is_new": false,
         "enriched_by": "pro-plan",
-        "vote": ""
+        "vote": "up"
       },
       {
         "id": "395560d6009eee7a",
@@ -798,28 +740,6 @@
       }
     ],
     "au_gov_ai": [
-      {
-        "id": "e3cf8ffebab07a87",
-        "title": "Have your say on the CCA discussion paper",
-        "source": "digital.gov.au — digital, data & AI policy",
-        "source_type": "government",
-        "published_date": "2026-05-26",
-        "retrieved_at": "2026-06-26T12:40:04+10:00",
-        "url": "https://www.digital.gov.au/have-your-say/consultation-CCA",
-        "priority": "Medium",
-        "relevance_score": 3,
-        "lens": "PublicSector",
-        "summary": "Have your say on the CCA discussion paper Consultation on the CCA discussion paper Have your say on the discussion paper created by the Digital Transformation Agency (DTA) to establish seller eligibility for consideration of future coordinated contracting arrangements (CCAs), also known as single seller arrangements (SSAs). 2/06/2026 - 16/06/26 The consultation carley.frost Tue, 2026-05-26 18:10…",
-        "why_it_matters": "Australian public sector AI assurance relevance; check DTA standards, AI impact assessment and procurement.",
-        "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
-        "newsletter_candidate": false,
-        "tags": [
-          "digital transformation"
-        ],
-        "is_new": true,
-        "enriched_by": "deterministic",
-        "vote": ""
-      },
       {
         "id": "f20549bc96ecdc16",
         "title": "New cross domain guidance for government, industry and the wider security community",
@@ -1616,15 +1536,8 @@
       "priority": "Medium"
     }
   ],
-  "newsletter_theme": "ASD / ACSC cyber assurance expectations",
+  "newsletter_theme": "cyber resilience under pressure",
   "action_queue": [
-    {
-      "item_id": "26bcb636d6619c8f",
-      "title": "CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability",
-      "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability",
-      "priority": "High",
-      "action": "Identify cPanel/WHM instances, apply the vendor patch immediately and restrict exposure of admin interfaces."
-    },
     {
       "item_id": "78e47568529ad914",
       "title": "Preparing for a ‘vulnerability patch wave’",
@@ -1654,13 +1567,6 @@
       "action": "Track AI export-control developments that could affect model availability within your AI management system."
     },
     {
-      "item_id": "e9d757e534f1f0d2",
-      "title": "CRITICAL ALERT: Reported widespread credential exposure affecting Fortinet Firewalls and VPN Gateways",
-      "url": "https://www.cyber.gov.au/about-us/view-all-content/Reported-widespread-credential-exposure-affecting-Fortinet-Firewalls-and-VPN-Gateways",
-      "priority": "Medium",
-      "action": "Reset Fortinet credentials, enforce multi-factor authentication and review VPN logs for unauthorised access."
-    },
-    {
       "item_id": "6c75dee5fc404218",
       "title": "NCSC CEO: Hostile states linked to three-quarters of cyber attacks affecting UK's critical systems",
       "url": "https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks",
@@ -1675,44 +1581,35 @@
       "action": "Inventory and verify third-party dependencies, pinning and monitoring trusted versions."
     },
     {
-      "item_id": "e3cf8ffebab07a87",
-      "title": "Have your say on the CCA discussion paper",
-      "url": "https://www.digital.gov.au/have-your-say/consultation-CCA",
-      "priority": "Medium",
-      "action": "Review the source and decide whether it changes advisory positioning, control design or client guidance."
-    },
-    {
       "item_id": "395560d6009eee7a",
       "title": "Thinking carefully before adopting agentic AI",
       "url": "https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai",
       "priority": "Medium",
       "action": "Define oversight, guardrails and rollback controls before piloting agentic AI."
+    },
+    {
+      "item_id": "1736b123361f4d57",
+      "title": "Executive Summary: Defending against China-nexus covert networks of compromised devices",
+      "url": "https://www.ncsc.gov.uk/news/executive-summary-defending-against-china-nexus-covert-networks-of-compromised-devices",
+      "priority": "Medium",
+      "action": "Baseline edge and VPN traffic and integrate covert-network threat indicators into monitoring."
+    },
+    {
+      "item_id": "f20549bc96ecdc16",
+      "title": "New cross domain guidance for government, industry and the wider security community",
+      "url": "https://www.ncsc.gov.uk/blogs/new-cross-domain-guidance-for-government-industry-and-the-wider-security-community",
+      "priority": "Medium",
+      "action": "Review cross domain transfer requirements against the new guidance before architecting data flows."
+    },
+    {
+      "item_id": "b3526f078f3c5a01",
+      "title": "The AI shift in cyber risk: why leaders must act now",
+      "url": "https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now",
+      "priority": "Watch",
+      "action": "Refresh your risk assessment to account for AI-enabled threats and defensive opportunities."
     }
   ],
   "newsletter_candidates": [
-    {
-      "id": "26bcb636d6619c8f",
-      "title": "CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability",
-      "source": "ASD ACSC — Alerts & advisories",
-      "source_type": "government",
-      "published_date": "2026-05-01",
-      "retrieved_at": "2026-06-26T12:40:04+10:00",
-      "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability",
-      "priority": "High",
-      "relevance_score": 4,
-      "lens": "ASD",
-      "summary": "ASD's ACSC reports active exploitation of a critical cPanel/WHM vulnerability (CVE-2026-4194, CVSS 4.0 base score 9.3) affecting the administration control interfaces used for website and server management.",
-      "why_it_matters": "Internet-facing administration interfaces under active exploitation are a direct Essential Eight 'patch applications' priority and a likely gap against ISO/IEC 27001 Annex A technical vulnerability management controls.",
-      "suggested_action": "Identify cPanel/WHM instances, apply the vendor patch immediately and restrict exposure of admin interfaces.",
-      "newsletter_candidate": true,
-      "tags": [
-        "acsc",
-        "vulnerability"
-      ],
-      "is_new": false,
-      "enriched_by": "pro-plan",
-      "vote": ""
-    },
     {
       "id": "78e47568529ad914",
       "title": "Preparing for a ‘vulnerability patch wave’",
@@ -1734,7 +1631,7 @@
       ],
       "is_new": false,
       "enriched_by": "pro-plan",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "d0bc636fd27fbc36",
@@ -1757,7 +1654,7 @@
       ],
       "is_new": false,
       "enriched_by": "pro-plan",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "e96386b842920f36",
@@ -1780,7 +1677,30 @@
       ],
       "is_new": false,
       "enriched_by": "pro-plan",
-      "vote": ""
+      "vote": "up"
+    },
+    {
+      "id": "1e995fdeb15ded28",
+      "title": "Anthropic’s Fable and the State of AI",
+      "source": "Schneier on Security",
+      "source_type": "research",
+      "published_date": "2026-06-19",
+      "retrieved_at": "2026-06-26T12:40:04+10:00",
+      "url": "https://www.schneier.com/blog/archives/2026/06/anthropics-fable-and-the-state-of-ai.html",
+      "priority": "Medium",
+      "relevance_score": 3,
+      "lens": "ResponsibleAI",
+      "summary": "A Schneier commentary uses Anthropic's Fable model to argue that AI export and access controls are structurally limited, struggling to distinguish domestic from foreign users and so failing to achieve their intended security aims.",
+      "why_it_matters": "AI export and access controls shape governance obligations under ISO/IEC 42001 and influence how Australian organisations source and assure third-party AI models.",
+      "suggested_action": "Track AI export-control developments that could affect model availability within your AI management system.",
+      "newsletter_candidate": true,
+      "tags": [
+        "generative ai",
+        "government"
+      ],
+      "is_new": false,
+      "enriched_by": "pro-plan",
+      "vote": "up"
     }
   ],
   "source_health": {
@@ -2004,5 +1924,13 @@
       "total": 21
     }
   },
-  "feedback": {}
+  "feedback": {
+    "26bcb636d6619c8f": "down",
+    "78e47568529ad914": "up",
+    "d0bc636fd27fbc36": "up",
+    "e96386b842920f36": "up",
+    "1e995fdeb15ded28": "up",
+    "e9d757e534f1f0d2": "down",
+    "e3cf8ffebab07a87": "down"
+  }
 }
