@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T15:53:47+10:00",
+  "generated_at": "2026-06-26T15:56:25+10:00",
   "generated_date": "2026-06-26",
   "timezone": "Australia/Melbourne",
   "run_type": "daily",
@@ -13,7 +13,7 @@
     "items_new": 0,
     "items_ignored": 28,
     "newsletter_candidates": 24,
-    "standards_tracked": 43
+    "standards_tracked": 44
   },
   "current_signals": [
     {
@@ -1195,6 +1195,15 @@
         "status_class": "published",
         "url": "https://www.iso.org/standard/88134.html",
         "why": "5th edition, parts published Apr-May 2026 (superseding the 2022 edition). SC 27-relevant for formal product/security assurance and Common Criteria certificates.",
+        "change": ""
+      },
+      {
+        "designation": "ISO/IEC 17021-1:2015",
+        "area": "Requirements for management-system certification bodies",
+        "status": "Published",
+        "status_class": "published",
+        "url": "https://www.iso.org/standard/61651.html",
+        "why": "The base certification-body standard that ISO/IEC 27006-1 and 42006 extend; foundational for audit/cert integrity (also in the reference vault).",
         "change": ""
       }
     ],

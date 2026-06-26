@@ -87,6 +87,12 @@ sc27:
     status_class: published
     url: "https://www.iso.org/standard/88134.html"
     why: "5th edition, parts published Apr-May 2026 (superseding the 2022 edition). SC 27-relevant for formal product/security assurance and Common Criteria certificates."
+  - designation: "ISO/IEC 17021-1:2015"
+    area: "Requirements for management-system certification bodies"
+    status: "Published"
+    status_class: published
+    url: "https://www.iso.org/standard/61651.html"
+    why: "The base certification-body standard that ISO/IEC 27006-1 and 42006 extend; foundational for audit/cert integrity (also in the reference vault)."
 
 sc42:
   - designation: "ISO/IEC 22989:2022"

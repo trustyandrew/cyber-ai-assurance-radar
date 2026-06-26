@@ -1,7 +1,7 @@
 # Cyber & Responsible AI Assurance Radar
 
-_Updated 2026-06-26T15:53:47+10:00 (Australia/Melbourne)._  
-**35** signals · **0** new · **24** newsletter candidates · **43** standards tracked · sources 12/25 ok (1 failed).
+_Updated 2026-06-26T15:56:25+10:00 (Australia/Melbourne)._  
+**35** signals · **0** new · **24** newsletter candidates · **44** standards tracked · sources 12/25 ok (1 failed).
 
 ## 🆕 New since last run
 
@@ -71,6 +71,7 @@ _Nothing new since the last run — all current signals carried over._
 | [ISO/IEC 27701:2025](https://www.iso.org/standard/27701.html) | Privacy information management systems (PIMS) | Published | 2nd edition (Oct 2025) — now a standalone, independently certifiable PIMS (no longer a 27001 extension). Bridges ISMS, privacy and Privacy Act reform. Transition ~Oct 2028. |
 | [ISO/IEC 27565:2026](https://www.iso.org/standard/80398.html) | Privacy preservation using zero-knowledge proofs | Published | Edition 1 (Feb 2026). Relevant to PETs, digital identity, verifiable credentials and sensitive AI use cases. |
 | [ISO/IEC 15408 series:2026](https://www.iso.org/standard/88134.html) | IT security evaluation / Common Criteria (parts 1-5) | Published | 5th edition, parts published Apr-May 2026 (superseding the 2022 edition). SC 27-relevant for formal product/security assurance and Common Criteria certificates. |
+| [ISO/IEC 17021-1:2015](https://www.iso.org/standard/61651.html) | Requirements for management-system certification bodies | Published | The base certification-body standard that ISO/IEC 27006-1 and 42006 extend; foundational for audit/cert integrity (also in the reference vault). |
 
 ## SC 42 / 42000 & AI assurance register
 
