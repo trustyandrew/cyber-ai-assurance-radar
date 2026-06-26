@@ -16,16 +16,16 @@ The theme this week is **ASD / ACSC cyber assurance expectations**. Below are th
 ## Top developments
 
 1. **[CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability)** — ASD ACSC — Alerts & advisories · 2026-05-01
-   Relevant to ASD assurance work; assess any impact on ISO/IEC 27001 / ISO/IEC 42001 positioning, control design or audit practice.
+   Bears on ASD/ACSC expectations (ISM, Essential Eight); check the impact on baseline controls and audit evidence.
 
 2. **[Preparing for a ‘vulnerability patch wave’](https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave)** — UK NCSC — All updates · 2026-05-01
-   Relevant to CyberResilience assurance work; assess any impact on ISO/IEC 27001 / ISO/IEC 42001 positioning, control design or audit practice.
+   Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
 
 3. **[Preparing for severe cyber threat: why leaders must act now](https://www.ncsc.gov.uk/blogs/preparing-for-severe-cyber-threat-why-leaders-must-act-now)** — UK NCSC — All updates · 2026-04-20
-   Relevant to CyberResilience assurance work; assess any impact on ISO/IEC 27001 / ISO/IEC 42001 positioning, control design or audit practice.
+   Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
 
 4. **[HIGH ALERT: Ongoing targeting of online code repositories](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories)** — ASD ACSC — Alerts & advisories · 2025-09-19
-   Relevant to ASD assurance work; assess any impact on ISO/IEC 27001 / ISO/IEC 42001 positioning, control design or audit practice.
+   Bears on ASD/ACSC expectations (ISM, Essential Eight); check the impact on baseline controls and audit evidence.
 
 ## Responsible AI watch
 
@@ -48,7 +48,7 @@ The theme this week is **ASD / ACSC cyber assurance expectations**. Below are th
 
 ## Practical takeaway
 
-Relevant to ASD assurance work; assess any impact on ISO/IEC 27001 / ISO/IEC 42001 positioning, control design or audit practice.
+Bears on ASD/ACSC expectations (ISM, Essential Eight); check the impact on baseline controls and audit evidence.
 
 ---
 
