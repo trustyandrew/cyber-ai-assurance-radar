@@ -1,1 +1,88 @@
-{}
+{
+  "26bcb636d6619c8f": {
+    "vote": "down",
+    "at": "2026-06-26T15:24:44+10:00"
+  },
+  "e9d757e534f1f0d2": {
+    "vote": "down",
+    "at": "2026-06-26T15:24:49+10:00"
+  },
+  "1e995fdeb15ded28": {
+    "vote": "up",
+    "at": "2026-06-26T15:24:52+10:00",
+    "item": {
+      "id": "1e995fdeb15ded28",
+      "title": "Anthropic’s Fable and the State of AI",
+      "source": "Schneier on Security",
+      "source_type": "research",
+      "published_date": "2026-06-19",
+      "retrieved_at": "2026-06-26T14:30:13+10:00",
+      "url": "https://www.schneier.com/blog/archives/2026/06/anthropics-fable-and-the-state-of-ai.html",
+      "priority": "High",
+      "relevance_score": 4,
+      "lens": "ResponsibleAI",
+      "summary": "A Schneier commentary uses Anthropic's Fable model to argue that AI export and access controls are structurally limited, struggling to distinguish domestic from foreign users and so failing to achieve their intended security aims.",
+      "why_it_matters": "AI export and access controls shape governance obligations under ISO/IEC 42001 and influence how Australian organisations source and assure third-party AI models.",
+      "suggested_action": "Track AI export-control developments that could affect model availability within your AI management system.",
+      "newsletter_candidate": true,
+      "tags": [
+        "generative ai",
+        "government"
+      ],
+      "is_new": false,
+      "enriched_by": "pro-plan",
+      "vote": ""
+    }
+  },
+  "78e47568529ad914": {
+    "vote": "up",
+    "at": "2026-06-26T15:24:58+10:00",
+    "item": {
+      "id": "78e47568529ad914",
+      "title": "Preparing for a ‘vulnerability patch wave’",
+      "source": "UK NCSC — All updates",
+      "source_type": "government",
+      "published_date": "2026-05-01",
+      "retrieved_at": "2026-06-26T14:30:13+10:00",
+      "url": "https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave",
+      "priority": "High",
+      "relevance_score": 4,
+      "lens": "CyberResilience",
+      "summary": "UK NCSC urges organisations to prepare now for a coming wave of patches that will address decades of accumulated technical debt across widely used products.",
+      "why_it_matters": "Sustained patch volume tests vulnerability and change management maturity against ISO/IEC 27001 and the Essential Eight patching benchmarks.",
+      "suggested_action": "Stress-test your patch prioritisation and deployment pipeline before the volume arrives.",
+      "newsletter_candidate": true,
+      "tags": [
+        "vulnerability",
+        "patch"
+      ],
+      "is_new": false,
+      "enriched_by": "pro-plan",
+      "vote": ""
+    }
+  },
+  "049c8ea23448cce1": {
+    "vote": "down",
+    "at": "2026-06-26T15:25:05+10:00"
+  },
+  "7149933a07e4fd46": {
+    "vote": "down",
+    "at": "2026-06-26T15:25:07+10:00"
+  },
+  "ad8704866c5f4a17": {
+    "vote": "down",
+    "at": "2026-06-26T15:25:11+10:00"
+  },
+  "72c95cc1ca5f710a": {
+    "vote": "down",
+    "at": "2026-06-26T15:25:16+10:00"
+  },
+  "db030d1451835fef": {
+    "vote": "down",
+    "at": "2026-06-26T15:25:23+10:00"
+  },
+  "e3cf8ffebab07a87": {
+    "vote": "down",
+    "at": "2026-06-26T15:25:43+10:00"
+  }
+}

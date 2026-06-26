@@ -1,62 +1,62 @@
 # Cyber & Responsible AI Assurance Radar
 
-_Updated 2026-06-26T14:32:40+10:00 (Australia/Melbourne)._  
-**53** signals · **0** new · **7** newsletter candidates · **32** standards tracked · sources 9/21 ok (1 failed).
+_Updated 2026-06-26T15:29:29+10:00 (Australia/Melbourne)._  
+**25** signals · **1** new · **14** newsletter candidates · **32** standards tracked · sources 9/21 ok (1 failed).
 
 ## 🆕 New since last run
 
-_Nothing new since the last run — all current signals carried over._
+- 🆕 **[Embedding Forbidden Text in Spyware to Discourage AI Analysis](https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis.html)** — Schneier on Security · ResponsibleAI · Medium (3/5)
 
 ## Current signals
 
-- **[CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability)** — ASD ACSC — Alerts & advisories · 2026-05-01 · Critical (5/5)
-  ASD's ACSC reports active exploitation of a critical cPanel/WHM vulnerability (CVE-2026-4194, CVSS 4.0 base score 9.3) affecting the administration control interfaces used for website and server management.
-  *Why it matters:* Internet-facing administration interfaces under active exploitation are a direct Essential Eight 'patch applications' priority and a likely gap against ISO/IEC 27001 Annex A technical vulnerability management controls.
-  *Action:* Identify cPanel/WHM instances, apply the vendor patch immediately and restrict exposure of admin interfaces.
+- **[The AI shift in cyber risk: why leaders must act now](https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now)** — UK NCSC — All updates · 2026-06-22 · Critical (5/5)
+  UK NCSC discusses how artificial intelligence is shifting the cyber risk landscape and argues that leaders must act now to adapt their defences.
+  *Why it matters:* AI-driven changes to threat and defence affect both ISO/IEC 27001 risk assessment and ISO/IEC 42001 AI governance obligations.
+  *Action:* Refresh your risk assessment to account for AI-enabled threats and defensive opportunities.
+- **[NCSC CEO: Hostile states linked to three-quarters of cyber attacks affecting UK's critical systems](https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks)** — UK NCSC — All updates · 2026-06-17 · Critical (5/5)
+  NCSC CEO Dr Richard Horne told RUSI's Annual Security Lecture that hostile states are linked to roughly three-quarters of cyber attacks affecting the UK's critical infrastructure.
+  *Why it matters:* State-linked targeting of critical infrastructure underscores SOCI Act obligations and risk-based assurance expectations for Australian critical infrastructure operators.
+  *Action:* Reassess critical infrastructure threat models against state-sponsored adversary capabilities.
+- **[HIGH ALERT: New steps for organisations running Cisco Firepower and Secure Firewall products](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/new-steps-for-organisations-running-cisco-firepower-and-secure-firewall-products)** — ASD ACSC — Alerts & advisories · 2026-04-24 · Critical (5/5)
+  ASD's ACSC, with partners CISA and NCSC, identified new malware affecting Cisco Firepower and Secure Firewall products and outlined new steps for affected organisations.
+  *Why it matters:* Edge security device compromise engages ISO/IEC 27001 technical vulnerability management and Essential Eight patching priorities for Australian entities.
+  *Action:* Apply the ASD steps for Cisco Firepower and Secure Firewall and hunt for the identified malware.
+- **[Embedding Forbidden Text in Spyware to Discourage AI Analysis](https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html)** — Schneier on Security · 2026-06-24 · High (4/5)
+  At least one malware developer is adding text about nuclear and biological weapons to their spyware, in an effort to stop automatic AI analysis. Details : The _index.js payload begins with a large JavaScript block comment containing fake system instructions and policy-triggering content. Because it is inside a comment, it does not affect JavaScript execution. The runtime skips it. The real…
+  *Why it matters:* Relevant to responsible AI governance (transparency, oversight, AI risk); consider impact assessment and assurance evidence.
+  *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
 - **[Anthropic’s Fable and the State of AI](https://www.schneier.com/blog/archives/2026/06/anthropics-fable-and-the-state-of-ai.html)** — Schneier on Security · 2026-06-19 · High (4/5)
   A Schneier commentary uses Anthropic's Fable model to argue that AI export and access controls are structurally limited, struggling to distinguish domestic from foreign users and so failing to achieve their intended security aims.
   *Why it matters:* AI export and access controls shape governance obligations under ISO/IEC 42001 and influence how Australian organisations source and assure third-party AI models.
   *Action:* Track AI export-control developments that could affect model availability within your AI management system.
-- **[CRITICAL ALERT: Reported widespread credential exposure affecting Fortinet Firewalls and VPN Gateways](https://www.cyber.gov.au/about-us/view-all-content/Reported-widespread-credential-exposure-affecting-Fortinet-Firewalls-and-VPN-Gateways)** — ASD ACSC — Alerts & advisories · 2026-06-18 · High (4/5)
-  ASD's ACSC is aware of public reporting of a malicious campaign causing widespread credential exposure affecting Fortinet firewalls and VPN gateways.
-  *Why it matters:* Edge devices and VPN credentials are high-value targets; exposure engages ISO/IEC 27001 access control and Essential Eight MFA and patching priorities for Australian entities.
-  *Action:* Reset Fortinet credentials, enforce multi-factor authentication and review VPN logs for unauthorised access.
-- **[NCSC CEO: Hostile states linked to three-quarters of cyber attacks affecting UK's critical systems](https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks)** — UK NCSC — All updates · 2026-06-17 · High (4/5)
-  NCSC CEO Dr Richard Horne told RUSI's Annual Security Lecture that hostile states are linked to roughly three-quarters of cyber attacks affecting the UK's critical infrastructure.
-  *Why it matters:* State-linked targeting of critical infrastructure underscores SOCI Act obligations and risk-based assurance expectations for Australian critical infrastructure operators.
-  *Action:* Reassess critical infrastructure threat models against state-sponsored adversary capabilities.
+- **[HIGH ALERT: Ongoing targeting of online code repositories](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories)** — ASD ACSC — Alerts & advisories · 2025-09-19 · High (4/5)
+  ASD's ACSC reports increased targeting of online code repositories, with threat actors scanning for and extracting secrets, accessing private codebases and modifying packages to infect downstream users; no specific sector is singled out.
+  *Why it matters:* Source code and secret management map to ISO/IEC 27001 Annex A controls and the Essential Eight; compromised repositories enable supply chain attacks that affect many parties.
+  *Action:* Rotate exposed secrets and enforce secret scanning and least-privilege access across all repositories.
+- **[DTA’s new look site now live](https://www.dta.gov.au/media-releases/dtas-new-look-site-now-live)** — Digital Transformation Agency — news · 2025-09-02 · Watch (2/5)
+  DTA’s new look site now live emily.farrelly Tue, 2025-09-02 11:29 The DTA has published a new look corporate site that shares details on our team, our culture, and our latest achievements. We have launched our new look corporate site. It delivers concise details about who we are, our reporting requirements, and our latest achievements. As part of this update, we have separated our corporate…
+  *Why it matters:* Australian public sector AI assurance relevance; check DTA standards, AI impact assessment and procurement.
+  *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
+- **[Software supply chain attacks: check your dependencies](https://www.ncsc.gov.uk/blogs/software-supply-chain-attacks-check-your-dependencies)** — UK NCSC — All updates · 2026-06-04 · High (4/5)
+  UK NCSC warns that attackers are compromising open-source packages to spread malware and asks defenders to review their dependencies to reduce risk.
+  *Why it matters:* Dependency integrity is core to ISO/IEC 27001 supplier and secure development controls and to managing software supply chain risk in regulated environments.
+  *Action:* Inventory and verify third-party dependencies, pinning and monitoring trusted versions.
+- **[Thinking carefully before adopting agentic AI](https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai)** — UK NCSC — All updates · 2026-05-15 · High (4/5)
+  UK NCSC advises organisations to proceed cautiously with agentic AI, ensuring foundational capability and controls are in place before deploying autonomous AI systems.
+  *Why it matters:* Agentic AI governance maps directly to ISO/IEC 42001 AI management system controls around risk, human oversight and accountability.
+  *Action:* Define oversight, guardrails and rollback controls before piloting agentic AI.
+- **[10 questions to ask when using AI models to find vulnerabilities](https://www.ncsc.gov.uk/blogs/10-questions-ask-using-ai-models-find-vulnerabilities)** — UK NCSC — All updates · 2026-05-11 · High (4/5)
+  UK NCSC offers ten questions to consider when using AI models for vulnerability discovery, highlighting the added security considerations such use introduces.
+  *Why it matters:* Using AI in security testing intersects ISO/IEC 42001 AI governance and ISO/IEC 27001 secure testing, including data handling and result reliability.
+  *Action:* Apply the ten questions before adopting AI tooling for vulnerability discovery.
 - **[Preparing for a ‘vulnerability patch wave’](https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave)** — UK NCSC — All updates · 2026-05-01 · High (4/5)
   UK NCSC urges organisations to prepare now for a coming wave of patches that will address decades of accumulated technical debt across widely used products.
   *Why it matters:* Sustained patch volume tests vulnerability and change management maturity against ISO/IEC 27001 and the Essential Eight patching benchmarks.
   *Action:* Stress-test your patch prioritisation and deployment pipeline before the volume arrives.
-- **[Quarterly Superannuation Product Statistics](https://www.apra.gov.au/news-and-publications/quarterly-superannuation-product-statistics)** — APRA — News & publications · 2026-06-22 · Medium (3/5)
-  APRA published its Quarterly Superannuation Product Statistics (22 June 2026), leveraging new reporting standards implemented in Phase 1 of the Superannuation Data Transformation project.
-  *Why it matters:* APRA's data transformation reflects regulatory reporting and data governance expectations relevant to CPS 234 and data integrity assurance for superannuation entities.
-  *Action:* Confirm superannuation reporting pipelines meet APRA's current data standards.
-- **[Quarterly Fund-Level Statistics](https://www.apra.gov.au/news-and-publications/quarterly-fund-level-statistics)** — APRA — News & publications · 2026-06-22 · Medium (3/5)
-  APRA published its Quarterly Fund-Level Statistics (22 June 2026), part of a suite of publications leveraging Phase 1 Superannuation Data Transformation reporting standards.
-  *Why it matters:* Reliable regulatory reporting depends on data governance and control assurance aligned with APRA CPS 234 expectations.
-  *Action:* Validate fund-level data submissions against APRA reporting standards.
-- **[Professional Athletes and Wearables](https://www.schneier.com/blog/archives/2026/06/professional-athletes-and-wearables.html)** — Schneier on Security · 2026-06-22 · Medium (3/5)
-  A Schneier blog post examines the heightened privacy risks of wearables for professional athletes, whose biometric data carries livelihood-level stakes well beyond those facing ordinary consumers.
-  *Why it matters:* Biometric data handling engages the Australian Privacy Principles and ISO/IEC 27001 personal-data protection controls, with elevated sensitivity for high-value individuals.
-  *Action:* Treat biometric data as sensitive information with stricter consent and protection controls.
-- **[Have your say on the CCA discussion paper](https://www.digital.gov.au/have-your-say/consultation-CCA)** — digital.gov.au — digital, data & AI policy · 2026-05-26 · Medium (3/5)
-  Have your say on the CCA discussion paper Consultation on the CCA discussion paper Have your say on the discussion paper created by the Digital Transformation Agency (DTA) to establish seller eligibility for consideration of future coordinated contracting arrangements (CCAs), also known as single seller arrangements (SSAs). 2/06/2026 - 16/06/26 The consultation carley.frost Tue, 2026-05-26 18:10…
-  *Why it matters:* Australian public sector AI assurance relevance; check DTA standards, AI impact assessment and procurement.
+- **[Supporting AI adoption for UK cyber defence](https://www.ncsc.gov.uk/blogs/supporting-ai-adoption-for-uk-cyber-defence)** — UK NCSC — All updates · 2026-04-23 · High (4/5)
+  Adopting AI will require time, the development of new capabilities and careful oversight.
+  *Why it matters:* Relevant to responsible AI governance (transparency, oversight, AI risk); consider impact assessment and assurance evidence.
   *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
-- **[Proposed apparatus licensing arrangements for rail services in the 1800 MHz band](https://www.acma.gov.au/consultations/2026-06/proposed-apparatus-licensing-arrangements-rail-services-1800-mhz-band)** — ACMA — News & media · 2026-06-16 · Watch (2/5)
-  Proposed apparatus licensing arrangements for rail services in the 1800 MHz band Andrew.Wallace… Tue, 2026-06-16 14:55 Status Open Closing in 27 days ( 22 July 2026 ) In progress Key documents download pdf Consultation paper: New apparatus licensing arrangements for 1800 MHz band rail services [pdf, 319.49 KB] download docx Draft RALI MS34 [docx, 667.31 KB] The issue As part of the expiring…
-  *Why it matters:* Regulatory / operational-resilience signal; assess obligations, CPS 230/234 alignment and board reporting.
-  *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
-- **[Cost recovery arrangements for marine radio](https://www.acma.gov.au/consultations/2026-06/cost-recovery-arrangements-marine-radio)** — ACMA — News & media · 2026-06-10 · Watch (2/5)
-  Cost recovery arrangements for marine radio Andrew.Wallace… Thu, 2026-06-11 09:39 Status Open Closing in 11 days ( 06 July 2026 ) In progress Key documents download pdf Draft Cost Recovery Implementation Statement: Maritime certificates of proficiency, handbooks and associated administrative services for the calendar year 2026 [pdf, 305.73 KB] The issue We have prepared a draft Cost Recovery…
-  *Why it matters:* Regulatory / operational-resilience signal; assess obligations, CPS 230/234 alignment and board reporting.
-  *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
-- **[Preparing for severe cyber threat: why leaders must act now](https://www.ncsc.gov.uk/blogs/preparing-for-severe-cyber-threat-why-leaders-must-act-now)** — UK NCSC — All updates · 2026-04-20 · High (4/5)
-  UK NCSC issues a leadership call to action to collectively strengthen national cyber resilience against a heightened threat environment.
-  *Why it matters:* Board-level ownership of cyber resilience aligns with ISO/IEC 27001 leadership clauses and APRA CPS 234 accountability expectations for Australian regulated entities.
-  *Action:* Brief your executive and board on current resilience posture and the gaps that need investment.
 
 ## SC 27 / 27000 family register
 
@@ -102,11 +102,18 @@ _Nothing new since the last run — all current signals carried over._
 
 ## Newsletter candidates
 
-- [CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability) — ASD ACSC — Alerts & advisories (Critical)
+- [The AI shift in cyber risk: why leaders must act now](https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now) — UK NCSC — All updates (Critical)
+- [NCSC CEO: Hostile states linked to three-quarters of cyber attacks affecting UK's critical systems](https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks) — UK NCSC — All updates (Critical)
+- [HIGH ALERT: New steps for organisations running Cisco Firepower and Secure Firewall products](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/new-steps-for-organisations-running-cisco-firepower-and-secure-firewall-products) — ASD ACSC — Alerts & advisories (Critical)
+- [Embedding Forbidden Text in Spyware to Discourage AI Analysis](https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html) — Schneier on Security (High)
 - [Anthropic’s Fable and the State of AI](https://www.schneier.com/blog/archives/2026/06/anthropics-fable-and-the-state-of-ai.html) — Schneier on Security (High)
-- [CRITICAL ALERT: Reported widespread credential exposure affecting Fortinet Firewalls and VPN Gateways](https://www.cyber.gov.au/about-us/view-all-content/Reported-widespread-credential-exposure-affecting-Fortinet-Firewalls-and-VPN-Gateways) — ASD ACSC — Alerts & advisories (High)
-- [NCSC CEO: Hostile states linked to three-quarters of cyber attacks affecting UK's critical systems](https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks) — UK NCSC — All updates (High)
+- [Software supply chain attacks: check your dependencies](https://www.ncsc.gov.uk/blogs/software-supply-chain-attacks-check-your-dependencies) — UK NCSC — All updates (High)
+- [Thinking carefully before adopting agentic AI](https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai) — UK NCSC — All updates (High)
+- [10 questions to ask when using AI models to find vulnerabilities](https://www.ncsc.gov.uk/blogs/10-questions-ask-using-ai-models-find-vulnerabilities) — UK NCSC — All updates (High)
 - [Preparing for a ‘vulnerability patch wave’](https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave) — UK NCSC — All updates (High)
+- [Supporting AI adoption for UK cyber defence](https://www.ncsc.gov.uk/blogs/supporting-ai-adoption-for-uk-cyber-defence) — UK NCSC — All updates (High)
+- [Cyber chief: UK faces "perfect storm" for cyber security](https://www.ncsc.gov.uk/news/cyber-chief-uk-faces-perfect-storm-for-cyber-security) — UK NCSC — All updates (High)
+- [New cross domain guidance for government, industry and the wider security community](https://www.ncsc.gov.uk/blogs/new-cross-domain-guidance-for-government-industry-and-the-wider-security-community) — UK NCSC — All updates (High)
 - [Preparing for severe cyber threat: why leaders must act now](https://www.ncsc.gov.uk/blogs/preparing-for-severe-cyber-threat-why-leaders-must-act-now) — UK NCSC — All updates (High)
 - [HIGH ALERT: Ongoing targeting of online code repositories](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories) — ASD ACSC — Alerts & advisories (High)
 

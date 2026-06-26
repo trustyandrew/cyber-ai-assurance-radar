@@ -57,7 +57,8 @@ LENS_TERMS = {
     "ISO42000": ["42001", "ai management system", "aims", "ai impact assessment"],
     "ResponsibleAI": ["responsible ai", "ai governance", "ai safety", "transparency",
                       "explainability", "human oversight", "synthetic data",
-                      "generative ai", "ai incident", "ai risk", "agentic"],
+                      "generative ai", "ai incident", "ai risk", "agentic",
+                      "ai", "artificial intelligence", "machine learning"],
     "SC27": ["27001", "27002", "27005", "27006", "27017", "27018", "27701",
              "27560", "27561", "27565", "sc 27", "sc27", "15408"],
     "ISO27000": ["27001", "27002", "information security management", "isms"],
@@ -69,7 +70,8 @@ LENS_TERMS = {
     "PublicSector": ["dta", "digital transformation", "public sector", "government",
                      "commonwealth", "procurement", "transparency statement"],
     "CyberResilience": ["vulnerability", "threat", "ransomware", "resilience",
-                        "supply chain", "cloud security", "identity", "patch"],
+                        "supply chain", "cloud security", "identity", "patch",
+                        "cyber", "security", "malware", "exploit", "data breach", "phishing"],
 }
 
 # Vendor marketing / generic noise -> penalty toward "ignore".
@@ -108,20 +110,24 @@ def _tier_base(item: dict) -> int:
     return 1
 
 
-def detect_lens_and_tags(item: dict) -> tuple[str, list[str]]:
+def detect_lens_and_tags(item: dict) -> tuple[str, list[str], int]:
+    """Returns (best lens, display tags, total term-hit count). hit_count counts every
+    matched term (incl. short ones like 'ai') so the relevance gate sees them, while
+    tags keep only the longer terms for display."""
     hay = _haystack(item)
     hits: dict[str, int] = {}
     tags: list[str] = []
+    total = 0
     for lens, terms in LENS_TERMS.items():
         for t in terms:
             if _has(hay, t):
                 hits[lens] = hits.get(lens, 0) + 1
+                total += 1
                 if t.strip() not in tags and len(t.strip()) > 3:
                     tags.append(t.strip())
     if hits:
-        best = max(hits, key=hits.get)
-        return best, tags[:8]
-    return item.get("lens", "CyberResilience"), tags[:8]
+        return max(hits, key=hits.get), tags[:8], total
+    return item.get("lens", "CyberResilience"), tags[:8], total
 
 
 def score_item(item: dict) -> dict:
@@ -129,12 +135,22 @@ def score_item(item: dict) -> dict:
     base = _tier_base(item)
 
     critical_hits = sum(1 for t in CRITICAL_TERMS if _has(hay, t))
-    lens, tags = detect_lens_and_tags(item)
-    topic_hits = len(tags)
+    lens, tags, topic_hits = detect_lens_and_tags(item)
     ignore_hits = sum(1 for t in IGNORE_TERMS if _has(hay, t))
 
     title = (item.get("title") or "").lower()
     is_alert = any(m in title for m in ALERT_MARKERS) or bool(_CVE_RE.search(title))
+
+    # Relevance gate: no cyber/AI/privacy/assurance signal and not an advisory ->
+    # off the radar (e.g. broadcasting/spectrum licences, routine prudential stats),
+    # however authoritative the source. Drop to 'ignore' so it never surfaces.
+    if not (critical_hits or topic_hits or is_alert):
+        item = dict(item)
+        item["lens"], item["tags"] = lens, tags
+        item["relevance_score"] = 1
+        item["priority"] = PRIORITY_BY_SCORE[1]
+        item["newsletter_candidate"] = False
+        return item
 
     score = base
     if critical_hits:

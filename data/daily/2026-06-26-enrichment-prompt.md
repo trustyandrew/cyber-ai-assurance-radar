@@ -16,20 +16,12 @@ Output JSON only.
 ITEMS:
 [
   {
-    "id": "26bcb636d6619c8f",
-    "title": "CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability",
-    "source": "ASD ACSC — Alerts & advisories",
-    "lens": "ASD",
-    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability",
-    "context": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of exploitation of a vulnerability affecting the cPanel/ WebHost Manager (CVE-2026-4194) administration control interfaces for website and server management. This vulnerability has received a CVSS4.0 base score of 9.3."
-  },
-  {
-    "id": "1e995fdeb15ded28",
-    "title": "Anthropic’s Fable and the State of AI",
-    "source": "Schneier on Security",
+    "id": "b3526f078f3c5a01",
+    "title": "The AI shift in cyber risk: why leaders must act now",
+    "source": "UK NCSC — All updates",
     "lens": "ResponsibleAI",
-    "url": "https://www.schneier.com/blog/archives/2026/06/anthropics-fable-and-the-state-of-ai.html",
-    "context": "On June 9th, Anthropic released its Fable generative AI model. Three days later, the US government classified it as a dangerous munition, and used its export-control authority to prohibit any foreign nationals from accessing it. Unable to differentiate between Americans and foreigners, the company shut off access for everyone. The government’s actions won’t help . The problem isn’t any one…"
+    "url": "https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now",
+    "context": ""
   },
   {
     "id": "e9d757e534f1f0d2",
@@ -43,81 +35,41 @@ ITEMS:
     "id": "6c75dee5fc404218",
     "title": "NCSC CEO: Hostile states linked to three-quarters of cyber attacks affecting UK's critical systems",
     "source": "UK NCSC — All updates",
-    "lens": "ASD",
+    "lens": "CyberResilience",
     "url": "https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks",
     "context": "Dr Richard Horne highlighted the scale of cyber threats against the UK’s critical infrastructure at RUSI’s Annual Security Lecture."
   },
   {
-    "id": "78e47568529ad914",
-    "title": "Preparing for a ‘vulnerability patch wave’",
-    "source": "UK NCSC — All updates",
+    "id": "26bcb636d6619c8f",
+    "title": "CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability",
+    "source": "ASD ACSC — Alerts & advisories",
     "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave",
-    "context": "Organisations must act now to prepare for a wave of patches that will address decades of technical debt."
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability",
+    "context": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of exploitation of a vulnerability affecting the cPanel/ WebHost Manager (CVE-2026-4194) administration control interfaces for website and server management. This vulnerability has received a CVSS4.0 base score of 9.3."
   },
   {
-    "id": "d0bc636fd27fbc36",
-    "title": "Preparing for severe cyber threat: why leaders must act now",
-    "source": "UK NCSC — All updates",
-    "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/blogs/preparing-for-severe-cyber-threat-why-leaders-must-act-now",
-    "context": "A call to action to collectively build UK resilience."
-  },
-  {
-    "id": "e96386b842920f36",
-    "title": "HIGH ALERT: Ongoing targeting of online code repositories",
+    "id": "5419f3a314e214b7",
+    "title": "HIGH ALERT: New steps for organisations running Cisco Firepower and Secure Firewall products",
     "source": "ASD ACSC — Alerts & advisories",
     "lens": "ASD",
-    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories",
-    "context": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of increased targeting of online code repositories, with threat actors employing various tactics to scan for and extract secrets, access private code bases, and modify packages to infect users. The ASD’s ACSC does not have information to indicate that a specific industry or sector is being targeted, with…"
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/new-steps-for-organisations-running-cisco-firepower-and-secure-firewall-products",
+    "context": "ASD partners CISA and NCSC have identified new malware affecting Cisco Firepower and Secure Firewall products."
   },
   {
-    "id": "b3526f078f3c5a01",
-    "title": "The AI shift in cyber risk: why leaders must act now",
-    "source": "UK NCSC — All updates",
-    "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now",
-    "context": ""
-  },
-  {
-    "id": "049c8ea23448cce1",
-    "title": "Quarterly Superannuation Product Statistics",
-    "source": "APRA — News & publications",
-    "lens": "Regulation",
-    "url": "https://www.apra.gov.au/news-and-publications/quarterly-superannuation-product-statistics",
-    "context": "Breadcrumb Home Statistical Publication Quarterly Superannuation Product Statistics Superannuation Published 22 June 2026 Print On this page On this page APRA publishes statistics on the superannuation products on a quarterly basis. The Quarterly Superannuation Product Statistics (QSPS) leverages new reporting standards implemented in Phase 1 of the Superannuation Data Transformation project to…"
-  },
-  {
-    "id": "7149933a07e4fd46",
-    "title": "Quarterly Fund-Level Statistics",
-    "source": "APRA — News & publications",
-    "lens": "Regulation",
-    "url": "https://www.apra.gov.au/news-and-publications/quarterly-fund-level-statistics",
-    "context": "Breadcrumb Home Statistical Publication Quarterly Fund-Level Statistics Superannuation Published 22 June 2026 Print On this page On this page APRA publishes statistics on superannuation funds on a quarterly basis. In June 2024 APRA released the inaugural quarterly fund-level statistics. The third in a suite of new publications which leverage new reporting standards implemented in Phase 1 of the…"
-  },
-  {
-    "id": "2c7f806049783451",
-    "title": "Quarterly Superannuation Industry publication",
-    "source": "APRA — News & publications",
-    "lens": "Regulation",
-    "url": "https://www.apra.gov.au/news-and-publications/quarterly-superannuation-industry-publication",
-    "context": "Breadcrumb Home Statistical Publication Quarterly Superannuation Industry publication Superannuation Published 22 June 2026 Print On this page On this page The Quarterly Superannuation Industry Publication (QSIP) contains data on superannuation products, investment options, member demographics and investments. Quarterly Superannuation Industry Publication - March 2026 XLSX 416.78 KB ‧ 22 June…"
-  },
-  {
-    "id": "ad8704866c5f4a17",
-    "title": "Professional Athletes and Wearables",
+    "id": "6b03dec649841343",
+    "title": "Embedding Forbidden Text in Spyware to Discourage AI Analysis",
     "source": "Schneier on Security",
-    "lens": "Privacy",
-    "url": "https://www.schneier.com/blog/archives/2026/06/professional-athletes-and-wearables.html",
-    "context": "I haven’t thought about the privacy issues surrounding professional athletes and wearables. Wearables present serious privacy issues for “Average Joe” consumers, who are entrusting tech companies to safely store and protect their biometric data. Imagine the stakes for a professional athlete, whose entire livelihood could be affected by a single biometric data point. To give one of many realistic…"
+    "lens": "ResponsibleAI",
+    "url": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html",
+    "context": "At least one malware developer is adding text about nuclear and biological weapons to their spyware, in an effort to stop automatic AI analysis. Details : The _index.js payload begins with a large JavaScript block comment containing fake system instructions and policy-triggering content. Because it is inside a comment, it does not affect JavaScript execution. The runtime skips it. The real…"
   },
   {
-    "id": "8e875ec5110fcaba",
-    "title": "Alert: NCSC issues advice following global targeting of Fortinet firewalls and VPN gateways",
-    "source": "UK NCSC — All updates",
-    "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/news/advice-following-global-targeting-of-fortinet-firewalls-and-vpn-gateways",
-    "context": "Organisations using Fortinet services are being urged to take action following a campaign affecting firewalls and VPN gateways."
+    "id": "1e995fdeb15ded28",
+    "title": "Anthropic’s Fable and the State of AI",
+    "source": "Schneier on Security",
+    "lens": "ResponsibleAI",
+    "url": "https://www.schneier.com/blog/archives/2026/06/anthropics-fable-and-the-state-of-ai.html",
+    "context": "On June 9th, Anthropic released its Fable generative AI model. Three days later, the US government classified it as a dangerous munition, and used its export-control authority to prohibit any foreign nationals from accessing it. Unable to differentiate between Americans and foreigners, the company shut off access for everyone. The government’s actions won’t help . The problem isn’t any one…"
   },
   {
     "id": "d1230fe571401997",
@@ -144,20 +96,36 @@ ITEMS:
     "context": "When it comes to using agentic AI, make sure you can walk before you run."
   },
   {
-    "id": "5419f3a314e214b7",
-    "title": "HIGH ALERT: New steps for organisations running Cisco Firepower and Secure Firewall products",
-    "source": "ASD ACSC — Alerts & advisories",
-    "lens": "ASD",
-    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/new-steps-for-organisations-running-cisco-firepower-and-secure-firewall-products",
-    "context": "ASD partners CISA and NCSC have identified new malware affecting Cisco Firepower and Secure Firewall products."
+    "id": "a34e5bfa96fafa05",
+    "title": "10 questions to ask when using AI models to find vulnerabilities",
+    "source": "UK NCSC — All updates",
+    "lens": "ResponsibleAI",
+    "url": "https://www.ncsc.gov.uk/blogs/10-questions-ask-using-ai-models-find-vulnerabilities",
+    "context": "Using Artificial Intelligence to find vulnerabilities can bring added security considerations."
   },
   {
-    "id": "1736b123361f4d57",
-    "title": "Executive Summary: Defending against China-nexus covert networks of compromised devices",
+    "id": "78e47568529ad914",
+    "title": "Preparing for a ‘vulnerability patch wave’",
     "source": "UK NCSC — All updates",
     "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/news/executive-summary-defending-against-china-nexus-covert-networks-of-compromised-devices",
-    "context": "Organisations should map and baseline their edge device traffic, especially VPN and remote access connections, and adopt dynamic threat feed filtering that includes known covert network indicators."
+    "url": "https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave",
+    "context": "Organisations must act now to prepare for a wave of patches that will address decades of technical debt."
+  },
+  {
+    "id": "f3d20af9d2daee2f",
+    "title": "Supporting AI adoption for UK cyber defence",
+    "source": "UK NCSC — All updates",
+    "lens": "ResponsibleAI",
+    "url": "https://www.ncsc.gov.uk/blogs/supporting-ai-adoption-for-uk-cyber-defence",
+    "context": "Adopting AI will require time, the development of new capabilities and careful oversight."
+  },
+  {
+    "id": "13b8f39d41e90cc0",
+    "title": "Cyber chief: UK faces \"perfect storm\" for cyber security",
+    "source": "UK NCSC — All updates",
+    "lens": "CyberResilience",
+    "url": "https://www.ncsc.gov.uk/news/cyber-chief-uk-faces-perfect-storm-for-cyber-security",
+    "context": "As the technology landscape develops, the definition of cyber security is expanding with it."
   },
   {
     "id": "f20549bc96ecdc16",
@@ -168,10 +136,26 @@ ITEMS:
     "context": "Ensuring cross domain technologies are better understood - and more easily deployed - across sectors."
   },
   {
+    "id": "d0bc636fd27fbc36",
+    "title": "Preparing for severe cyber threat: why leaders must act now",
+    "source": "UK NCSC — All updates",
+    "lens": "CyberResilience",
+    "url": "https://www.ncsc.gov.uk/blogs/preparing-for-severe-cyber-threat-why-leaders-must-act-now",
+    "context": "A call to action to collectively build UK resilience."
+  },
+  {
+    "id": "e96386b842920f36",
+    "title": "HIGH ALERT: Ongoing targeting of online code repositories",
+    "source": "ASD ACSC — Alerts & advisories",
+    "lens": "CyberResilience",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories",
+    "context": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of increased targeting of online code repositories, with threat actors employing various tactics to scan for and extract secrets, access private code bases, and modify packages to infect users. The ASD’s ACSC does not have information to indicate that a specific industry or sector is being targeted, with…"
+  },
+  {
     "id": "836093ee3cff4a19",
     "title": "AI and Liability",
     "source": "Schneier on Security",
-    "lens": "CyberResilience",
+    "lens": "ResponsibleAI",
     "url": "https://www.schneier.com/blog/archives/2026/06/ai-and-liability.html",
     "context": "Earlier this month, a German court ruled that Google is liable for its AI search summaries. Rejecting defenses like “users can check for themselves,” and that they generally know “that information generated with AI should not be blindly trusted,” the court held that the AI’s summaries are reflections of the company and “above all an expression of Google’s business activities.” This is the latest…"
   },
@@ -184,20 +168,12 @@ ITEMS:
     "context": "This is a fascinating explotation of how LLMs fall for prompt injection attacks. It turns out that they learn to recognize the style of text in different role/instruction blocks, and not just the tags. Their conclusion: Role tags were a formatting trick that became the security architecture and the cognitive scaffolding of modern LLMs. We’ve shown that this architecture doesn’t survive into the…"
   },
   {
-    "id": "6b03dec649841343",
-    "title": "Embedding Forbidden Text in Spyware to Discourage AI Analysis",
+    "id": "ad8704866c5f4a17",
+    "title": "Professional Athletes and Wearables",
     "source": "Schneier on Security",
-    "lens": "CyberResilience",
-    "url": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html",
-    "context": "At least one malware developer is adding text about nuclear and biological weapons to their spyware, in an effort to stop automatic AI analysis. Details : The _index.js payload begins with a large JavaScript block comment containing fake system instructions and policy-triggering content. Because it is inside a comment, it does not affect JavaScript execution. The runtime skips it. The real…"
-  },
-  {
-    "id": "ccd5d6489330c69f",
-    "title": "Anthropic’s Fable 5 Model Jailbroken Within Days",
-    "source": "Schneier on Security",
-    "lens": "CyberResilience",
-    "url": "https://www.schneier.com/blog/archives/2026/06/anthropics-fable-5-model-jailbroken-within-days.html",
-    "context": "Fable 5 is the supposed safe version of Anthropic’s Mythos Preview, with guardrails to ensure that it can’t be used to create cyberattacks. Well, that restriction was bypassed within days."
+    "lens": "Privacy",
+    "url": "https://www.schneier.com/blog/archives/2026/06/professional-athletes-and-wearables.html",
+    "context": "I haven’t thought about the privacy issues surrounding professional athletes and wearables. Wearables present serious privacy issues for “Average Joe” consumers, who are entrusting tech companies to safely store and protect their biometric data. Imagine the stakes for a professional athlete, whose entire livelihood could be affected by a single biometric data point. To give one of many realistic…"
   },
   {
     "id": "41f3f0e26725b16f",
@@ -208,51 +184,67 @@ ITEMS:
     "context": "Dolphins, sharks, turtles, and human workers are all victims of unregulated squid fishing fleets. Another news article . As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy."
   },
   {
+    "id": "8e875ec5110fcaba",
+    "title": "Alert: NCSC issues advice following global targeting of Fortinet firewalls and VPN gateways",
+    "source": "UK NCSC — All updates",
+    "lens": "CyberResilience",
+    "url": "https://www.ncsc.gov.uk/news/advice-following-global-targeting-of-fortinet-firewalls-and-vpn-gateways",
+    "context": "Organisations using Fortinet services are being urged to take action following a campaign affecting firewalls and VPN gateways."
+  },
+  {
     "id": "c6f2968cc3cb337f",
     "title": "The 'vibe coding spectrum' approach to AI-assisted software development",
     "source": "UK NCSC — All updates",
-    "lens": "CyberResilience",
+    "lens": "ResponsibleAI",
     "url": "https://www.ncsc.gov.uk/blogs/the-vibe-coding-spectrum-approach-to-ai-assisted-software-development",
     "context": "Different code deserves different levels of oversight, so calibrate your approach to ‘vibe coding’ accordingly."
+  },
+  {
+    "id": "207f823b11cc6557",
+    "title": "Embedding Forbidden Text in Spyware to Discourage AI Analysis",
+    "source": "Schneier on Security",
+    "lens": "ResponsibleAI",
+    "url": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis.html",
+    "context": "At least one malware developer is adding text about nuclear and biological weapons to their spyware, in an effort to stop automatic AI analysis. Details : The _index.js payload begins with a large JavaScript block comment containing fake system instructions and policy-triggering content. Because it is inside a comment, it does not affect JavaScript execution. The runtime skips it. The real…"
   },
   {
     "id": "327fdbfc07b8c48c",
     "title": "AI Use by the US Government",
     "source": "Schneier on Security",
-    "lens": "PublicSector",
+    "lens": "ResponsibleAI",
     "url": "https://www.schneier.com/blog/archives/2026/06/ai-use-by-the-us-government.html",
     "context": "On 14 April, the Trump administration quietly acknowledged the widespread use of AI to automate government processes. The office of management and budget (OMB) disclosed a staggering 3,611 active or planned use cases for AI across the federal government. The list has ballooned by 70% from the one published in the final year of the Biden administration, and includes many disturbing-seeming plans…"
   },
   {
-    "id": "72c95cc1ca5f710a",
-    "title": "Proposed apparatus licensing arrangements for rail services in the 1800 MHz band",
-    "source": "ACMA — News & media",
-    "lens": "Regulation",
-    "url": "https://www.acma.gov.au/consultations/2026-06/proposed-apparatus-licensing-arrangements-rail-services-1800-mhz-band",
-    "context": "Proposed apparatus licensing arrangements for rail services in the 1800 MHz band Andrew.Wallace… Tue, 2026-06-16 14:55 Status Open Closing in 27 days ( 22 July 2026 ) In progress Key documents download pdf Consultation paper: New apparatus licensing arrangements for 1800 MHz band rail services [pdf, 319.49 KB] download docx Draft RALI MS34 [docx, 667.31 KB] The issue As part of the expiring…"
+    "id": "dbc0e3f164b2e239",
+    "title": "Could your choice of metrics be harming your SOC?",
+    "source": "UK NCSC — All updates",
+    "lens": "CyberResilience",
+    "url": "https://www.ncsc.gov.uk/blogs/could-your-choice-of-metrics-be-harming-your-soc",
+    "context": "Poor metrics can render a well-intentioned security operation centre entirely ineffective."
   },
   {
-    "id": "db030d1451835fef",
-    "title": "Cost recovery arrangements for marine radio",
-    "source": "ACMA — News & media",
-    "lens": "Regulation",
-    "url": "https://www.acma.gov.au/consultations/2026-06/cost-recovery-arrangements-marine-radio",
-    "context": "Cost recovery arrangements for marine radio Andrew.Wallace… Thu, 2026-06-11 09:39 Status Open Closing in 11 days ( 06 July 2026 ) In progress Key documents download pdf Draft Cost Recovery Implementation Statement: Maritime certificates of proficiency, handbooks and associated administrative services for the calendar year 2026 [pdf, 305.73 KB] The issue We have prepared a draft Cost Recovery…"
+    "id": "b4d2cddf82eb0fe3",
+    "title": "International cyber agencies share fresh advice to defend against China-linked covert networks",
+    "source": "UK NCSC — All updates",
+    "lens": "CyberResilience",
+    "url": "https://www.ncsc.gov.uk/news/international-cyber-agencies-fresh-advice-defend-against-china-linked-covert-networks",
+    "context": "New advisory highlights how to defend against attacker tactics believed to be used by China-linked actors to hide malicious cyber activity."
   },
   {
-    "id": "4209ded7f2318687",
-    "title": "Proposal to remake the Radiocommunications (Aircraft and Aeronautical Mobile Stations) Class Licence 2016",
-    "source": "ACMA — News & media",
-    "lens": "Regulation",
-    "url": "https://www.acma.gov.au/consultations/2026-06/proposal-remake-radiocommunications-aircraft-and-aeronautical-mobile-stations-class-licence-2016",
-    "context": "Proposal to remake the Radiocommunications (Aircraft and Aeronautical Mobile Stations) Class Licence 2016 peter.watts Tue, 2026-06-09 10:09 Status Open Closing in 26 days ( 21 July 2026 ) In progress Key documents download pdf Consultation paper: Proposal to remake the Radiocommunications (Aircraft and Aeronautical Mobile Stations) Class Licence 2016 [pdf, 239.74 KB] download pdf Draft…"
+    "id": "1736b123361f4d57",
+    "title": "Executive Summary: Defending against China-nexus covert networks of compromised devices",
+    "source": "UK NCSC — All updates",
+    "lens": "CyberResilience",
+    "url": "https://www.ncsc.gov.uk/news/executive-summary-defending-against-china-nexus-covert-networks-of-compromised-devices",
+    "context": "Organisations should map and baseline their edge device traffic, especially VPN and remote access connections, and adopt dynamic threat feed filtering that includes known covert network indicators."
   },
   {
-    "id": "b1afd7ff1062b817",
-    "title": "Review of the 2.5 GHz band spectrum licence technical framework",
-    "source": "ACMA — News & media",
-    "lens": "Regulation",
-    "url": "https://www.acma.gov.au/consultations/2026-06/review-25-ghz-band-spectrum-licence-technical-framework",
-    "context": "Review of the 2.5 GHz band spectrum licence technical framework Andrew.Wallace… Thu, 2026-06-04 11:55 Status Open Closing in 13 days ( 08 July 2026 ) In progress Key documents download pdf Consultation paper: Review of the 2.5 GHz band spectrum licence technical framework [pdf, 1.02 MB] download pdf Draft Radiocommunications Advisory Guidelines (Managing Interference from Spectrum Licensed…"
+    "id": "58e8a99997d1d6a5",
+    "title": "DTA’s new look site now live",
+    "source": "Digital Transformation Agency — news",
+    "lens": "PublicSector",
+    "url": "https://www.dta.gov.au/media-releases/dtas-new-look-site-now-live",
+    "context": "DTA’s new look site now live emily.farrelly Tue, 2025-09-02 11:29 The DTA has published a new look corporate site that shares details on our team, our culture, and our latest achievements. We have launched our new look corporate site. It delivers concise details about who we are, our reporting requirements, and our latest achievements. As part of this update, we have separated our corporate…"
   }
 ]
