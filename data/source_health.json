@@ -1,15 +1,45 @@
 {
-  "checked_at": "2026-06-26T15:29:25+10:00",
+  "checked_at": "2026-06-26T15:34:33+10:00",
   "sources": [
     {
       "id": "acsc-alerts",
-      "name": "ASD ACSC — Alerts & advisories",
+      "name": "ASD ACSC — Alerts",
       "tier": 1,
       "source_type": "government",
       "lens": "ASD",
       "status": "ok",
       "detail": "4 items",
       "items": 4
+    },
+    {
+      "id": "acsc-news",
+      "name": "ASD ACSC — News",
+      "tier": 1,
+      "source_type": "government",
+      "lens": "ASD",
+      "status": "ok",
+      "detail": "8 items",
+      "items": 8
+    },
+    {
+      "id": "acsc-advisories",
+      "name": "ASD ACSC — Advisories",
+      "tier": 1,
+      "source_type": "government",
+      "lens": "ASD",
+      "status": "ok",
+      "detail": "3 items",
+      "items": 3
+    },
+    {
+      "id": "acsc-publications",
+      "name": "ASD ACSC — Publications (ISM, Essential Eight, guidance)",
+      "tier": 1,
+      "source_type": "government",
+      "lens": "ASD",
+      "status": "ok",
+      "detail": "2 items",
+      "items": 2
     },
     {
       "id": "ncsc-uk",
@@ -213,9 +243,9 @@
     }
   ],
   "summary": {
-    "ok": 9,
+    "ok": 12,
     "fail": 1,
     "research": 11,
-    "total": 21
+    "total": 24
   }
 }

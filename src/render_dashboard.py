@@ -87,15 +87,18 @@ def build() -> dict:
                 sections[key].append(it)
                 break
 
-    # Diversify current signals — a hard cap per source so one prolific feed (e.g. NCSC,
-    # which publishes far more than ASD) can't dominate, even when few sources are active.
-    # Items are already score-sorted; take up to `cap` per source. Showing fewer than 12
-    # is fine — better a diverse 9 than 7-of-12 from one feed.
-    cap, counts, picked = 3, {}, []
-    for it in items:
-        if counts.get(it["source"], 0) < cap:
+    # Diversify by ORGANISATION (so splitting a source into sub-feeds — e.g. ASD ACSC's
+    # alerts/news/advisories/publications — can't game a per-feed cap). ASD ACSC is the
+    # home regulator and gets more headline room; secondary feeds are capped tighter.
+    def _org(src):
+        return src.split("—")[0].strip()
+    ORG_CAP = {"ASD ACSC": 5}
+    counts, picked = {}, []
+    for it in items:  # already score-sorted
+        org = _org(it["source"])
+        if counts.get(org, 0) < ORG_CAP.get(org, 3):
             picked.append(it)
-            counts[it["source"]] = counts.get(it["source"], 0) + 1
+            counts[org] = counts.get(org, 0) + 1
     current_signals = picked[:12]
 
     newsletter_candidates = [it for it in items if it.get("newsletter_candidate")]

@@ -16,6 +16,30 @@ Output JSON only.
 ITEMS:
 [
   {
+    "id": "f8c9a2e404dd0615",
+    "title": "Latest release in the quantum technology primer series: Sensing",
+    "source": "ASD ACSC — News",
+    "lens": "CyberResilience",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing",
+    "context": "The latest in the quantum technology primer series explores quantum sensing and its potential applications, capabilities and key cyber security considerations."
+  },
+  {
+    "id": "c8a009d9dd4ec48f",
+    "title": "Quantum technology primer: Sensing",
+    "source": "ASD ACSC — Publications (ISM, Essential Eight, guidance)",
+    "lens": "CyberResilience",
+    "url": "https://www.cyber.gov.au/business-government/secure-design/quantum/quantum-technology-primer-sensing",
+    "context": "Discover quantum sensing to understand its applications, capabilities, and key cyber security considerations."
+  },
+  {
+    "id": "9b6c16a04a8fbe61",
+    "title": "Five Eyes cyber security agencies statement",
+    "source": "ASD ACSC — News",
+    "lens": "CyberResilience",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement",
+    "context": "Our joint Five Eyes statement highlights AI is rapidly increasing cyber risk, urging leaders to act now to strengthen resilience, adopt secure practices, and integrate cyber security into core strategy."
+  },
+  {
     "id": "b3526f078f3c5a01",
     "title": "The AI shift in cyber risk: why leaders must act now",
     "source": "UK NCSC — All updates",
@@ -26,7 +50,7 @@ ITEMS:
   {
     "id": "e9d757e534f1f0d2",
     "title": "CRITICAL ALERT: Reported widespread credential exposure affecting Fortinet Firewalls and VPN Gateways",
-    "source": "ASD ACSC — Alerts & advisories",
+    "source": "ASD ACSC — Alerts",
     "lens": "ASD",
     "url": "https://www.cyber.gov.au/about-us/view-all-content/Reported-widespread-credential-exposure-affecting-Fortinet-Firewalls-and-VPN-Gateways",
     "context": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of public reporting of a malicious campaign against Fortinet Firewalls and VPN Gateways"
@@ -40,9 +64,17 @@ ITEMS:
     "context": "Dr Richard Horne highlighted the scale of cyber threats against the UK’s critical infrastructure at RUSI’s Annual Security Lecture."
   },
   {
+    "id": "8d3bb393b1af330e",
+    "title": "Consultation on evolution of Essential Eight",
+    "source": "ASD ACSC — News",
+    "lens": "CyberResilience",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/news/consultation-on-evolution-of-essential-eight",
+    "context": "We’re consulting ASD network partners on evolving the Essential Eight cyber security framework to increase flexibility and support stronger cyber resilience."
+  },
+  {
     "id": "26bcb636d6619c8f",
     "title": "CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability",
-    "source": "ASD ACSC — Alerts & advisories",
+    "source": "ASD ACSC — Alerts",
     "lens": "CyberResilience",
     "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability",
     "context": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of exploitation of a vulnerability affecting the cPanel/ WebHost Manager (CVE-2026-4194) administration control interfaces for website and server management. This vulnerability has received a CVSS4.0 base score of 9.3."
@@ -50,7 +82,7 @@ ITEMS:
   {
     "id": "5419f3a314e214b7",
     "title": "HIGH ALERT: New steps for organisations running Cisco Firepower and Secure Firewall products",
-    "source": "ASD ACSC — Alerts & advisories",
+    "source": "ASD ACSC — Alerts",
     "lens": "ASD",
     "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/new-steps-for-organisations-running-cisco-firepower-and-secure-firewall-products",
     "context": "ASD partners CISA and NCSC have identified new malware affecting Cisco Firepower and Secure Firewall products."
@@ -80,6 +112,22 @@ ITEMS:
     "context": "Attackers are compromising open-source packages to spread malware. Cyber defenders are asked to review dependencies to reduce risks"
   },
   {
+    "id": "414b3462b319fad0",
+    "title": "Using AI to strengthen cyber defence",
+    "source": "ASD ACSC — News",
+    "lens": "CyberResilience",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/news/using-ai-to-strengthen-cyber-defence",
+    "context": "Our latest publication explains how and where organisations can use AI to strengthen their cyber security while mitigating associated risks."
+  },
+  {
+    "id": "2e89f13198387237",
+    "title": "Opportunities for AI in cyber defence",
+    "source": "ASD ACSC — Publications (ISM, Essential Eight, guidance)",
+    "lens": "ResponsibleAI",
+    "url": "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/opportunities-for-ai-in-cyber-defence",
+    "context": "This publication provides guidance on how organisations can adopt frontier AI to strengthen cyber defence while managing associated risks."
+  },
+  {
     "id": "e3cf8ffebab07a87",
     "title": "Have your say on the CCA discussion paper",
     "source": "digital.gov.au — digital, data & AI policy",
@@ -104,12 +152,44 @@ ITEMS:
     "context": "Using Artificial Intelligence to find vulnerabilities can bring added security considerations."
   },
   {
+    "id": "d4c0edf7b7f63a47",
+    "title": "ClickFix distributing Vidar Stealer via WordPress targeting Australian infrastructure",
+    "source": "ASD ACSC — Advisories",
+    "lens": "CyberResilience",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/clickfix-distributing-vidar-stealer-via-wordpress-targeting-australian-infrastructure",
+    "context": "Threat actors are targeting Australian networks with a social engineering technique, ClickFix, to distribute malware through compromised WordPress websites. This advisory provides an overview of the activity, an assessment of the threat, observed indicators, detections and recommended mitigations."
+  },
+  {
+    "id": "f2d3600b97165301",
+    "title": "New joint guidance provides mitigations for careful adoption of agentic AI services",
+    "source": "ASD ACSC — News",
+    "lens": "ResponsibleAI",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/news/new-joint-guidance-provides-mitigations-for-cautious-adoption-of-agentic-ai",
+    "context": "Agentic AI enables powerful automation but introduces significant security risks. Our new guidance helps organisations adopt it carefully, prioritising secure and resilient use."
+  },
+  {
     "id": "78e47568529ad914",
     "title": "Preparing for a ‘vulnerability patch wave’",
     "source": "UK NCSC — All updates",
     "lens": "CyberResilience",
     "url": "https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave",
     "context": "Organisations must act now to prepare for a wave of patches that will address decades of technical debt."
+  },
+  {
+    "id": "6d25c08782f53138",
+    "title": "Frontier AI models and their impact on cyber security",
+    "source": "ASD ACSC — News",
+    "lens": "CyberResilience",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/news/frontier-models-and-their-impact-on-cyber-security-update",
+    "context": "Our latest update explains what frontier AI models likely can — and can’t — do, and what that means for cyber risk."
+  },
+  {
+    "id": "f3a52cd11bd612b3",
+    "title": "Joint advisory released on China-nexus covert networks of compromised devices",
+    "source": "ASD ACSC — News",
+    "lens": "CyberResilience",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/news/joint-advisory-released-on-china-nexus-covert-networks-of-compromised-devices",
+    "context": "This advisory outlines the shift in tactics, techniques and procedures used by China-nexus cyber actors to target organisations, as well as recommended mitigations."
   },
   {
     "id": "f3d20af9d2daee2f",
@@ -144,9 +224,17 @@ ITEMS:
     "context": "A call to action to collectively build UK resilience."
   },
   {
+    "id": "46fbf5becd9e5fa6",
+    "title": "Frontier models and their impact on cyber security",
+    "source": "ASD ACSC — News",
+    "lens": "CyberResilience",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/news/frontier-models-and-their-impact-on-cyber-security",
+    "context": "As frontier AI technology matures and becomes more accessible, the cyber threat landscape will evolve rapidly alongside new frontier model releases."
+  },
+  {
     "id": "e96386b842920f36",
     "title": "HIGH ALERT: Ongoing targeting of online code repositories",
-    "source": "ASD ACSC — Alerts & advisories",
+    "source": "ASD ACSC — Alerts",
     "lens": "CyberResilience",
     "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories",
     "context": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of increased targeting of online code repositories, with threat actors employing various tactics to scan for and extract secrets, access private code bases, and modify packages to infect users. The ASD’s ACSC does not have information to indicate that a specific industry or sector is being targeted, with…"
@@ -166,85 +254,5 @@ ITEMS:
     "lens": "CyberResilience",
     "url": "https://www.schneier.com/blog/archives/2026/06/interesting-paper-exploring-prompt-injection.html",
     "context": "This is a fascinating explotation of how LLMs fall for prompt injection attacks. It turns out that they learn to recognize the style of text in different role/instruction blocks, and not just the tags. Their conclusion: Role tags were a formatting trick that became the security architecture and the cognitive scaffolding of modern LLMs. We’ve shown that this architecture doesn’t survive into the…"
-  },
-  {
-    "id": "ad8704866c5f4a17",
-    "title": "Professional Athletes and Wearables",
-    "source": "Schneier on Security",
-    "lens": "Privacy",
-    "url": "https://www.schneier.com/blog/archives/2026/06/professional-athletes-and-wearables.html",
-    "context": "I haven’t thought about the privacy issues surrounding professional athletes and wearables. Wearables present serious privacy issues for “Average Joe” consumers, who are entrusting tech companies to safely store and protect their biometric data. Imagine the stakes for a professional athlete, whose entire livelihood could be affected by a single biometric data point. To give one of many realistic…"
-  },
-  {
-    "id": "41f3f0e26725b16f",
-    "title": "Friday Squid Blogging: Victims of Unregulated Squid Fishing",
-    "source": "Schneier on Security",
-    "lens": "CyberResilience",
-    "url": "https://www.schneier.com/blog/archives/2026/06/friday-squid-blogging-victims-of-unregulated-squid-fishing.html",
-    "context": "Dolphins, sharks, turtles, and human workers are all victims of unregulated squid fishing fleets. Another news article . As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy."
-  },
-  {
-    "id": "8e875ec5110fcaba",
-    "title": "Alert: NCSC issues advice following global targeting of Fortinet firewalls and VPN gateways",
-    "source": "UK NCSC — All updates",
-    "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/news/advice-following-global-targeting-of-fortinet-firewalls-and-vpn-gateways",
-    "context": "Organisations using Fortinet services are being urged to take action following a campaign affecting firewalls and VPN gateways."
-  },
-  {
-    "id": "c6f2968cc3cb337f",
-    "title": "The 'vibe coding spectrum' approach to AI-assisted software development",
-    "source": "UK NCSC — All updates",
-    "lens": "ResponsibleAI",
-    "url": "https://www.ncsc.gov.uk/blogs/the-vibe-coding-spectrum-approach-to-ai-assisted-software-development",
-    "context": "Different code deserves different levels of oversight, so calibrate your approach to ‘vibe coding’ accordingly."
-  },
-  {
-    "id": "207f823b11cc6557",
-    "title": "Embedding Forbidden Text in Spyware to Discourage AI Analysis",
-    "source": "Schneier on Security",
-    "lens": "ResponsibleAI",
-    "url": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis.html",
-    "context": "At least one malware developer is adding text about nuclear and biological weapons to their spyware, in an effort to stop automatic AI analysis. Details : The _index.js payload begins with a large JavaScript block comment containing fake system instructions and policy-triggering content. Because it is inside a comment, it does not affect JavaScript execution. The runtime skips it. The real…"
-  },
-  {
-    "id": "327fdbfc07b8c48c",
-    "title": "AI Use by the US Government",
-    "source": "Schneier on Security",
-    "lens": "ResponsibleAI",
-    "url": "https://www.schneier.com/blog/archives/2026/06/ai-use-by-the-us-government.html",
-    "context": "On 14 April, the Trump administration quietly acknowledged the widespread use of AI to automate government processes. The office of management and budget (OMB) disclosed a staggering 3,611 active or planned use cases for AI across the federal government. The list has ballooned by 70% from the one published in the final year of the Biden administration, and includes many disturbing-seeming plans…"
-  },
-  {
-    "id": "dbc0e3f164b2e239",
-    "title": "Could your choice of metrics be harming your SOC?",
-    "source": "UK NCSC — All updates",
-    "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/blogs/could-your-choice-of-metrics-be-harming-your-soc",
-    "context": "Poor metrics can render a well-intentioned security operation centre entirely ineffective."
-  },
-  {
-    "id": "b4d2cddf82eb0fe3",
-    "title": "International cyber agencies share fresh advice to defend against China-linked covert networks",
-    "source": "UK NCSC — All updates",
-    "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/news/international-cyber-agencies-fresh-advice-defend-against-china-linked-covert-networks",
-    "context": "New advisory highlights how to defend against attacker tactics believed to be used by China-linked actors to hide malicious cyber activity."
-  },
-  {
-    "id": "1736b123361f4d57",
-    "title": "Executive Summary: Defending against China-nexus covert networks of compromised devices",
-    "source": "UK NCSC — All updates",
-    "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/news/executive-summary-defending-against-china-nexus-covert-networks-of-compromised-devices",
-    "context": "Organisations should map and baseline their edge device traffic, especially VPN and remote access connections, and adopt dynamic threat feed filtering that includes known covert network indicators."
-  },
-  {
-    "id": "58e8a99997d1d6a5",
-    "title": "DTA’s new look site now live",
-    "source": "Digital Transformation Agency — news",
-    "lens": "PublicSector",
-    "url": "https://www.dta.gov.au/media-releases/dtas-new-look-site-now-live",
-    "context": "DTA’s new look site now live emily.farrelly Tue, 2025-09-02 11:29 The DTA has published a new look corporate site that shares details on our team, our culture, and our latest achievements. We have launched our new look corporate site. It delivers concise details about who we are, our reporting requirements, and our latest achievements. As part of this update, we have separated our corporate…"
   }
 ]

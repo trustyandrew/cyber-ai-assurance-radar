@@ -1,14 +1,37 @@
 # Cyber & Responsible AI Assurance Radar
 
-_Updated 2026-06-26T15:31:33+10:00 (Australia/Melbourne)._  
-**25** signals · **1** new · **14** newsletter candidates · **32** standards tracked · sources 9/21 ok (1 failed).
+_Updated 2026-06-26T15:36:17+10:00 (Australia/Melbourne)._  
+**35** signals · **12** new · **24** newsletter candidates · **32** standards tracked · sources 12/24 ok (1 failed).
 
 ## 🆕 New since last run
 
-- 🆕 **[Embedding Forbidden Text in Spyware to Discourage AI Analysis](https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis.html)** — Schneier on Security · ResponsibleAI · Medium (3/5)
+- 🆕 **[Latest release in the quantum technology primer series: Sensing](https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing)** — ASD ACSC — News · CyberResilience · Critical (5/5)
+- 🆕 **[Quantum technology primer: Sensing](https://www.cyber.gov.au/business-government/secure-design/quantum/quantum-technology-primer-sensing)** — ASD ACSC — Publications (ISM, Essential Eight, guidance) · CyberResilience · Critical (5/5)
+- 🆕 **[Five Eyes cyber security agencies statement](https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement)** — ASD ACSC — News · CyberResilience · Critical (5/5)
+- 🆕 **[Consultation on evolution of Essential Eight](https://www.cyber.gov.au/about-us/view-all-content/news/consultation-on-evolution-of-essential-eight)** — ASD ACSC — News · CyberResilience · Critical (5/5)
+- 🆕 **[Using AI to strengthen cyber defence](https://www.cyber.gov.au/about-us/view-all-content/news/using-ai-to-strengthen-cyber-defence)** — ASD ACSC — News · CyberResilience · High (4/5)
+- 🆕 **[ClickFix distributing Vidar Stealer via WordPress targeting Australian infrastructure](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/clickfix-distributing-vidar-stealer-via-wordpress-targeting-australian-infrastructure)** — ASD ACSC — Advisories · CyberResilience · High (4/5)
+- 🆕 **[Frontier AI models and their impact on cyber security](https://www.cyber.gov.au/about-us/view-all-content/news/frontier-models-and-their-impact-on-cyber-security-update)** — ASD ACSC — News · CyberResilience · High (4/5)
+- 🆕 **[Joint advisory released on China-nexus covert networks of compromised devices](https://www.cyber.gov.au/about-us/view-all-content/news/joint-advisory-released-on-china-nexus-covert-networks-of-compromised-devices)** — ASD ACSC — News · CyberResilience · High (4/5)
+- 🆕 **[Frontier models and their impact on cyber security](https://www.cyber.gov.au/about-us/view-all-content/news/frontier-models-and-their-impact-on-cyber-security)** — ASD ACSC — News · CyberResilience · High (4/5)
+- 🆕 **[Opportunities for AI in cyber defence](https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/opportunities-for-ai-in-cyber-defence)** — ASD ACSC — Publications (ISM, Essential Eight, guidance) · ResponsibleAI · High (4/5)
+- 🆕 **[New joint guidance provides mitigations for careful adoption of agentic AI services](https://www.cyber.gov.au/about-us/view-all-content/news/new-joint-guidance-provides-mitigations-for-cautious-adoption-of-agentic-ai)** — ASD ACSC — News · ResponsibleAI · High (4/5)
+- 🆕 **[Defending against China-nexus covert networks of compromised devices](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/defending-against-china-nexus-covert-networks-of-compromised-devices)** — ASD ACSC — Advisories · CyberResilience · Medium (3/5)
 
 ## Current signals
 
+- 🆕 **[Latest release in the quantum technology primer series: Sensing](https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing)** — ASD ACSC — News · 2026-06-24 · Critical (5/5)
+  The latest in the quantum technology primer series explores quantum sensing and its potential applications, capabilities and key cyber security considerations.
+  *Why it matters:* Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
+  *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
+- 🆕 **[Quantum technology primer: Sensing](https://www.cyber.gov.au/business-government/secure-design/quantum/quantum-technology-primer-sensing)** — ASD ACSC — Publications (ISM, Essential Eight, guidance) · 2026-06-23 · Critical (5/5)
+  Discover quantum sensing to understand its applications, capabilities, and key cyber security considerations.
+  *Why it matters:* Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
+  *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
+- 🆕 **[Five Eyes cyber security agencies statement](https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement)** — ASD ACSC — News · 2026-06-22 · Critical (5/5)
+  Our joint Five Eyes statement highlights AI is rapidly increasing cyber risk, urging leaders to act now to strengthen resilience, adopt secure practices, and integrate cyber security into core strategy.
+  *Why it matters:* Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
+  *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
 - **[The AI shift in cyber risk: why leaders must act now](https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now)** — UK NCSC — All updates · 2026-06-22 · Critical (5/5)
   UK NCSC discusses how artificial intelligence is shifting the cyber risk landscape and argues that leaders must act now to adapt their defences.
   *Why it matters:* AI-driven changes to threat and defence affect both ISO/IEC 27001 risk assessment and ISO/IEC 42001 AI governance obligations.
@@ -17,10 +40,10 @@ _Updated 2026-06-26T15:31:33+10:00 (Australia/Melbourne)._
   NCSC CEO Dr Richard Horne told RUSI's Annual Security Lecture that hostile states are linked to roughly three-quarters of cyber attacks affecting the UK's critical infrastructure.
   *Why it matters:* State-linked targeting of critical infrastructure underscores SOCI Act obligations and risk-based assurance expectations for Australian critical infrastructure operators.
   *Action:* Reassess critical infrastructure threat models against state-sponsored adversary capabilities.
-- **[HIGH ALERT: New steps for organisations running Cisco Firepower and Secure Firewall products](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/new-steps-for-organisations-running-cisco-firepower-and-secure-firewall-products)** — ASD ACSC — Alerts & advisories · 2026-04-24 · Critical (5/5)
-  ASD's ACSC, with partners CISA and NCSC, identified new malware affecting Cisco Firepower and Secure Firewall products and outlined new steps for affected organisations.
-  *Why it matters:* Edge security device compromise engages ISO/IEC 27001 technical vulnerability management and Essential Eight patching priorities for Australian entities.
-  *Action:* Apply the ASD steps for Cisco Firepower and Secure Firewall and hunt for the identified malware.
+- 🆕 **[Consultation on evolution of Essential Eight](https://www.cyber.gov.au/about-us/view-all-content/news/consultation-on-evolution-of-essential-eight)** — ASD ACSC — News · 2026-06-15 · Critical (5/5)
+  We’re consulting ASD network partners on evolving the Essential Eight cyber security framework to increase flexibility and support stronger cyber resilience.
+  *Why it matters:* Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
+  *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
 - **[Embedding Forbidden Text in Spyware to Discourage AI Analysis](https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html)** — Schneier on Security · 2026-06-24 · High (4/5)
   At least one malware developer is adding text about nuclear and biological weapons to their spyware, in an effort to stop automatic AI analysis. Details : The _index.js payload begins with a large JavaScript block comment containing fake system instructions and policy-triggering content. Because it is inside a comment, it does not affect JavaScript execution. The runtime skips it. The real…
   *Why it matters:* Relevant to responsible AI governance (transparency, oversight, AI risk); consider impact assessment and assurance evidence.
@@ -33,17 +56,13 @@ _Updated 2026-06-26T15:31:33+10:00 (Australia/Melbourne)._
   UK NCSC warns that attackers are compromising open-source packages to spread malware and asks defenders to review their dependencies to reduce risk.
   *Why it matters:* Dependency integrity is core to ISO/IEC 27001 supplier and secure development controls and to managing software supply chain risk in regulated environments.
   *Action:* Inventory and verify third-party dependencies, pinning and monitoring trusted versions.
-- **[HIGH ALERT: Ongoing targeting of online code repositories](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories)** — ASD ACSC — Alerts & advisories · 2025-09-19 · High (4/5)
-  ASD's ACSC reports increased targeting of online code repositories, with threat actors scanning for and extracting secrets, accessing private codebases and modifying packages to infect downstream users; no specific sector is singled out.
-  *Why it matters:* Source code and secret management map to ISO/IEC 27001 Annex A controls and the Essential Eight; compromised repositories enable supply chain attacks that affect many parties.
-  *Action:* Rotate exposed secrets and enforce secret scanning and least-privilege access across all repositories.
+- 🆕 **[Using AI to strengthen cyber defence](https://www.cyber.gov.au/about-us/view-all-content/news/using-ai-to-strengthen-cyber-defence)** — ASD ACSC — News · 2026-05-27 · High (4/5)
+  Our latest publication explains how and where organisations can use AI to strengthen their cyber security while mitigating associated risks.
+  *Why it matters:* Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
+  *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
 - **[AI and Liability](https://www.schneier.com/blog/archives/2026/06/ai-and-liability.html)** — Schneier on Security · 2026-06-25 · Medium (3/5)
   Earlier this month, a German court ruled that Google is liable for its AI search summaries. Rejecting defenses like “users can check for themselves,” and that they generally know “that information generated with AI should not be blindly trusted,” the court held that the AI’s summaries are reflections of the company and “above all an expression of Google’s business activities.” This is the latest…
   *Why it matters:* Relevant to responsible AI governance (transparency, oversight, AI risk); consider impact assessment and assurance evidence.
-  *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
-- **[DTA’s new look site now live](https://www.dta.gov.au/media-releases/dtas-new-look-site-now-live)** — Digital Transformation Agency — news · 2025-09-02 · Watch (2/5)
-  DTA’s new look site now live emily.farrelly Tue, 2025-09-02 11:29 The DTA has published a new look corporate site that shares details on our team, our culture, and our latest achievements. We have launched our new look corporate site. It delivers concise details about who we are, our reporting requirements, and our latest achievements. As part of this update, we have separated our corporate…
-  *Why it matters:* Australian public sector AI assurance relevance; check DTA standards, AI impact assessment and procurement.
   *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
 
 ## SC 27 / 27000 family register
@@ -90,24 +109,37 @@ _Updated 2026-06-26T15:31:33+10:00 (Australia/Melbourne)._
 
 ## Newsletter candidates
 
+- [Latest release in the quantum technology primer series: Sensing](https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing) — ASD ACSC — News (Critical)
+- [Quantum technology primer: Sensing](https://www.cyber.gov.au/business-government/secure-design/quantum/quantum-technology-primer-sensing) — ASD ACSC — Publications (ISM, Essential Eight, guidance) (Critical)
+- [Five Eyes cyber security agencies statement](https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement) — ASD ACSC — News (Critical)
 - [The AI shift in cyber risk: why leaders must act now](https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now) — UK NCSC — All updates (Critical)
 - [NCSC CEO: Hostile states linked to three-quarters of cyber attacks affecting UK's critical systems](https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks) — UK NCSC — All updates (Critical)
-- [HIGH ALERT: New steps for organisations running Cisco Firepower and Secure Firewall products](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/new-steps-for-organisations-running-cisco-firepower-and-secure-firewall-products) — ASD ACSC — Alerts & advisories (Critical)
+- [Consultation on evolution of Essential Eight](https://www.cyber.gov.au/about-us/view-all-content/news/consultation-on-evolution-of-essential-eight) — ASD ACSC — News (Critical)
 - [Embedding Forbidden Text in Spyware to Discourage AI Analysis](https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html) — Schneier on Security (High)
 - [Anthropic’s Fable and the State of AI](https://www.schneier.com/blog/archives/2026/06/anthropics-fable-and-the-state-of-ai.html) — Schneier on Security (High)
 - [Software supply chain attacks: check your dependencies](https://www.ncsc.gov.uk/blogs/software-supply-chain-attacks-check-your-dependencies) — UK NCSC — All updates (High)
+- [Using AI to strengthen cyber defence](https://www.cyber.gov.au/about-us/view-all-content/news/using-ai-to-strengthen-cyber-defence) — ASD ACSC — News (High)
+- [Opportunities for AI in cyber defence](https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/opportunities-for-ai-in-cyber-defence) — ASD ACSC — Publications (ISM, Essential Eight, guidance) (High)
 - [Thinking carefully before adopting agentic AI](https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai) — UK NCSC — All updates (High)
 - [10 questions to ask when using AI models to find vulnerabilities](https://www.ncsc.gov.uk/blogs/10-questions-ask-using-ai-models-find-vulnerabilities) — UK NCSC — All updates (High)
+- [ClickFix distributing Vidar Stealer via WordPress targeting Australian infrastructure](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/clickfix-distributing-vidar-stealer-via-wordpress-targeting-australian-infrastructure) — ASD ACSC — Advisories (High)
+- [New joint guidance provides mitigations for careful adoption of agentic AI services](https://www.cyber.gov.au/about-us/view-all-content/news/new-joint-guidance-provides-mitigations-for-cautious-adoption-of-agentic-ai) — ASD ACSC — News (High)
 - [Preparing for a ‘vulnerability patch wave’](https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave) — UK NCSC — All updates (High)
+- [Frontier AI models and their impact on cyber security](https://www.cyber.gov.au/about-us/view-all-content/news/frontier-models-and-their-impact-on-cyber-security-update) — ASD ACSC — News (High)
+- [Joint advisory released on China-nexus covert networks of compromised devices](https://www.cyber.gov.au/about-us/view-all-content/news/joint-advisory-released-on-china-nexus-covert-networks-of-compromised-devices) — ASD ACSC — News (High)
 - [Supporting AI adoption for UK cyber defence](https://www.ncsc.gov.uk/blogs/supporting-ai-adoption-for-uk-cyber-defence) — UK NCSC — All updates (High)
 - [Cyber chief: UK faces "perfect storm" for cyber security](https://www.ncsc.gov.uk/news/cyber-chief-uk-faces-perfect-storm-for-cyber-security) — UK NCSC — All updates (High)
 - [New cross domain guidance for government, industry and the wider security community](https://www.ncsc.gov.uk/blogs/new-cross-domain-guidance-for-government-industry-and-the-wider-security-community) — UK NCSC — All updates (High)
 - [Preparing for severe cyber threat: why leaders must act now](https://www.ncsc.gov.uk/blogs/preparing-for-severe-cyber-threat-why-leaders-must-act-now) — UK NCSC — All updates (High)
-- [HIGH ALERT: Ongoing targeting of online code repositories](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories) — ASD ACSC — Alerts & advisories (High)
+- [Frontier models and their impact on cyber security](https://www.cyber.gov.au/about-us/view-all-content/news/frontier-models-and-their-impact-on-cyber-security) — ASD ACSC — News (High)
+- [HIGH ALERT: Ongoing targeting of online code repositories](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories) — ASD ACSC — Alerts (High)
 
 ## Source health
 
-- OK — ASD ACSC — Alerts & advisories: 4 items
+- OK — ASD ACSC — Alerts: 4 items
+- OK — ASD ACSC — News: 8 items
+- OK — ASD ACSC — Advisories: 3 items
+- OK — ASD ACSC — Publications (ISM, Essential Eight, guidance): 2 items
 - OK — UK NCSC — All updates: 20 items
 - OK — NIST — Cybersecurity news: 0 items
 - FAIL — CISA — Cybersecurity advisories: <HTTPError 403: 'Forbidden'>

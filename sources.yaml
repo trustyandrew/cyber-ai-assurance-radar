@@ -43,9 +43,39 @@ search_strategy:
 sources:
   # --- Tier 1: ASD / ACSC and allied cyber authorities ----------------------
   - id: acsc-alerts
-    name: ASD ACSC — Alerts & advisories
+    name: ASD ACSC — Alerts
     fetch: rss
     url: https://www.cyber.gov.au/rss/alerts
+    tier: 1
+    source_type: government
+    lens: ASD
+    verified: true
+    enabled: true
+
+  - id: acsc-news
+    name: ASD ACSC — News
+    fetch: rss
+    url: https://www.cyber.gov.au/rss/news
+    tier: 1
+    source_type: government
+    lens: ASD
+    verified: true
+    enabled: true
+
+  - id: acsc-advisories
+    name: ASD ACSC — Advisories
+    fetch: rss
+    url: https://www.cyber.gov.au/rss/advisories
+    tier: 1
+    source_type: government
+    lens: ASD
+    verified: true
+    enabled: true
+
+  - id: acsc-publications
+    name: ASD ACSC — Publications (ISM, Essential Eight, guidance)
+    fetch: rss
+    url: https://www.cyber.gov.au/rss/publications
     tier: 1
     source_type: government
     lens: ASD
