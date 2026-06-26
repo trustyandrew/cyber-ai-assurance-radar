@@ -15,6 +15,7 @@ import json
 import sys
 
 import render_dashboard
+from score_items import PRIORITY_BY_SCORE
 from radar_common import CACHE, load_json, log, save_json
 
 IN_FILE = CACHE / "enrichment-in.json"
@@ -45,6 +46,12 @@ def main() -> int:
         it["summary"] = o.get("summary") or it.get("summary", "")
         it["why_it_matters"] = o.get("why_it_matters", it.get("why_it_matters", ""))
         it["suggested_action"] = o.get("suggested_action", it.get("suggested_action", ""))
+        # LLM relevance score overrides the deterministic one and drives ranking/priority.
+        s = o.get("score")
+        if isinstance(s, (int, float)) and 1 <= int(s) <= 5:
+            it["relevance_score"] = int(s)
+            it["priority"] = PRIORITY_BY_SCORE[int(s)]
+            it["newsletter_candidate"] = int(s) >= 4
         it["enriched_by"] = "pro-plan"
         applied += 1
 

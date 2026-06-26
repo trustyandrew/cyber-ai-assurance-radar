@@ -51,10 +51,19 @@ SYSTEM = (
 )
 
 INSTRUCTION = (
-    "For each item, return STRICT JSON: an array of objects with keys id, summary "
-    "(<=45 words, factual), why_it_matters (1-2 sentences tying it to cyber/AI "
-    "assurance, ISO 27001/42001, ASD/ISM/Essential Eight or Australian public sector "
-    "assurance) and suggested_action (one imperative sentence). Output JSON only."
+    "For each item, return STRICT JSON: an array of objects with keys id, score, "
+    "summary, why_it_matters and suggested_action.\n"
+    "- score: integer 1-5 for assurance relevance. 5 = critical (mandatory change, "
+    "ASD/ISM/Essential Eight expectation, certification/conformity, regulatory "
+    "obligation, board-level cyber/AI accountability); 4 = high advisory/newsletter "
+    "value; 3 = useful watch; 2 = low; 1 = ignore. Prefer primary sources and "
+    "actionable advisories; routine statistics, telco/broadcasting notices and generic "
+    "news score low.\n"
+    "- summary: <=45 words, factual.\n"
+    "- why_it_matters: 1-2 sentences tying it to cyber/AI assurance, ISO 27001/42001, "
+    "ASD/ISM/Essential Eight or Australian public sector assurance.\n"
+    "- suggested_action: one imperative sentence.\n"
+    "Output JSON only."
 )
 
 

@@ -12,9 +12,9 @@ from __future__ import annotations
 import json
 
 from radar_common import (
-    ROOT, CACHE, DATA, DAILY, DASHBOARD, DASHBOARD_JSON, HEALTH_FILE, HISTORY,
-    SOURCES_YAML, STANDARDS_YAML,
-    load_json, load_yaml, log, now_iso, save_json, today_str,
+    ROOT, CACHE, DATA, DAILY, DASHBOARD, DASHBOARD_JSON, FEEDBACK_FILE, HEALTH_FILE,
+    HISTORY, SOURCES_YAML, STANDARDS_YAML,
+    load_json, load_yaml, log, now_iso, save_json, today_str, vote_of,
 )
 
 CTA = ("If your organisation is preparing for ISO/IEC 27001, ISO/IEC 42001, cyber "
@@ -73,10 +73,10 @@ def build() -> dict:
     )
 
     # Apply 👍/👎 feedback: drop dismissed items everywhere; force 👍 as candidates.
-    votes = load_json(DATA / "feedback.json", {})
-    items = [it for it in items if votes.get(it["id"]) != "down"]
+    votes = load_json(FEEDBACK_FILE, {})
+    items = [it for it in items if vote_of(votes.get(it["id"])) != "down"]
     for it in items:
-        it["vote"] = votes.get(it["id"], "")
+        it["vote"] = vote_of(votes.get(it["id"]))
         if it["vote"] == "up":
             it["newsletter_candidate"] = True
 

@@ -39,6 +39,10 @@ analysis using a **Claude Pro/Max subscription** (no per-token API charge):
 3. Save the reply to `data/_cache/enrichment-in.json`.
 4. `python src/apply_enrichment.py` → merges it in and re-renders.
 
+Enrichment also assigns each item a **1–5 LLM relevance score** that drives ranking,
+priority and the per-source diversity cap. Deterministic keyword scoring (sharpened with
+recency + ASD/CVE alert detection) is the fallback for anything the LLM doesn't reach.
+
 > Paid API path (off by default, billed separately from a subscription): set
 > `RADAR_USE_API=1` **and** `ANTHROPIC_API_KEY`. Only then does the pipeline call the API.
 
@@ -88,10 +92,16 @@ https://github.com/trustyandrew/cyber-ai-assurance-radar/blob/main/DASHBOARD.md
 ```
 
 The rich HTML dashboard stays for local viewing. Run `python src/serve_dashboard.py`
-and open `http://localhost:4178/` — this server also powers the **👍/👎 triage**: 👍
-marks a signal as a newsletter candidate, 👎 dismisses it (hidden everywhere and
-excluded from the newsletter). Votes are stored in `data/feedback.json` and honoured by
-the pipeline on every run. GitHub Pages is not used — free Pages requires a public repo.
+and open `http://localhost:4178/`. This server powers two things:
+
+- **👍/👎 triage** — 👍 adds a signal to your picks, 👎 dismisses it (hidden everywhere
+  and excluded from the newsletter). Votes (with a snapshot + timestamp) persist in
+  `data/feedback.json` and are honoured by the pipeline on every run.
+- **Build newsletter** — turns your 👍 picks into a copy/paste brief over a chosen range
+  (*Since last*, *Last week/month/quarter*) with a Copy button. "Since last" tracks
+  `data/newsletter_state.json` so each edition picks up where the previous left off.
+
+GitHub Pages is not used — free Pages requires a public repo.
 
 ## Design
 

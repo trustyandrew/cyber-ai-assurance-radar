@@ -12,23 +12,61 @@
     "matters from what is noise — and build an evidence-based path forward.";
   var PRI_CLASS = { Critical: "critical", High: "high", Medium: "medium", Watch: "watch", Low: "low" };
   var state = { filter: "All" };
-  var votes = D.feedback || {};  // {id: "up"|"down"} — overridden by live GET if served
+  var votes = D.feedback || {};  // {id: {vote, at, item}} — overridden by live GET if served
+  var itemsById = {};
+
+  function indexItems() {
+    (D.current_signals || []).forEach(function (it) { itemsById[it.id] = it; });
+    Object.keys(D.sections || {}).forEach(function (k) {
+      (D.sections[k] || []).forEach(function (it) { itemsById[it.id] = it; });
+    });
+  }
+
+  function voteOf(id) {
+    var v = votes[id];
+    return v && typeof v === "object" ? (v.vote || "") : (v || "");
+  }
+
+  function pickedItems() {
+    return Object.keys(votes)
+      .filter(function (id) { return voteOf(id) === "up"; })
+      .map(function (id) { return itemsById[id] || (votes[id] && votes[id].item); })
+      .filter(Boolean);
+  }
 
   function postVote(id, vote) {
-    if (vote === "none") { delete votes[id]; } else { votes[id] = vote; }
+    var item = itemsById[id] || (votes[id] && votes[id].item);
+    if (vote === "none") { delete votes[id]; }
+    else { votes[id] = { vote: vote, item: item }; }
     fetch("/feedback", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ id: id, vote: vote })
+      body: JSON.stringify({ id: id, vote: vote, item: vote === "up" ? item : null })
     }).catch(function () {});  // file:// has no server — UI still updates for the session
     render();
+  }
+
+  function buildNewsletter(range) {
+    var status = document.getElementById("nl-status");
+    var out = document.getElementById("nl-out");
+    if (status) status.textContent = "Building…";
+    fetch("/newsletter", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ range: range })
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (out) out.value = d.md || "";
+        if (status) status.textContent = d.count + " pick(s) · " + d.range + " · theme: " + (d.theme || "");
+      })
+      .catch(function () { if (status) status.textContent = "Build failed — is the local server running?"; });
   }
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
   function passes(it) {
-    if (votes[it.id] === "down") return false;
+    if (voteOf(it.id) === "down") return false;
     if (state.filter === "All") return true;
     if (state.filter === "New") return !!it.is_new;
     return it.priority === state.filter;
@@ -65,7 +103,7 @@
         '<div class="card-actions">' +
           '<a href="' + esc(it.url) + '" target="_blank" rel="noopener">Open source →</a>' +
           '<span class="votes">' +
-            '<button class="vote up' + (votes[it.id] === "up" ? " active" : "") + '" data-id="' + esc(it.id) +
+            '<button class="vote up' + (voteOf(it.id) === "up" ? " active" : "") + '" data-id="' + esc(it.id) +
               '" data-vote="up" title="Mark as newsletter candidate" aria-label="Thumbs up">👍</button>' +
             '<button class="vote down" data-id="' + esc(it.id) +
               '" data-vote="down" title="Dismiss and exclude" aria-label="Thumbs down">👎</button>' +
@@ -176,20 +214,31 @@
   }
 
   function newsletterSection() {
-    var theme = D.newsletter_theme || "cyber and responsible AI assurance";
-    var cands = (D.newsletter_candidates || []).slice(0, 6).map(function (it) {
-      return "<li><a href='" + esc(it.url) + "' target='_blank' rel='noopener'>" + esc(it.title) + "</a> — " + esc(it.source) + "</li>";
-    }).join("") || "<li>No candidates this run.</li>";
-    var copy = "Subject option:\nCyber & Responsible AI Assurance Brief — " + theme +
-      "\n\nOpening angle:\nThis week's signal is " + theme + ". Below: what changed, why it matters for ISO/IEC 27001 and 42001, and what to do.";
+    var picks = pickedItems();
+    var pickList = picks.length
+      ? picks.map(function (it) {
+          return "<li><a href='" + esc(it.url) + "' target='_blank' rel='noopener'>" +
+            esc(it.title) + "</a> — " + esc(it.source) + "</li>";
+        }).join("")
+      : "<li>No picks yet — give signals a 👍 above to add them.</li>";
+    var ranges = [["since_last", "Since last"], ["week", "Last week"],
+                  ["month", "Last month"], ["quarter", "Last quarter"]];
+    var buttons = ranges.map(function (r) {
+      return '<button class="nl-range" data-range="' + r[0] + '">' + r[1] + "</button>";
+    }).join("");
     return (
       '<section id="newsletter">' +
-        '<div class="section-head"><div><h2>Newsletter candidates</h2>' +
-        "<p>Items the weekly generator would turn into a copy/paste brief.</p></div></div>" +
+        '<div class="section-head"><div><h2>Newsletter</h2>' +
+        "<p>Build a copy/paste brief from your 👍 picks.</p></div></div>" +
         '<div class="twocol">' +
-          '<div class="callout"><h3>Lead theme</h3><p>' + esc(theme) +
-            '</p><div class="copy-box">' + esc(copy) + "</div></div>" +
-          '<div class="callout"><h3>This run’s candidates</h3><ul>' + cands + "</ul></div>" +
+          '<div class="callout"><h3>Your picks (👍) — ' + picks.length + "</h3>" +
+            '<ul id="picks">' + pickList + "</ul></div>" +
+          '<div class="callout"><h3>Build newsletter</h3>' +
+            '<div class="nl-controls">' + buttons + "</div>" +
+            '<p class="nl-status" id="nl-status">Pick a range to generate.</p>' +
+            '<textarea id="nl-out" class="nl-out" readonly placeholder="Newsletter markdown appears here…"></textarea>' +
+            '<button id="nl-copy" class="button" style="margin-top:10px">Copy to clipboard</button>' +
+          "</div>" +
         "</div>" +
       "</section>"
     );
@@ -226,13 +275,25 @@
     app.querySelectorAll(".vote").forEach(function (b) {
       b.addEventListener("click", function () {
         var id = b.dataset.id, vote = b.dataset.vote;
-        if (vote === "up" && votes[id] === "up") vote = "none";  // click 👍 again to clear
+        if (vote === "up" && voteOf(id) === "up") vote = "none";  // click 👍 again to clear
         postVote(id, vote);
       });
     });
+    app.querySelectorAll(".nl-range").forEach(function (b) {
+      b.addEventListener("click", function () { buildNewsletter(b.dataset.range); });
+    });
+    var copyBtn = document.getElementById("nl-copy");
+    if (copyBtn) copyBtn.addEventListener("click", function () {
+      var out = document.getElementById("nl-out");
+      if (out && out.value && navigator.clipboard) {
+        navigator.clipboard.writeText(out.value);
+        copyBtn.textContent = "Copied ✓";
+        setTimeout(function () { copyBtn.textContent = "Copy to clipboard"; }, 1500);
+      }
+    });
   }
 
-  function init() { renderMeta(); render(); }
+  function init() { indexItems(); renderMeta(); render(); }
   init();  // render immediately from baked feedback — never block render on the network
   // then refresh live votes from the local server (best-effort) and re-render if changed
   fetch("/feedback.json", { cache: "no-store" })

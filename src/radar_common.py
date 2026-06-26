@@ -31,6 +31,8 @@ STANDARDS_YAML = ROOT / "standards.yaml"
 SEEN_FILE = DATA / "seen_items.json"
 HEALTH_FILE = DATA / "source_health.json"
 DASHBOARD_JSON = DATA / "dashboard.json"
+FEEDBACK_FILE = DATA / "feedback.json"
+NEWSLETTER_STATE = DATA / "newsletter_state.json"
 
 TZ = ZoneInfo("Australia/Melbourne")
 
@@ -153,6 +155,14 @@ def parse_date(raw: str) -> str:
     if m:
         return m.group(0)
     return ""
+
+
+def vote_of(v) -> str:
+    """Tolerant read of a feedback entry — supports the legacy '{id: "up"}' form and
+    the current '{id: {"vote": "up", "at": ..., "item": ...}}' form."""
+    if isinstance(v, dict):
+        return v.get("vote", "")
+    return v or ""
 
 
 def log(msg: str) -> None:

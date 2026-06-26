@@ -11,7 +11,30 @@ from __future__ import annotations
 
 import re
 
-from radar_common import CACHE, SEEN_FILE, load_json, log, save_json
+from datetime import date
+
+from radar_common import CACHE, SEEN_FILE, load_json, log, now, save_json
+
+# Title markers that signal an actionable advisory (vs general news/commentary).
+ALERT_MARKERS = ["alert", "advisory", "critical", "actively exploited", "exploited",
+                 "urgent", "kev", "patch now", "zero-day", "0-day"]
+_CVE_RE = re.compile(r"cve-\d{4}-\d{3,}")
+
+
+def _recency_adj(published_date: str) -> int:
+    """+1 for items in the last 7 days, -1 for stale (>120 days), else 0."""
+    try:
+        y, m, d = (int(x) for x in published_date.split("-"))
+        age = (now().date() - date(y, m, d)).days
+    except (ValueError, AttributeError):
+        return 0
+    if age < 0:
+        return 0
+    if age <= 7:
+        return 1
+    if age > 120:
+        return -1
+    return 0
 
 # --- Term lists (edit to tune relevance) ------------------------------------
 # Strong assurance signals -> big boost. Keep these tight and authoritative.
@@ -110,6 +133,9 @@ def score_item(item: dict) -> dict:
     topic_hits = len(tags)
     ignore_hits = sum(1 for t in IGNORE_TERMS if _has(hay, t))
 
+    title = (item.get("title") or "").lower()
+    is_alert = any(m in title for m in ALERT_MARKERS) or bool(_CVE_RE.search(title))
+
     score = base
     if critical_hits:
         score += 2
@@ -117,6 +143,9 @@ def score_item(item: dict) -> dict:
         score += 1
     elif topic_hits == 0:
         score -= 1  # mentions nothing on the radar -> de-prioritise
+    if is_alert:
+        score += 1  # actionable advisory, not general news
+    score += _recency_adj(item.get("published_date", ""))
     score -= 2 * ignore_hits
 
     score = max(1, min(5, score))

@@ -38,8 +38,9 @@ Run from the repo root: `C:\Users\AndrewRobinson\source\repos\cyber-ai-assurance
 
 3. **Enrich with the LLM (Claude, on the subscription):**
    - Read `data/daily/<date>-enrichment-prompt.md` (task spec + the day's top items as JSON).
-   - Write the JSON reply — an array of `{id, summary, why_it_matters, suggested_action}` —
-     to `data/_cache/enrichment-in.json`. Australian English, assurance-framed, no fabrication.
+   - Write the JSON reply — an array of `{id, score, summary, why_it_matters, suggested_action}` —
+     to `data/_cache/enrichment-in.json`. `score` is 1–5 assurance relevance (5 critical … 1 ignore;
+     routine stats score low). Australian English, assurance-framed, no fabrication.
    - Apply and re-render:
      ```bash
      python src/apply_enrichment.py

@@ -11,7 +11,9 @@ from __future__ import annotations
 from collections import Counter
 from datetime import timedelta
 
-from radar_common import DATA, HISTORY, WEEKLY, load_json, log, now, today_str
+from radar_common import (
+    DATA, FEEDBACK_FILE, HISTORY, WEEKLY, load_json, log, now, today_str, vote_of,
+)
 
 CTA = (
     "If your organisation is preparing for ISO/IEC 27001, ISO/IEC 42001, cyber "
@@ -43,8 +45,8 @@ def _load_window(days: int = 7) -> list[dict]:
             cur = by_id.get(it["id"])
             if cur is None or it.get("relevance_score", 0) > cur.get("relevance_score", 0):
                 by_id[it["id"]] = it
-    votes = load_json(DATA / "feedback.json", {})
-    return [it for it in by_id.values() if votes.get(it["id"]) != "down"]
+    votes = load_json(FEEDBACK_FILE, {})
+    return [it for it in by_id.values() if vote_of(votes.get(it["id"])) != "down"]
 
 
 def _select(items: list[dict]) -> list[dict]:
@@ -69,6 +71,46 @@ def _theme(items: list[dict]) -> str:
 
 def _bucket(items, lenses):
     return [it for it in items if it.get("lens") in lenses]
+
+
+def compose_newsletter(items: list[dict], date: str) -> tuple[str, str]:
+    """Copy/paste newsletter markdown from an explicit list of items (the user's 👍
+    picks). Returns (markdown, theme). Lists every selected item, not just 3-7."""
+    items = sorted(items, key=lambda x: (x.get("relevance_score", 0),
+                                         x.get("published_date") or ""), reverse=True)
+    theme = _theme(items)
+    L = [
+        f"# Cyber & Responsible AI Assurance Radar — {date}",
+        "",
+        "**Subject line options**",
+        f"1. This edition: {theme}",
+        f"2. {len(items)} signals worth your attention",
+        "3. Assurance Radar: what changed, why it matters",
+        "",
+        f"**Preview text:** A focused read on {theme} and what it means for ISO/IEC "
+        "27001, ISO/IEC 42001 and Australian assurance practice.",
+        "",
+        "---",
+        "",
+        "Hi — here are the developments I've flagged as worth your attention.",
+        "",
+        f"The theme is **{theme}**.",
+        "",
+        "## Developments",
+        "",
+    ]
+    if not items:
+        L.append("_No items selected — thumbs-up some signals on the dashboard first._")
+    for i, it in enumerate(items, 1):
+        L.append(f"{i}. **[{it['title']}]({it['url']})** — {it['source']}"
+                 f"{' · ' + it['published_date'] if it.get('published_date') else ''}")
+        if it.get("why_it_matters"):
+            L.append(f"   {it['why_it_matters']}")
+        L.append("")
+    takeaway = (items[0].get("why_it_matters") if items and items[0].get("why_it_matters")
+                else "Keep your control evidence and AI governance artefacts current.")
+    L += ["## Practical takeaway", "", takeaway, "", "---", "", CTA, ""]
+    return "\n".join(L), theme
 
 
 def build() -> dict:

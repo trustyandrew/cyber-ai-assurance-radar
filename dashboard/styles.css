@@ -108,6 +108,18 @@ h1 { font-size:clamp(34px,4.7vw,62px); letter-spacing:-.055em; line-height:.96; 
 .vote:hover { border-color:var(--ink); }
 .vote.up.active { background:var(--lime); border-color:var(--lime); }
 .vote.down:hover { background:var(--red); border-color:var(--red); }
+.nl-controls { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px; }
+.nl-range {
+  font:inherit; font-size:12px; font-weight:800; padding:6px 12px; cursor:pointer;
+  background:#fff; border:1px solid var(--line); border-radius:999px; color:var(--ink);
+}
+.nl-range:hover { background:var(--lime); border-color:var(--lime); }
+.nl-status { color:#cbd4ce; font-size:12px; margin:0 0 10px; }
+.nl-out {
+  width:100%; min-height:200px; box-sizing:border-box; background:#0a0c0b; color:#ecf3ee;
+  border:1px solid rgba(255,255,255,.12); border-radius:12px; padding:12px;
+  font-family:ui-monospace,Consolas,monospace; font-size:12px; line-height:1.5; resize:vertical;
+}
 a { color:var(--ink); font-weight:850; text-decoration:none; }
 .card a:hover, .table-panel a:hover { text-decoration:underline; }
 .table-panel {

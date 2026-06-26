@@ -29,6 +29,13 @@ unused. There are no GitHub Actions workflows.
 SC 27 / SC 42 are a curated standards register (`standards.yaml`), separate from the
 live signals — keep "news" and "standards radar" distinct.
 
+Curation & scoring: 👍/👎 votes live in `data/feedback.json` as `{vote, at, item}`. The
+newsletter is built from **👍 picks by range** (`serve_dashboard.py` `/newsletter`:
+since_last / week / month / quarter; "since_last" tracks `data/newsletter_state.json`),
+NOT auto-candidates. Enrichment assigns a **1–5 LLM `score`** in `enrichment-in.json`;
+`apply_enrichment` uses it to override the deterministic score and drive ranking/priority.
+Current signals are capped per source for diversity.
+
 ## Run / verify
 
 ```bash

@@ -6,7 +6,12 @@ Paste everything below into Claude (Desktop/Pro). Save its JSON reply to `data/_
 
 You are an assurance analyst for a boutique cyber security and responsible AI advisory. Audience: an ISO/IEC 27001 and ISO/IEC 42001 lead auditor advising Australian enterprise and public sector clients. Be precise about standards, use Australian English, never fabricate facts, and never invent standard numbers or publication claims. If the input is thin, stay general rather than inventing detail.
 
-For each item, return STRICT JSON: an array of objects with keys id, summary (<=45 words, factual), why_it_matters (1-2 sentences tying it to cyber/AI assurance, ISO 27001/42001, ASD/ISM/Essential Eight or Australian public sector assurance) and suggested_action (one imperative sentence). Output JSON only.
+For each item, return STRICT JSON: an array of objects with keys id, score, summary, why_it_matters and suggested_action.
+- score: integer 1-5 for assurance relevance. 5 = critical (mandatory change, ASD/ISM/Essential Eight expectation, certification/conformity, regulatory obligation, board-level cyber/AI accountability); 4 = high advisory/newsletter value; 3 = useful watch; 2 = low; 1 = ignore. Prefer primary sources and actionable advisories; routine statistics, telco/broadcasting notices and generic news score low.
+- summary: <=45 words, factual.
+- why_it_matters: 1-2 sentences tying it to cyber/AI assurance, ISO 27001/42001, ASD/ISM/Essential Eight or Australian public sector assurance.
+- suggested_action: one imperative sentence.
+Output JSON only.
 
 ITEMS:
 [
@@ -17,30 +22,6 @@ ITEMS:
     "lens": "ASD",
     "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability",
     "context": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of exploitation of a vulnerability affecting the cPanel/ WebHost Manager (CVE-2026-4194) administration control interfaces for website and server management. This vulnerability has received a CVSS4.0 base score of 9.3."
-  },
-  {
-    "id": "78e47568529ad914",
-    "title": "Preparing for a ‘vulnerability patch wave’",
-    "source": "UK NCSC — All updates",
-    "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave",
-    "context": "Organisations must act now to prepare for a wave of patches that will address decades of technical debt."
-  },
-  {
-    "id": "d0bc636fd27fbc36",
-    "title": "Preparing for severe cyber threat: why leaders must act now",
-    "source": "UK NCSC — All updates",
-    "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/blogs/preparing-for-severe-cyber-threat-why-leaders-must-act-now",
-    "context": "A call to action to collectively build UK resilience."
-  },
-  {
-    "id": "e96386b842920f36",
-    "title": "HIGH ALERT: Ongoing targeting of online code repositories",
-    "source": "ASD ACSC — Alerts & advisories",
-    "lens": "ASD",
-    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories",
-    "context": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of increased targeting of online code repositories, with threat actors employing various tactics to scan for and extract secrets, access private code bases, and modify packages to infect users. The ASD’s ACSC does not have information to indicate that a specific industry or sector is being targeted, with…"
   },
   {
     "id": "1e995fdeb15ded28",
@@ -67,44 +48,28 @@ ITEMS:
     "context": "Dr Richard Horne highlighted the scale of cyber threats against the UK’s critical infrastructure at RUSI’s Annual Security Lecture."
   },
   {
-    "id": "d1230fe571401997",
-    "title": "Software supply chain attacks: check your dependencies",
+    "id": "78e47568529ad914",
+    "title": "Preparing for a ‘vulnerability patch wave’",
     "source": "UK NCSC — All updates",
     "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/blogs/software-supply-chain-attacks-check-your-dependencies",
-    "context": "Attackers are compromising open-source packages to spread malware. Cyber defenders are asked to review dependencies to reduce risks"
+    "url": "https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave",
+    "context": "Organisations must act now to prepare for a wave of patches that will address decades of technical debt."
   },
   {
-    "id": "e3cf8ffebab07a87",
-    "title": "Have your say on the CCA discussion paper",
-    "source": "digital.gov.au — digital, data & AI policy",
-    "lens": "PublicSector",
-    "url": "https://www.digital.gov.au/have-your-say/consultation-CCA",
-    "context": "Have your say on the CCA discussion paper Consultation on the CCA discussion paper Have your say on the discussion paper created by the Digital Transformation Agency (DTA) to establish seller eligibility for consideration of future coordinated contracting arrangements (CCAs), also known as single seller arrangements (SSAs). 2/06/2026 - 16/06/26 The consultation carley.frost Tue, 2026-05-26 18:10…"
-  },
-  {
-    "id": "395560d6009eee7a",
-    "title": "Thinking carefully before adopting agentic AI",
-    "source": "UK NCSC — All updates",
-    "lens": "ResponsibleAI",
-    "url": "https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai",
-    "context": "When it comes to using agentic AI, make sure you can walk before you run."
-  },
-  {
-    "id": "1736b123361f4d57",
-    "title": "Executive Summary: Defending against China-nexus covert networks of compromised devices",
+    "id": "d0bc636fd27fbc36",
+    "title": "Preparing for severe cyber threat: why leaders must act now",
     "source": "UK NCSC — All updates",
     "lens": "CyberResilience",
-    "url": "https://www.ncsc.gov.uk/news/executive-summary-defending-against-china-nexus-covert-networks-of-compromised-devices",
-    "context": "Organisations should map and baseline their edge device traffic, especially VPN and remote access connections, and adopt dynamic threat feed filtering that includes known covert network indicators."
+    "url": "https://www.ncsc.gov.uk/blogs/preparing-for-severe-cyber-threat-why-leaders-must-act-now",
+    "context": "A call to action to collectively build UK resilience."
   },
   {
-    "id": "f20549bc96ecdc16",
-    "title": "New cross domain guidance for government, industry and the wider security community",
-    "source": "UK NCSC — All updates",
-    "lens": "PublicSector",
-    "url": "https://www.ncsc.gov.uk/blogs/new-cross-domain-guidance-for-government-industry-and-the-wider-security-community",
-    "context": "Ensuring cross domain technologies are better understood - and more easily deployed - across sectors."
+    "id": "e96386b842920f36",
+    "title": "HIGH ALERT: Ongoing targeting of online code repositories",
+    "source": "ASD ACSC — Alerts & advisories",
+    "lens": "ASD",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories",
+    "context": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of increased targeting of online code repositories, with threat actors employing various tactics to scan for and extract secrets, access private code bases, and modify packages to infect users. The ASD’s ACSC does not have information to indicate that a specific industry or sector is being targeted, with…"
   },
   {
     "id": "b3526f078f3c5a01",
@@ -155,6 +120,94 @@ ITEMS:
     "context": "Organisations using Fortinet services are being urged to take action following a campaign affecting firewalls and VPN gateways."
   },
   {
+    "id": "d1230fe571401997",
+    "title": "Software supply chain attacks: check your dependencies",
+    "source": "UK NCSC — All updates",
+    "lens": "CyberResilience",
+    "url": "https://www.ncsc.gov.uk/blogs/software-supply-chain-attacks-check-your-dependencies",
+    "context": "Attackers are compromising open-source packages to spread malware. Cyber defenders are asked to review dependencies to reduce risks"
+  },
+  {
+    "id": "e3cf8ffebab07a87",
+    "title": "Have your say on the CCA discussion paper",
+    "source": "digital.gov.au — digital, data & AI policy",
+    "lens": "PublicSector",
+    "url": "https://www.digital.gov.au/have-your-say/consultation-CCA",
+    "context": "Have your say on the CCA discussion paper Consultation on the CCA discussion paper Have your say on the discussion paper created by the Digital Transformation Agency (DTA) to establish seller eligibility for consideration of future coordinated contracting arrangements (CCAs), also known as single seller arrangements (SSAs). 2/06/2026 - 16/06/26 The consultation carley.frost Tue, 2026-05-26 18:10…"
+  },
+  {
+    "id": "395560d6009eee7a",
+    "title": "Thinking carefully before adopting agentic AI",
+    "source": "UK NCSC — All updates",
+    "lens": "ResponsibleAI",
+    "url": "https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai",
+    "context": "When it comes to using agentic AI, make sure you can walk before you run."
+  },
+  {
+    "id": "5419f3a314e214b7",
+    "title": "HIGH ALERT: New steps for organisations running Cisco Firepower and Secure Firewall products",
+    "source": "ASD ACSC — Alerts & advisories",
+    "lens": "ASD",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/new-steps-for-organisations-running-cisco-firepower-and-secure-firewall-products",
+    "context": "ASD partners CISA and NCSC have identified new malware affecting Cisco Firepower and Secure Firewall products."
+  },
+  {
+    "id": "1736b123361f4d57",
+    "title": "Executive Summary: Defending against China-nexus covert networks of compromised devices",
+    "source": "UK NCSC — All updates",
+    "lens": "CyberResilience",
+    "url": "https://www.ncsc.gov.uk/news/executive-summary-defending-against-china-nexus-covert-networks-of-compromised-devices",
+    "context": "Organisations should map and baseline their edge device traffic, especially VPN and remote access connections, and adopt dynamic threat feed filtering that includes known covert network indicators."
+  },
+  {
+    "id": "f20549bc96ecdc16",
+    "title": "New cross domain guidance for government, industry and the wider security community",
+    "source": "UK NCSC — All updates",
+    "lens": "PublicSector",
+    "url": "https://www.ncsc.gov.uk/blogs/new-cross-domain-guidance-for-government-industry-and-the-wider-security-community",
+    "context": "Ensuring cross domain technologies are better understood - and more easily deployed - across sectors."
+  },
+  {
+    "id": "836093ee3cff4a19",
+    "title": "AI and Liability",
+    "source": "Schneier on Security",
+    "lens": "CyberResilience",
+    "url": "https://www.schneier.com/blog/archives/2026/06/ai-and-liability.html",
+    "context": "Earlier this month, a German court ruled that Google is liable for its AI search summaries. Rejecting defenses like “users can check for themselves,” and that they generally know “that information generated with AI should not be blindly trusted,” the court held that the AI’s summaries are reflections of the company and “above all an expression of Google’s business activities.” This is the latest…"
+  },
+  {
+    "id": "9a25c67747344fc8",
+    "title": "Interesting Paper Exploring Prompt Injection",
+    "source": "Schneier on Security",
+    "lens": "CyberResilience",
+    "url": "https://www.schneier.com/blog/archives/2026/06/interesting-paper-exploring-prompt-injection.html",
+    "context": "This is a fascinating explotation of how LLMs fall for prompt injection attacks. It turns out that they learn to recognize the style of text in different role/instruction blocks, and not just the tags. Their conclusion: Role tags were a formatting trick that became the security architecture and the cognitive scaffolding of modern LLMs. We’ve shown that this architecture doesn’t survive into the…"
+  },
+  {
+    "id": "6b03dec649841343",
+    "title": "Embedding Forbidden Text in Spyware to Discourage AI Analysis",
+    "source": "Schneier on Security",
+    "lens": "CyberResilience",
+    "url": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html",
+    "context": "At least one malware developer is adding text about nuclear and biological weapons to their spyware, in an effort to stop automatic AI analysis. Details : The _index.js payload begins with a large JavaScript block comment containing fake system instructions and policy-triggering content. Because it is inside a comment, it does not affect JavaScript execution. The runtime skips it. The real…"
+  },
+  {
+    "id": "ccd5d6489330c69f",
+    "title": "Anthropic’s Fable 5 Model Jailbroken Within Days",
+    "source": "Schneier on Security",
+    "lens": "CyberResilience",
+    "url": "https://www.schneier.com/blog/archives/2026/06/anthropics-fable-5-model-jailbroken-within-days.html",
+    "context": "Fable 5 is the supposed safe version of Anthropic’s Mythos Preview, with guardrails to ensure that it can’t be used to create cyberattacks. Well, that restriction was bypassed within days."
+  },
+  {
+    "id": "41f3f0e26725b16f",
+    "title": "Friday Squid Blogging: Victims of Unregulated Squid Fishing",
+    "source": "Schneier on Security",
+    "lens": "CyberResilience",
+    "url": "https://www.schneier.com/blog/archives/2026/06/friday-squid-blogging-victims-of-unregulated-squid-fishing.html",
+    "context": "Dolphins, sharks, turtles, and human workers are all victims of unregulated squid fishing fleets. Another news article . As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy."
+  },
+  {
     "id": "c6f2968cc3cb337f",
     "title": "The 'vibe coding spectrum' approach to AI-assisted software development",
     "source": "UK NCSC — All updates",
@@ -201,53 +254,5 @@ ITEMS:
     "lens": "Regulation",
     "url": "https://www.acma.gov.au/consultations/2026-06/review-25-ghz-band-spectrum-licence-technical-framework",
     "context": "Review of the 2.5 GHz band spectrum licence technical framework Andrew.Wallace… Thu, 2026-06-04 11:55 Status Open Closing in 13 days ( 08 July 2026 ) In progress Key documents download pdf Consultation paper: Review of the 2.5 GHz band spectrum licence technical framework [pdf, 1.02 MB] download pdf Draft Radiocommunications Advisory Guidelines (Managing Interference from Spectrum Licensed…"
-  },
-  {
-    "id": "0e020e8b8d921b41",
-    "title": "Remaking the emergency locating devices class licence",
-    "source": "ACMA — News & media",
-    "lens": "Regulation",
-    "url": "https://www.acma.gov.au/consultations/2026-06/remaking-emergency-locating-devices-class-licence",
-    "context": "Remaking the emergency locating devices class licence Andrew.Wallace… Wed, 2026-06-03 10:56 Status Open Closing in 26 days ( 21 July 2026 ) In progress Key documents download pdf Consultation paper: Remaking the emergency locating devices class licence [pdf, 219.31 KB] download pdf Draft Radiocommunications (Emergency Locating Devices) Class Licence 2026 [pdf, 377.75 KB] download pdf Notice to…"
-  },
-  {
-    "id": "82ddfcc8f5334bc2",
-    "title": "Quarterly private health insurance performance statistics",
-    "source": "APRA — News & publications",
-    "lens": "Regulation",
-    "url": "https://www.apra.gov.au/news-and-publications/quarterly-private-health-insurance-performance-statistics",
-    "context": "Breadcrumb Home Statistical Publication Quarterly private health insurance performance statistics Private health insurance Published 29 May 2026 Print On this page On this page APRA publishes statistics on the private health insurance industry on a quarterly basis. The industry performance statistics contain aggregate summaries of financial performance and position and capital adequacy. View the…"
-  },
-  {
-    "id": "abf32211a4ca1d15",
-    "title": "Quarterly life insurance performance statistics",
-    "source": "APRA — News & publications",
-    "lens": "Regulation",
-    "url": "https://www.apra.gov.au/news-and-publications/quarterly-life-insurance-performance-statistics",
-    "context": "Breadcrumb Home Statistical Publication Quarterly life insurance performance statistics Life insurance Published 29 May 2026 Print On this page On this page APRA publishes statistics on the performance of the life insurance industry on a quarterly basis. These statistics contain industry aggregate summaries of financial performance and position, capital adequacy, as well as details on the…"
-  },
-  {
-    "id": "125b04a81133445d",
-    "title": "Quarterly general insurance performance statistics",
-    "source": "APRA — News & publications",
-    "lens": "Regulation",
-    "url": "https://www.apra.gov.au/news-and-publications/quarterly-general-insurance-performance-statistics",
-    "context": "Breadcrumb Home Statistical Publication Quarterly general insurance performance statistics General insurance Published 29 May 2026 Print On this page On this page APRA publishes statistics on the general insurance industry on a quarterly basis. The industry performance statistics contain aggregate summaries of financial performance and position, investments and capital adequacy. Statistics are…"
-  },
-  {
-    "id": "9c2dfefe34efdb90",
-    "title": "Quarterly private health insurance statistics",
-    "source": "APRA — News & publications",
-    "lens": "Regulation",
-    "url": "https://www.apra.gov.au/news-and-publications/quarterly-private-health-insurance-statistics",
-    "context": "Breadcrumb Home Statistical Publication Quarterly private health insurance statistics Private health insurance Published 29 May 2026 Print APRA publishes statistics on the private health insurance industry (PHI) on a quarterly basis. The statistics cover the areas of membership, coverage, benefits paid, medical gap, medical devices or human tissue products, and medical services. Quarterly private…"
-  },
-  {
-    "id": "3a15d74ca7828779",
-    "title": "Monthly Authorised Deposit-taking Institution Statistics",
-    "source": "APRA — News & publications",
-    "lens": "Regulation",
-    "url": "https://www.apra.gov.au/news-and-publications/monthly-authorised-deposit-taking-institution-statistics",
-    "context": "Breadcrumb Home Statistical Publication Monthly Authorised Deposit-taking Institution Statistics Banking Published 29 May 2026 Print On this page On this page The Monthly Authorised Deposit-taking Institution Statistics (MADIS) publication provides selected information on the banking business of individual banks within the domestic market. Monthly authorised deposit-taking institution statistics…"
   }
 ]
