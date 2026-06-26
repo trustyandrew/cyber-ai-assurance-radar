@@ -1,6 +1,6 @@
 # Cyber & Responsible AI Assurance Radar
 
-_Updated 2026-06-26T12:40:39+10:00 (Australia/Melbourne)._  
+_Updated 2026-06-26T12:55:05+10:00 (Australia/Melbourne)._  
 **49** signals · **12** new · **4** newsletter candidates · **32** standards tracked · sources 9/21 ok (1 failed).
 
 ## 🆕 New since last run
@@ -126,21 +126,21 @@ _Updated 2026-06-26T12:40:39+10:00 (Australia/Melbourne)._
 - FAIL — CISA — Cybersecurity advisories: <HTTPError 403: 'Forbidden'>
 - OK — APRA — News & publications: 10 items
 - OK — OAIC — News & privacy guidance: 0 items
-- MANUAL — ASIC — Media & guidance: manual source — not auto-fetched
-- MANUAL — ACCC — News: manual source — not auto-fetched
+- RESEARCH — ASIC — Media & guidance: no feed — covered by the daily routine's web research
+- RESEARCH — ACCC — News: no feed — covered by the daily routine's web research
 - OK — ACMA — News & media: 10 items
-- MANUAL — Home Affairs — Critical infrastructure / cyber: manual source — not auto-fetched
-- MANUAL — Attorney-General's Department — Privacy reform: manual source — not auto-fetched
+- RESEARCH — Home Affairs — Critical infrastructure / cyber: no feed — covered by the daily routine's web research
+- RESEARCH — Attorney-General's Department — Privacy reform: no feed — covered by the daily routine's web research
 - OK — Digital Transformation Agency — news: 1 items
 - OK — digital.gov.au — digital, data & AI policy: 1 items
-- MANUAL — ISO/IEC JTC 1/SC 27 — Information security: manual source — not auto-fetched
-- MANUAL — ISO/IEC JTC 1/SC 42 — Artificial intelligence: manual source — not auto-fetched
-- MANUAL — ISO/IEC 42001 — AI management system: manual source — not auto-fetched
-- MANUAL — ISO/IEC 27001 — ISMS: manual source — not auto-fetched
-- MANUAL — Standards Australia — Updates: manual source — not auto-fetched
-- MANUAL — ENISA — News & publications: manual source — not auto-fetched
+- RESEARCH — ISO/IEC JTC 1/SC 27 — Information security: no feed — covered by the daily routine's web research
+- RESEARCH — ISO/IEC JTC 1/SC 42 — Artificial intelligence: no feed — covered by the daily routine's web research
+- RESEARCH — ISO/IEC 42001 — AI management system: no feed — covered by the daily routine's web research
+- RESEARCH — ISO/IEC 27001 — ISMS: no feed — covered by the daily routine's web research
+- RESEARCH — Standards Australia — Updates: no feed — covered by the daily routine's web research
+- RESEARCH — ENISA — News & publications: no feed — covered by the daily routine's web research
 - OK — Schneier on Security: 10 items
-- MANUAL — OECD.AI — Policy observatory: manual source — not auto-fetched
+- RESEARCH — OECD.AI — Policy observatory: no feed — covered by the daily routine's web research
 
 ---
 

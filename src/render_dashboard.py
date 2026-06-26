@@ -104,7 +104,7 @@ def build() -> dict:
         "sources_checked": health.get("summary", {}).get("total", 0),
         "sources_ok": health.get("summary", {}).get("ok", 0),
         "sources_failed": health.get("summary", {}).get("fail", 0),
-        "sources_manual": health.get("summary", {}).get("manual", 0),
+        "sources_research": health.get("summary", {}).get("research", 0),
         "items_scored": len(scored),
         "items_material": len(items),
         "items_new": sum(1 for it in items if it.get("is_new")),
@@ -220,7 +220,7 @@ def _write_daily_md(dashboard: dict) -> None:
         f"**{c['items_material']}** material items · **{c['items_new']}** new · "
         f"**{c['newsletter_candidates']}** newsletter candidates · "
         f"sources {c['sources_ok']}/{c['sources_checked']} ok "
-        f"({c['sources_failed']} failed, {c['sources_manual']} manual).",
+        f"({c['sources_failed']} failed, {c['sources_research']} via research).",
         "",
         "## Current signals",
         "",

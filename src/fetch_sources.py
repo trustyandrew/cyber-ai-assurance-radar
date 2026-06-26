@@ -99,7 +99,8 @@ def fetch_all() -> dict:
 
         if stype not in ("rss", "atom"):
             health["sources"].append(
-                {**entry, "status": "manual", "detail": f"{stype} source — not auto-fetched", "items": 0}
+                {**entry, "status": "research", "items": 0,
+                 "detail": "no feed — covered by the daily routine's web research"}
             )
             continue
 
@@ -120,13 +121,13 @@ def fetch_all() -> dict:
 
     ok = sum(1 for s in health["sources"] if s["status"] == "ok")
     fail = sum(1 for s in health["sources"] if s["status"] == "fail")
-    manual = sum(1 for s in health["sources"] if s["status"] == "manual")
-    health["summary"] = {"ok": ok, "fail": fail, "manual": manual, "total": len(health["sources"])}
+    research = sum(1 for s in health["sources"] if s["status"] == "research")
+    health["summary"] = {"ok": ok, "fail": fail, "research": research, "total": len(health["sources"])}
 
     save_json(CACHE / "fetched.json", fetched)
     save_json(HEALTH_FILE, health)
     log(f"Fetched {sum(len(f['entries']) for f in fetched)} raw items "
-        f"({ok} ok, {fail} fail, {manual} manual)")
+        f"({ok} ok, {fail} fail, {research} research)")
     return {"fetched": fetched, "health": health}
 
 

@@ -112,6 +112,7 @@ td { padding:14px 10px; border-bottom:1px solid #edf1ee; vertical-align:top; lin
 .state.dev { background:var(--blue); }
 .state.ok { background:var(--green); }
 .state.fail { background:var(--red); }
+.state.research { background:var(--lime2); color:var(--ink); }
 .state.manual { background:var(--soft); color:var(--muted); }
 .twocol { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
 .callout { background:var(--dark); color:#fff; border-radius:24px; padding:24px; }
