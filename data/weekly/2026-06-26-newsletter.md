@@ -1,55 +1,87 @@
-# Cyber & Responsible AI Assurance Radar — week to 2026-06-26
+SUBJECT OPTIONS — pick one, then delete these three lines:
+  • This week in assurance: cyber resilience
+  • 7 signals worth your attention — cyber resilience
+  • Assurance Radar: what changed, why it matters
 
-**Subject line options**
-1. This week in assurance: ASD / ACSC cyber assurance expectations
-2. 4 signals worth your attention — ASD / ACSC cyber assurance expectations
-3. Assurance Radar: what changed, why it matters
+# Cyber & Responsible AI Assurance Radar
+**26 June 2026 · by Andrew Robinson**
 
-**Preview text:** A focused read on ASD / ACSC cyber assurance expectations and what it means for ISO/IEC 27001, ISO/IEC 42001 and Australian assurance practice.
+_A focused brief on cyber security and responsible AI assurance — ISO/IEC 27001 & 42001, ASD/ACSC guidance, and Australian public-sector assurance. Signal, not noise._
+
+## In this issue
+
+1. Latest release in the quantum technology primer series: Sensing
+2. Quantum technology primer: Sensing
+3. Five Eyes cyber security agencies statement
+4. The AI shift in cyber risk: why leaders must act now
+5. NCSC CEO: Hostile states linked to three-quarters of cyber attacks affecting UK's critical systems
+6. Consultation on evolution of Essential Eight
+7. Embedding Forbidden Text in Spyware to Discourage AI Analysis
+8. Responsible AI watch
+9. Cyber security watch
+10. Australian public sector & regulatory watch
+- Practical takeaway
+- About this newsletter
 
 ---
 
-Hi — here's this week's signal, not noise.
-
-The theme this week is **ASD / ACSC cyber assurance expectations**. Below are the developments most likely to matter for assurance, audit and advisory work, with a practical takeaway at the end.
+This week's theme is **cyber resilience** — the developments most likely to matter for assurance, audit and advisory work.
 
 ## Top developments
 
-1. **[CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability)** — ASD ACSC — Alerts & advisories · 2026-05-01
-   Internet-facing administration interfaces under active exploitation are a direct Essential Eight 'patch applications' priority and a likely gap against ISO/IEC 27001 Annex A technical vulnerability management controls.
+1. **[Latest release in the quantum technology primer series: Sensing](https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing)** — ASD ACSC — News · 2026-06-24
+   Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
 
-2. **[Preparing for a ‘vulnerability patch wave’](https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave)** — UK NCSC — All updates · 2026-05-01
-   Sustained patch volume tests vulnerability and change management maturity against ISO/IEC 27001 and the Essential Eight patching benchmarks.
+2. **[Quantum technology primer: Sensing](https://www.cyber.gov.au/business-government/secure-design/quantum/quantum-technology-primer-sensing)** — ASD ACSC — Publications (ISM, Essential Eight, guidance) · 2026-06-23
+   Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
 
-3. **[Preparing for severe cyber threat: why leaders must act now](https://www.ncsc.gov.uk/blogs/preparing-for-severe-cyber-threat-why-leaders-must-act-now)** — UK NCSC — All updates · 2026-04-20
-   Board-level ownership of cyber resilience aligns with ISO/IEC 27001 leadership clauses and APRA CPS 234 accountability expectations for Australian regulated entities.
+3. **[Five Eyes cyber security agencies statement](https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement)** — ASD ACSC — News · 2026-06-22
+   Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
 
-4. **[HIGH ALERT: Ongoing targeting of online code repositories](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories)** — ASD ACSC — Alerts & advisories · 2025-09-19
-   Source code and secret management map to ISO/IEC 27001 Annex A controls and the Essential Eight; compromised repositories enable supply chain attacks that affect many parties.
+4. **[The AI shift in cyber risk: why leaders must act now](https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now)** — UK NCSC — All updates · 2026-06-22
+   AI-driven changes to threat and defence affect both ISO/IEC 27001 risk assessment and ISO/IEC 42001 AI governance obligations.
+
+5. **[NCSC CEO: Hostile states linked to three-quarters of cyber attacks affecting UK's critical systems](https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks)** — UK NCSC — All updates · 2026-06-17
+   State-linked targeting of critical infrastructure underscores SOCI Act obligations and risk-based assurance expectations for Australian critical infrastructure operators.
+
+6. **[Consultation on evolution of Essential Eight](https://www.cyber.gov.au/about-us/view-all-content/news/consultation-on-evolution-of-essential-eight)** — ASD ACSC — News · 2026-06-15
+   Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
+
+7. **[Embedding Forbidden Text in Spyware to Discourage AI Analysis](https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html)** — Schneier on Security · 2026-06-24
+   Relevant to responsible AI governance (transparency, oversight, AI risk); consider impact assessment and assurance evidence.
 
 ## Responsible AI watch
 
+- [The AI shift in cyber risk: why leaders must act now](https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now) — UK NCSC — All updates
+- [Embedding Forbidden Text in Spyware to Discourage AI Analysis](https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html) — Schneier on Security
 - [Anthropic’s Fable and the State of AI](https://www.schneier.com/blog/archives/2026/06/anthropics-fable-and-the-state-of-ai.html) — Schneier on Security
-- [Thinking carefully before adopting agentic AI](https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai) — UK NCSC — All updates
+- [Opportunities for AI in cyber defence](https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/opportunities-for-ai-in-cyber-defence) — ASD ACSC — Publications (ISM, Essential Eight, guidance)
 
 ## Cyber security watch
 
-- [CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability) — ASD ACSC — Alerts & advisories
-- [Preparing for a ‘vulnerability patch wave’](https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave) — UK NCSC — All updates
-- [Preparing for severe cyber threat: why leaders must act now](https://www.ncsc.gov.uk/blogs/preparing-for-severe-cyber-threat-why-leaders-must-act-now) — UK NCSC — All updates
-- [HIGH ALERT: Ongoing targeting of online code repositories](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories) — ASD ACSC — Alerts & advisories
+- [Latest release in the quantum technology primer series: Sensing](https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing) — ASD ACSC — News
+- [Quantum technology primer: Sensing](https://www.cyber.gov.au/business-government/secure-design/quantum/quantum-technology-primer-sensing) — ASD ACSC — Publications (ISM, Essential Eight, guidance)
+- [Five Eyes cyber security agencies statement](https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement) — ASD ACSC — News
+- [NCSC CEO: Hostile states linked to three-quarters of cyber attacks affecting UK's critical systems](https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks) — UK NCSC — All updates
 
 ## Australian public sector & regulatory watch
 
 - [New cross domain guidance for government, industry and the wider security community](https://www.ncsc.gov.uk/blogs/new-cross-domain-guidance-for-government-industry-and-the-wider-security-community) — UK NCSC — All updates
-- [Quarterly Superannuation Product Statistics](https://www.apra.gov.au/news-and-publications/quarterly-superannuation-product-statistics) — APRA — News & publications
-- [Quarterly Fund-Level Statistics](https://www.apra.gov.au/news-and-publications/quarterly-fund-level-statistics) — APRA — News & publications
-- [Quarterly Superannuation Industry publication](https://www.apra.gov.au/news-and-publications/quarterly-superannuation-industry-publication) — APRA — News & publications
 
 ## Practical takeaway
 
-Internet-facing administration interfaces under active exploitation are a direct Essential Eight 'patch applications' priority and a likely gap against ISO/IEC 27001 Annex A technical vulnerability management controls.
+Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
 
 ---
 
+## About this newsletter
+
+The Cyber & Responsible AI Assurance Radar is a curated brief by Andrew Robinson, tracking cyber security and responsible AI assurance — ISO/IEC 27001 and 42001, ASD/ACSC guidance (ISM, Essential Eight), and Australian public-sector and regulatory developments. Signal, not noise.
+
 If your organisation is preparing for ISO/IEC 27001, ISO/IEC 42001, cyber assurance or responsible AI governance, I can help you separate what matters from what is noise — and build an evidence-based path forward.
+
+Forward this to a colleague who'd find it useful.
+
+_Curated by Andrew Robinson. Opinions are my own._
+
+Copyright © 2026 Andrew Robinson.

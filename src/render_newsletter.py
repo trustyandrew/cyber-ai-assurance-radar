@@ -9,7 +9,7 @@ theme, and writes copy/paste-ready outputs:
 from __future__ import annotations
 
 from collections import Counter
-from datetime import timedelta
+from datetime import datetime, timedelta
 
 from radar_common import (
     DATA, FEEDBACK_FILE, HISTORY, WEEKLY, load_json, log, now, today_str, vote_of,
@@ -33,6 +33,57 @@ THEME_LABELS = {
     "Regulation": "regulatory and operational-resilience change",
     "Privacy": "privacy and data protection",
 }
+
+
+TAGLINE = ("A focused brief on cyber security and responsible AI assurance — ISO/IEC "
+           "27001 & 42001, ASD/ACSC guidance, and Australian public-sector assurance. "
+           "Signal, not noise.")
+
+
+def _fmt_date(date_str: str) -> str:
+    try:
+        dt = datetime.strptime(date_str, "%Y-%m-%d")
+        return f"{dt.day} {dt:%B %Y}"
+    except ValueError:
+        return date_str
+
+
+def _header(date_str: str) -> list[str]:
+    return [
+        "# Cyber & Responsible AI Assurance Radar",
+        f"**{_fmt_date(date_str)} · by Andrew Robinson**",
+        "",
+        f"_{TAGLINE}_",
+        "",
+    ]
+
+
+def _toc(entries: list[str]) -> list[str]:
+    out = ["## In this issue", ""]
+    out += [f"{i}. {t}" for i, t in enumerate(entries, 1)]
+    out += ["- Practical takeaway", "- About this newsletter", ""]
+    return out
+
+
+def _footer() -> list[str]:
+    return [
+        "---",
+        "",
+        "## About this newsletter",
+        "",
+        "The Cyber & Responsible AI Assurance Radar is a curated brief by Andrew "
+        "Robinson, tracking cyber security and responsible AI assurance — ISO/IEC 27001 "
+        "and 42001, ASD/ACSC guidance (ISM, Essential Eight), and Australian "
+        "public-sector and regulatory developments. Signal, not noise.",
+        "",
+        CTA,
+        "",
+        "Forward this to a colleague who'd find it useful.",
+        "",
+        "_Curated by Andrew Robinson. Opinions are my own._",
+        "",
+        "Copyright © 2026 Andrew Robinson.",
+    ]
 
 
 def _load_window(days: int = 7) -> list[dict]:
@@ -79,38 +130,39 @@ def compose_newsletter(items: list[dict], date: str) -> tuple[str, str]:
     items = sorted(items, key=lambda x: (x.get("relevance_score", 0),
                                          x.get("published_date") or ""), reverse=True)
     theme = _theme(items)
+
+    # Subject helper (pick one, delete the block) — kept above the masthead.
     L = [
-        f"# Cyber & Responsible AI Assurance Radar — {date}",
-        "",
-        "**Subject line options**",
-        f"1. This edition: {theme}",
-        f"2. {len(items)} signals worth your attention",
-        "3. Assurance Radar: what changed, why it matters",
-        "",
-        f"**Preview text:** A focused read on {theme} and what it means for ISO/IEC "
-        "27001, ISO/IEC 42001 and Australian assurance practice.",
-        "",
-        "---",
-        "",
-        "Hi — here are the developments I've flagged as worth your attention.",
-        "",
-        f"The theme is **{theme}**.",
-        "",
-        "## Developments",
+        "SUBJECT OPTIONS — pick one, then delete these three lines:",
+        f"  • This edition: {theme}",
+        f"  • {len(items)} assurance signals worth your attention",
+        "  • Assurance Radar: what changed, why it matters",
         "",
     ]
+    L += _header(date)
+    L += _toc([it["title"] for it in items] or ["(no items selected yet)"])
+    L += ["---", "",
+          f"The theme this edition is **{theme}**. Here are the developments I've "
+          "flagged as worth your attention.", ""]
+
     if not items:
-        L.append("_No items selected — thumbs-up some signals on the dashboard first._")
+        L += ["_No items selected — give signals a 👍 on the dashboard, then build again._", ""]
     for i, it in enumerate(items, 1):
-        L.append(f"{i}. **[{it['title']}]({it['url']})** — {it['source']}"
-                 f"{' · ' + it['published_date'] if it.get('published_date') else ''}")
+        L += [f"## {i}. {it['title']}", ""]
         if it.get("why_it_matters"):
-            L.append(f"   {it['why_it_matters']}")
-        L.append("")
+            L += [it["why_it_matters"], ""]
+        meta = f"_{it['source']}"
+        if it.get("published_date"):
+            meta += f" · {it['published_date']}"
+        meta += f" · [read more]({it['url']})_"
+        L += [meta, ""]
+
     takeaway = (items[0].get("why_it_matters") if items and items[0].get("why_it_matters")
-                else "Keep your control evidence and AI governance artefacts current.")
-    L += ["## Practical takeaway", "", takeaway, "", "---", "", CTA, ""]
-    return "\n".join(L), theme
+                else "Keep your control evidence and AI governance artefacts current — "
+                     "the expectations are tightening faster than the standards reissue.")
+    L += ["## Practical takeaway", "", takeaway, ""]
+    L += _footer()
+    return "\n".join(L) + "\n", theme
 
 
 def build() -> dict:
@@ -139,44 +191,38 @@ def build() -> dict:
 
 
 def _newsletter_md(top, window, theme, date) -> str:
+    watches = [
+        ("Standards & assurance watch", _bucket(window, {"SC27", "ISO27000", "SC42", "ISO42000"})),
+        ("Responsible AI watch", _bucket(window, {"ResponsibleAI"})),
+        ("Cyber security watch", _bucket(window, {"ASD", "CyberResilience"})),
+        ("Australian public sector & regulatory watch", _bucket(window, {"PublicSector", "Regulation", "Privacy"})),
+    ]
     L = [
-        f"# Cyber & Responsible AI Assurance Radar — week to {date}",
-        "",
-        "**Subject line options**",
-        f"1. This week in assurance: {theme}",
-        f"2. {len(top)} signals worth your attention — {theme}",
-        "3. Assurance Radar: what changed, why it matters",
-        "",
-        f"**Preview text:** A focused read on {theme} and what it means for "
-        "ISO/IEC 27001, ISO/IEC 42001 and Australian assurance practice.",
-        "",
-        "---",
-        "",
-        "Hi — here's this week's signal, not noise.",
-        "",
-        f"The theme this week is **{theme}**. "
-        f"Below are the developments most likely to matter for assurance, audit and "
-        "advisory work, with a practical takeaway at the end.",
-        "",
-        "## Top developments",
+        "SUBJECT OPTIONS — pick one, then delete these three lines:",
+        f"  • This week in assurance: {theme}",
+        f"  • {len(top)} signals worth your attention — {theme}",
+        "  • Assurance Radar: what changed, why it matters",
         "",
     ]
+    L += _header(date)
+    L += _toc([it["title"] for it in top] + [name for name, items in watches if items])
+    L += ["---", "",
+          f"This week's theme is **{theme}** — the developments most likely to matter "
+          "for assurance, audit and advisory work.", "",
+          "## Top developments", ""]
     for i, it in enumerate(top, 1):
         L.append(f"{i}. **[{it['title']}]({it['url']})** — {it['source']}"
                  f"{' · ' + it['published_date'] if it.get('published_date') else ''}")
         if it.get("why_it_matters"):
             L.append(f"   {it['why_it_matters']}")
         L.append("")
-
-    L += _md_watch("Standards & assurance watch", _bucket(window, {"SC27", "ISO27000", "SC42", "ISO42000"}))
-    L += _md_watch("Responsible AI watch", _bucket(window, {"ResponsibleAI"}))
-    L += _md_watch("Cyber security watch", _bucket(window, {"ASD", "CyberResilience"}))
-    L += _md_watch("Australian public sector & regulatory watch", _bucket(window, {"PublicSector", "Regulation", "Privacy"}))
-
+    for name, items in watches:
+        L += _md_watch(name, items)
     takeaway = top[0]["why_it_matters"] if top and top[0].get("why_it_matters") else (
         "Keep your control evidence and AI governance artefacts current — the "
         "expectations are tightening faster than the standards are reissued.")
-    L += ["## Practical takeaway", "", takeaway, "", "---", "", CTA, ""]
+    L += ["## Practical takeaway", "", takeaway, ""]
+    L += _footer()
     return "\n".join(L)
 
 
@@ -208,10 +254,17 @@ def _newsletter_html(top, theme, date) -> str:
   <p style="text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:#666;margin:0;">
     Cyber &amp; Responsible AI Assurance Radar</p>
   <h1 style="font-size:22px;margin:6px 0 2px;">Week to {date}</h1>
-  <p style="color:#444;margin:0 0 20px;">Theme: <strong>{_esc(theme)}</strong></p>
+  <p style="color:#444;margin:2px 0 0;">by Andrew Robinson · Theme: <strong>{_esc(theme)}</strong></p>
+  <p style="color:#666;font-size:13px;margin:8px 0 20px;">{_esc(TAGLINE)}</p>
   <h2 style="font-size:15px;border-bottom:2px solid #111;padding-bottom:4px;">Top developments</h2>
   <ol style="padding-left:18px;">{''.join(rows)}</ol>
   <p style="background:#f4f4f4;border-left:3px solid #111;padding:12px 14px;color:#222;">{_esc(CTA)}</p>
+  <hr style="border:none;border-top:1px solid #ddd;margin:24px 0;">
+  <h2 style="font-size:14px;">About this newsletter</h2>
+  <p style="color:#555;font-size:13px;line-height:1.5;">A curated brief by Andrew Robinson,
+    tracking cyber security and responsible AI assurance — ISO/IEC 27001 and 42001, ASD/ACSC
+    guidance, and Australian public-sector and regulatory developments. Forward freely.</p>
+  <p style="color:#888;font-size:12px;">Copyright © 2026 Andrew Robinson. Opinions are my own.</p>
 </div></body></html>
 """
 

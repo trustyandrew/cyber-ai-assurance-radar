@@ -1,8 +1,8 @@
-This week's Cyber & Responsible AI Assurance Radar — theme: ASD / ACSC cyber assurance expectations.
+This week's Cyber & Responsible AI Assurance Radar — theme: cyber resilience.
 
-• CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability (ASD ACSC — Alerts & advisories)
-• Preparing for a ‘vulnerability patch wave’ (UK NCSC — All updates)
-• Preparing for severe cyber threat: why leaders must act now (UK NCSC — All updates)
+• Latest release in the quantum technology primer series: Sensing (ASD ACSC — News)
+• Quantum technology primer: Sensing (ASD ACSC — Publications (ISM, Essential Eight, guidance))
+• Five Eyes cyber security agencies statement (ASD ACSC — News)
 
 My read: the assurance bar keeps rising between standard revisions. Treat these as evidence and governance prompts, not just news.
 
