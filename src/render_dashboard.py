@@ -87,17 +87,16 @@ def build() -> dict:
                 sections[key].append(it)
                 break
 
-    # Diversify current signals — cap items per source so one prolific feed (e.g. NCSC,
-    # which publishes far more than ASD) can't crowd out the rest. Items are already
-    # score-sorted; take up to `cap` per source first, then fill remaining slots by score.
-    cap, counts, diverse, leftover = 2, {}, [], []
+    # Diversify current signals — a hard cap per source so one prolific feed (e.g. NCSC,
+    # which publishes far more than ASD) can't dominate, even when few sources are active.
+    # Items are already score-sorted; take up to `cap` per source. Showing fewer than 12
+    # is fine — better a diverse 9 than 7-of-12 from one feed.
+    cap, counts, picked = 3, {}, []
     for it in items:
         if counts.get(it["source"], 0) < cap:
-            diverse.append(it)
+            picked.append(it)
             counts[it["source"]] = counts.get(it["source"], 0) + 1
-        else:
-            leftover.append(it)
-    current_signals = (diverse + leftover)[:12]
+    current_signals = picked[:12]
 
     newsletter_candidates = [it for it in items if it.get("newsletter_candidate")]
     action_queue = [
