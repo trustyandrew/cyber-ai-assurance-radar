@@ -18,7 +18,7 @@ from radar_common import (
 CTA = (
     "If your organisation is preparing for ISO/IEC 27001, ISO/IEC 42001, cyber "
     "assurance or responsible AI governance, I can help you separate what matters "
-    "from what is noise — and build an evidence-based path forward."
+    "from what is noise, and build an evidence-based path forward."
 )
 
 THEME_LABELS = {
@@ -35,9 +35,13 @@ THEME_LABELS = {
 }
 
 
-TAGLINE = ("A focused brief on cyber security and responsible AI assurance — ISO/IEC "
-           "27001 & 42001, ASD/ACSC guidance, and Australian public-sector assurance. "
+TAGLINE = ("A focused brief on cyber security and responsible AI assurance: ISO/IEC "
+           "27001 & 42001, ASD/ACSC guidance, and Australian public-sector developments. "
            "Signal, not noise.")
+
+
+def _no_emdash(s: str) -> str:
+    return s.replace("—", "-").replace("–", "-")
 
 
 def _fmt_date(date_str: str) -> str:
@@ -99,34 +103,37 @@ _AREA_NAME = {
     "ausreg": "Australian public-sector and regulatory change",
 }
 _AREA_INSIGHT = {
-    "cyber": "On the cyber side, treat the advisories as control evidence — patch "
-             "cadence, identity hardening and incident readiness mapped to the Essential "
-             "Eight and ISO/IEC 27001 Annex A, not just headlines to note.",
-    "iso27k": "On information security and privacy, the 27000-family movement is a prompt "
-              "to revisit ISMS scope, control mappings and the customer assurance pack "
-              "before clients ask.",
-    "ai": "On AI, the through-line is the shift from principles to evidence — ISO/IEC "
-          "42001, impact assessment and conformity-assessment work are turning "
-          "responsible-AI intent into auditable controls and human oversight.",
-    "ausreg": "For Australian public-sector and regulated clients, expect these to land "
-              "in procurement requirements, board reporting and operational-resilience "
-              "obligations.",
+    "cyber": "On the cyber side, the message for your organisation is to turn these "
+             "advisories into control evidence: confirm your patching cadence, identity "
+             "hardening and incident readiness stand up against the Essential Eight and "
+             "ISO/IEC 27001 Annex A.",
+    "iso27k": "On information security and privacy, movement in the ISO/IEC 27000 family "
+              "is a prompt to revisit your ISMS scope, control mappings and the assurance "
+              "evidence your own customers and auditors ask for.",
+    "ai": "On AI, the shift from principles to evidence is accelerating: if your "
+          "organisation uses or builds AI, expect to demonstrate ISO/IEC 42001-style "
+          "controls, impact assessments and human oversight, not just a policy.",
+    "ausreg": "For Australian public-sector and regulated organisations, these are "
+              "likely to surface in procurement requirements, board reporting and "
+              "operational-resilience obligations.",
 }
 
 
 def _takeaway(items: list[dict], theme: str) -> str:
     if not items:
-        return ("Nothing curated this edition. When you do, this takeaway will tie the "
-                "pieces together and point at the controls and client conversations they affect.")
+        return ("Nothing curated this edition. Once items are added, this takeaway will "
+                "tie them together and point to the controls and assurance evidence your "
+                "organisation should check.")
     counts = Counter(_AREA_OF.get(it.get("lens", ""), "cyber") for it in items)
     areas = [a for a, _ in counts.most_common()]
     names = [_AREA_NAME[a] for a in areas]
     sentences = [f"This edition spans {'; '.join(names)}. The common thread is {theme}."]
     sentences += [_AREA_INSIGHT[a] for a in areas[:2]]
     sentences.append(
-        "The practical move: take the two or three items here that touch a live "
-        "engagement, map each to a specific control or audit question, and decide what "
-        "changes in your evidence base — or your next client conversation — this quarter.")
+        "The practical step: pick the two or three items most relevant to your "
+        "environment, map each to a control or assurance question you can answer with "
+        "evidence, and decide what your board, auditors or own customers need to see "
+        "this quarter.")
     return " ".join(sentences)
 
 
@@ -203,7 +210,7 @@ def compose_newsletter(items: list[dict], date: str) -> tuple[str, str]:
 
     L += ["## Practical takeaway", "", _takeaway(items, theme), ""]
     L += _footer()
-    return "\n".join(L) + "\n", theme
+    return _no_emdash("\n".join(L) + "\n"), theme
 
 
 def build() -> dict:
@@ -261,7 +268,7 @@ def _newsletter_md(top, window, theme, date) -> str:
         L += _md_watch(name, items)
     L += ["## Practical takeaway", "", _takeaway(top, theme), ""]
     L += _footer()
-    return "\n".join(L)
+    return _no_emdash("\n".join(L))
 
 
 def _md_watch(title, items) -> list[str]:
@@ -285,8 +292,8 @@ def _newsletter_html(top, theme, date) -> str:
             f'<div style="color:#333;margin-top:3px;">{_esc(why)}</div></li>'
         )
     # Neutral, email-safe styling. Visual identity (black/white/lime) pending mock-up.
-    return f"""<!doctype html>
-<html><head><meta charset="utf-8"><title>Assurance Radar — {date}</title></head>
+    return _no_emdash(f"""<!doctype html>
+<html><head><meta charset="utf-8"><title>Assurance Radar - {date}</title></head>
 <body style="margin:0;background:#fff;color:#111;font-family:-apple-system,Segoe UI,Arial,sans-serif;">
 <div style="max-width:640px;margin:0 auto;padding:28px 22px;">
   <p style="text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:#666;margin:0;">
@@ -304,7 +311,7 @@ def _newsletter_html(top, theme, date) -> str:
     guidance, and Australian public-sector and regulatory developments. Forward freely.</p>
   <p style="color:#888;font-size:12px;">Copyright © 2026 Andrew Robinson. Opinions are my own.</p>
 </div></body></html>
-"""
+""")
 
 
 def _linkedin_md(top, theme, date) -> str:

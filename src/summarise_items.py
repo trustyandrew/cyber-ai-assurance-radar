@@ -39,15 +39,18 @@ LENS_WHY = {
     "Regulation": "Regulatory / operational-resilience signal; assess obligations, CPS 230/234 alignment and board reporting.",
     "PublicSector": "Australian public sector AI assurance relevance; check DTA standards, AI impact assessment and procurement.",
 }
-DEFAULT_WHY = "Relevant to cyber/AI assurance; assess the impact on ISO/IEC 27001 / 42001 positioning, control design or audit practice."
-DEFAULT_ACTION = "Review the source and decide whether it changes advisory positioning, control design or client guidance."
+DEFAULT_WHY = "Relevant to your cyber and AI assurance; consider the impact on your ISO/IEC 27001 / 42001 controls, evidence and governance."
+DEFAULT_ACTION = "Review this against your current controls and decide whether anything in your environment needs to change."
 
 SYSTEM = (
-    "You are an assurance analyst for a boutique cyber security and responsible AI "
-    "advisory. Audience: an ISO/IEC 27001 and ISO/IEC 42001 lead auditor advising "
-    "Australian enterprise and public sector clients. Be precise about standards, use "
-    "Australian English, never fabricate facts, and never invent standard numbers or "
-    "publication claims. If the input is thin, stay general rather than inventing detail."
+    "You are an assurance analyst writing a brief for the READER: an organisation "
+    "preparing for or maintaining ISO/IEC 27001 and ISO/IEC 42001, cyber assurance and "
+    "responsible AI governance (primarily Australian enterprise and public sector). "
+    "Write for that organisation, not for a consultant; frame impact in terms of their "
+    "controls, evidence, governance and obligations. Be precise about standards, use "
+    "Australian English, and DO NOT use em dashes (use commas, colons or 'and'). Never "
+    "fabricate facts or invent standard numbers or publication claims; if the input is "
+    "thin, stay general rather than inventing detail."
 )
 
 INSTRUCTION = (
@@ -60,10 +63,12 @@ INSTRUCTION = (
     "actionable advisories; routine statistics, telco/broadcasting notices and generic "
     "news score low.\n"
     "- summary: <=45 words, factual.\n"
-    "- why_it_matters: 1-2 sentences tying it to cyber/AI assurance, ISO 27001/42001, "
-    "ASD/ISM/Essential Eight or Australian public sector assurance.\n"
-    "- suggested_action: one imperative sentence.\n"
-    "Output JSON only."
+    "- why_it_matters: 1-2 sentences on why it matters for the reader's organisation "
+    "(impact on its controls, evidence, governance or obligations under ISO/IEC 27001 / "
+    "42001, ASD/ISM/Essential Eight or Australian regulation).\n"
+    "- suggested_action: one imperative sentence addressed to the reader's organisation "
+    "(e.g. 'Confirm your patch cadence ...', 'Brief your board on ...').\n"
+    "Do not use em dashes anywhere. Output JSON only."
 )
 
 
