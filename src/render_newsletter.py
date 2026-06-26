@@ -86,6 +86,50 @@ def _footer() -> list[str]:
     ]
 
 
+_AREA_OF = {
+    "ASD": "cyber", "CyberResilience": "cyber",
+    "SC27": "iso27k", "ISO27000": "iso27k", "Privacy": "iso27k",
+    "SC42": "ai", "ISO42000": "ai", "ResponsibleAI": "ai",
+    "PublicSector": "ausreg", "Regulation": "ausreg",
+}
+_AREA_NAME = {
+    "cyber": "ASD/ACSC cyber resilience",
+    "iso27k": "the ISO/IEC 27000 family and privacy",
+    "ai": "ISO/IEC 42001 and responsible AI",
+    "ausreg": "Australian public-sector and regulatory change",
+}
+_AREA_INSIGHT = {
+    "cyber": "On the cyber side, treat the advisories as control evidence — patch "
+             "cadence, identity hardening and incident readiness mapped to the Essential "
+             "Eight and ISO/IEC 27001 Annex A, not just headlines to note.",
+    "iso27k": "On information security and privacy, the 27000-family movement is a prompt "
+              "to revisit ISMS scope, control mappings and the customer assurance pack "
+              "before clients ask.",
+    "ai": "On AI, the through-line is the shift from principles to evidence — ISO/IEC "
+          "42001, impact assessment and conformity-assessment work are turning "
+          "responsible-AI intent into auditable controls and human oversight.",
+    "ausreg": "For Australian public-sector and regulated clients, expect these to land "
+              "in procurement requirements, board reporting and operational-resilience "
+              "obligations.",
+}
+
+
+def _takeaway(items: list[dict], theme: str) -> str:
+    if not items:
+        return ("Nothing curated this edition. When you do, this takeaway will tie the "
+                "pieces together and point at the controls and client conversations they affect.")
+    counts = Counter(_AREA_OF.get(it.get("lens", ""), "cyber") for it in items)
+    areas = [a for a, _ in counts.most_common()]
+    names = [_AREA_NAME[a] for a in areas]
+    sentences = [f"This edition spans {'; '.join(names)}. The common thread is {theme}."]
+    sentences += [_AREA_INSIGHT[a] for a in areas[:2]]
+    sentences.append(
+        "The practical move: take the two or three items here that touch a live "
+        "engagement, map each to a specific control or audit question, and decide what "
+        "changes in your evidence base — or your next client conversation — this quarter.")
+    return " ".join(sentences)
+
+
 def _load_window(days: int = 7) -> list[dict]:
     cutoff = (now() - timedelta(days=days)).date().isoformat()
     by_id: dict[str, dict] = {}
@@ -157,10 +201,7 @@ def compose_newsletter(items: list[dict], date: str) -> tuple[str, str]:
         meta += f" · [read more]({it['url']})_"
         L += [meta, ""]
 
-    takeaway = (items[0].get("why_it_matters") if items and items[0].get("why_it_matters")
-                else "Keep your control evidence and AI governance artefacts current — "
-                     "the expectations are tightening faster than the standards reissue.")
-    L += ["## Practical takeaway", "", takeaway, ""]
+    L += ["## Practical takeaway", "", _takeaway(items, theme), ""]
     L += _footer()
     return "\n".join(L) + "\n", theme
 
@@ -218,10 +259,7 @@ def _newsletter_md(top, window, theme, date) -> str:
         L.append("")
     for name, items in watches:
         L += _md_watch(name, items)
-    takeaway = top[0]["why_it_matters"] if top and top[0].get("why_it_matters") else (
-        "Keep your control evidence and AI governance artefacts current — the "
-        "expectations are tightening faster than the standards are reissued.")
-    L += ["## Practical takeaway", "", takeaway, ""]
+    L += ["## Practical takeaway", "", _takeaway(top, theme), ""]
     L += _footer()
     return "\n".join(L)
 
