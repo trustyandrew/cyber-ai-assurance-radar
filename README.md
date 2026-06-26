@@ -12,9 +12,10 @@ vendor/marketing noise is filtered out.
 
 ## Outputs
 
-1. **Daily dashboard** — static site in `dashboard/` (`index.html`).
-2. **Daily Markdown brief** — `data/daily/YYYY-MM-DD.md`.
-3. **Weekly newsletter** — copy/paste-ready `data/weekly/` (`.md`, `.html`, LinkedIn).
+1. **`DASHBOARD.md`** — the stable, bookmarkable rendered view (works on a private GitHub repo).
+2. **Daily dashboard** — static HTML in `dashboard/` (`index.html`), for local viewing.
+3. **Daily Markdown brief** — `data/daily/YYYY-MM-DD.md` (dated archive).
+4. **Weekly newsletter** — copy/paste-ready `data/weekly/` (`.md`, `.html`, LinkedIn).
 
 ## Quick start
 
@@ -69,25 +70,25 @@ the term lists at the top of `src/score_items.py` (machine).
 `manual` and surface in **source health** as review prompts. When a source shows
 `fail`, fix its URL or switch it to `manual`.
 
-## Automation & hosting (free tier)
+## Automation & hosting (private, free)
 
-`.github/workflows/` does three things once the repo is on GitHub, all on the **free
-tier** (a **public** repo — free Pages requires public):
+This runs from a **local Claude Code routine** (the same pattern used to refresh the
+reference vault) — no GitHub Actions, no paid API:
 
-- **daily-dashboard.yml** — rebuilds the dashboard at 08:00 Melbourne and commits it.
-- **weekly-newsletter.yml** — builds the newsletter Friday 08:00 Melbourne.
-- **pages.yml** — publishes `dashboard/` to GitHub Pages on every push and after each
-  daily build, so the bookmark stays current.
+1. Routine runs `python src/run.py daily` (fetch → score → render).
+2. Claude — on your subscription — writes assurance-framed summaries to
+   `data/_cache/enrichment-in.json` and runs `python src/apply_enrichment.py`.
+3. Routine commits and pushes to the **private** repo.
 
-Runs are deterministic and free — no API key, no secrets. See the DST note in the
-workflow files.
-
-### Bookmark
-After pushing, in **Settings → Pages** set **Source = GitHub Actions**, then bookmark:
+**Bookmark (free on a private repo):** GitHub renders Markdown, so the stable view is
+[`DASHBOARD.md`](DASHBOARD.md):
 
 ```
-https://trustyandrew.github.io/cyber-ai-assurance-radar/
+https://github.com/trustyandrew/cyber-ai-assurance-radar/blob/main/DASHBOARD.md
 ```
+
+The rich HTML dashboard (`dashboard/index.html`) stays for local viewing. GitHub Pages
+is not used — free Pages requires a public repo.
 
 ## Design
 

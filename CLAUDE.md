@@ -11,14 +11,20 @@ Do not include something just because it mentions "AI" or "cyber".
 
 ## Architecture
 
-Python pipeline (stdlib + PyYAML only): `fetch → normalise → score → summarise →
-render → validate`, orchestrated by `src/run.py`. **Deterministic and free by
-default — do NOT add paid-API calls to the default path.** Andrew uses a Claude
-Pro/Max subscription, not pay-per-token API. Richer summaries come via the Pro-plan
-prompt pack (`data/daily/<date>-enrichment-prompt.md` → paste into Claude Desktop →
-`data/_cache/enrichment-in.json` → `python src/apply_enrichment.py`). The paid API
-path only runs if BOTH `RADAR_USE_API=1` and `ANTHROPIC_API_KEY` are set. Daily and
-weekly GitHub Actions in `.github/workflows/`.
+Python pipeline (stdlib + PyYAML only): `fetch → normalise → score → render →
+validate`, orchestrated by `src/run.py`. **Never add paid-API calls to the default
+path** — Andrew uses a Claude subscription, not pay-per-token API.
+
+Orchestration is a **local Claude Code routine** (like the reference-vault refresh),
+NOT GitHub Actions. The routine: (1) `python src/run.py daily`; (2) Claude — on the
+subscription — writes assurance-framed enrichment to `data/_cache/enrichment-in.json`
+(the task spec is in `src/summarise_items.py` SYSTEM/INSTRUCTION) and runs
+`python src/apply_enrichment.py`; (3) commit + push to the **private** repo.
+
+Hosting: repo is **private**, so no GitHub Pages (free Pages needs public). The
+bookmarkable view is `DASHBOARD.md` (GitHub renders Markdown free on private repos).
+The `RADAR_USE_API=1` + `ANTHROPIC_API_KEY` paid path still exists but is off and
+unused. There are no GitHub Actions workflows.
 
 SC 27 / SC 42 are a curated standards register (`standards.yaml`), separate from the
 live signals — keep "news" and "standards radar" distinct.

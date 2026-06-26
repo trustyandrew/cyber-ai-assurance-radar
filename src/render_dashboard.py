@@ -12,10 +12,14 @@ from __future__ import annotations
 import json
 
 from radar_common import (
-    CACHE, DAILY, DASHBOARD, DASHBOARD_JSON, HEALTH_FILE, HISTORY,
+    ROOT, CACHE, DAILY, DASHBOARD, DASHBOARD_JSON, HEALTH_FILE, HISTORY,
     SOURCES_YAML, STANDARDS_YAML,
     load_json, load_yaml, log, now_iso, save_json, today_str,
 )
+
+CTA = ("If your organisation is preparing for ISO/IEC 27001, ISO/IEC 42001, cyber "
+       "assurance or responsible AI governance, I can help you separate what matters "
+       "from what is noise — and build an evidence-based path forward.")
 
 THEME_LABELS = {
     "ASD": "ASD / ACSC cyber assurance expectations",
@@ -130,9 +134,50 @@ def build() -> dict:
     save_json(HISTORY / f"{today_str()}.json", items)
     _write_data_js(dashboard)
     _write_daily_md(dashboard)
+    _write_markdown_dashboard(dashboard)
     log(f"Dashboard built: {counts['items_material']} material items, "
         f"{counts['items_new']} new")
     return dashboard
+
+
+def _md_std_table(rows: list[dict]) -> str:
+    if not rows:
+        return "_None tracked._"
+    out = ["| Standard / work item | Area | Status | Why watch it |", "|---|---|---|---|"]
+    for r in rows:
+        out.append(f"| [{r['designation']}]({r['url']}) | {r['area']} | "
+                   f"{r['status']} | {r['why']} |")
+    return "\n".join(out)
+
+
+def _write_markdown_dashboard(d: dict) -> None:
+    """Stable-named DASHBOARD.md — the rendered view for a private GitHub repo
+    (GitHub renders Markdown free on private repos; bookmark its URL)."""
+    c = d["counts"]
+    L = [
+        "# Cyber & Responsible AI Assurance Radar",
+        "",
+        f"_Updated {d['generated_at']} ({d['timezone']})._  ",
+        f"**{c['items_material']}** signals · **{c['items_new']}** new · "
+        f"**{c['newsletter_candidates']}** newsletter candidates · "
+        f"**{c['standards_tracked']}** standards tracked · "
+        f"sources {c['sources_ok']}/{c['sources_checked']} ok "
+        f"({c['sources_failed']} failed).",
+        "",
+        "## Current signals",
+        "",
+    ]
+    L += [_md_item(it) for it in d["current_signals"]] or ["_No material signals._"]
+    L += ["", "## SC 27 / 27000 family register", "", _md_std_table(d["standards"].get("sc27", []))]
+    L += ["", "## SC 42 / 42000 & AI assurance register", "", _md_std_table(d["standards"].get("sc42", []))]
+    L += ["", "## Newsletter candidates", ""]
+    L += [f"- [{it['title']}]({it['url']}) — {it['source']} ({it['priority']})"
+          for it in d["newsletter_candidates"]] or ["_None this run._"]
+    L += ["", "## Source health", ""]
+    for s in d["source_health"].get("sources", []):
+        L.append(f"- {s['status'].upper()} — {s['name']}: {s['detail']}")
+    L += ["", "---", "", f"_{CTA}_", ""]
+    (ROOT / "DASHBOARD.md").write_text("\n".join(L) + "\n", encoding="utf-8")
 
 
 def _write_data_js(dashboard: dict) -> None:
