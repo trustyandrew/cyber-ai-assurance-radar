@@ -167,7 +167,10 @@
   function standardsTable(id, title, sub, rows) {
     rows = rows || [];
     var body = rows.map(function (r) {
-      return "<tr><td><a href='" + esc(r.url) + "' target='_blank' rel='noopener'>" + esc(r.designation) + "</a></td>" +
+      var chg = r.change === "new" ? '<span class="chg new">NEW</span> '
+              : (r.change === "updated" ? '<span class="chg upd">UPDATED</span> ' : "");
+      return "<tr><td>" + chg + "<a href='" + esc(r.url) + "' target='_blank' rel='noopener'>" +
+        esc(r.designation) + "</a></td>" +
         "<td>" + esc(r.area) + "</td>" +
         "<td><span class='state " + esc(r.status_class) + "'>" + esc(r.status) + "</span></td>" +
         "<td>" + esc(r.why) + "</td></tr>";
@@ -178,7 +181,7 @@
         '<div class="table-panel"><table><thead><tr>' +
           "<th>Standard / work item</th><th>Area</th><th>Status</th><th>Why watch it</th>" +
         "</tr></thead><tbody>" + body + "</tbody></table>" +
-        '<p class="disclaimer">Curated register — confirm current edition and stage at iso.org.</p></div>' +
+        '<p class="disclaimer">Curated register — confirm current edition / stage at the source.</p></div>' +
       "</section>"
     );
   }
@@ -268,6 +271,8 @@
         "Information security, cyber and privacy-protection standards to monitor.", s.sc27) +
       standardsTable("sc42", "SC 42 / 42000 and AI assurance radar",
         "AI management systems, impact assessment, testing, data quality, transparency and incident reporting.", s.sc42) +
+      standardsTable("frameworks", "Global & national frameworks",
+        "NIST CSF & AI RMF, EU AI Act, ASD ISM/Essential Eight, PSPF and others — aligned with the reference vault.", s.frameworks) +
       sourceQueue() + sourceHealth() + newsletterSection() + footer();
     app.querySelectorAll(".controls button").forEach(function (b) {
       b.addEventListener("click", function () { state.filter = b.dataset.p; render(); });

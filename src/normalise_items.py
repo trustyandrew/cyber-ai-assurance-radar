@@ -35,9 +35,9 @@ def normalise() -> list[dict]:
                 "tags": [],
             }
 
-    # Merge manually-curated items — researched by the daily routine for sources that
-    # have no usable feed (ISO committees, ASIC/ACCC/AGD/Home Affairs, ENISA, OECD.AI).
-    manual = load_json(DATA / "manual_items.json", [])
+    # Merge (a) manually-curated items researched by the daily routine for feedless
+    # sources, and (b) standards-register change signals (new/updated standards).
+    manual = load_json(DATA / "manual_items.json", []) + load_json(CACHE / "standards_changes.json", [])
     merged = 0
     for e in manual:
         url = (e.get("url") or "").strip()

@@ -203,3 +203,84 @@ sc42:
     status_class: dev
     url: "https://www.iso.org/standard/91831.html"
     why: "Model/system resilience framing alongside cyber resilience; early stage (SC 42/WG 3)."
+
+# Global & national frameworks — non-ISO reference frameworks to watch, aligned with
+# Andrew's reference vault. Each carries a lens so changes route to the right signal.
+frameworks:
+  - designation: "NIST CSF 2.0"
+    area: "Cybersecurity framework (Govern…Recover)"
+    status: "Published (2024)"
+    status_class: published
+    lens: CyberResilience
+    url: "https://www.nist.gov/cyberframework"
+    why: "The dominant cross-walk framework for cyber governance; CSF 2.0 added GOVERN. Maps to ISM and ISO 27001."
+  - designation: "NIST AI RMF 1.0 (AI 100-1)"
+    area: "AI risk management (+ Generative AI Profile)"
+    status: "Published (2023; GenAI profile 2024)"
+    status_class: published
+    lens: ResponsibleAI
+    url: "https://www.nist.gov/itl/ai-risk-management-framework"
+    why: "Voluntary AI RMF (Govern/Map/Measure/Manage); the US counterpart to ISO/IEC 42001 for AI governance."
+  - designation: "EU AI Act (Reg 2024/1689)"
+    area: "AI regulation — risk tiers, GPAI, high-risk obligations"
+    status: "In force, phased to 2027"
+    status_class: dev
+    lens: ResponsibleAI
+    url: "https://artificialintelligenceact.eu/"
+    why: "Extraterritorial AI law; GPAI obligations and the Code of Practice are live. Shapes AI assurance globally."
+  - designation: "ASD Information Security Manual (ISM)"
+    area: "Australian gov technical cyber controls"
+    status: "Published (updated ~quarterly)"
+    status_class: published
+    lens: ASD
+    url: "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism"
+    why: "Core Australian control framework; watch quarterly releases and new AI/PQC controls."
+  - designation: "ASD Essential Eight (Maturity Model)"
+    area: "Baseline mitigation strategies"
+    status: "Published (under consultation)"
+    status_class: dev
+    lens: ASD
+    url: "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight"
+    why: "The baseline most AU assurance work references; an 'evolution of Essential Eight' consultation is open."
+  - designation: "PSPF Release 2025"
+    area: "Whole-of-government protective security"
+    status: "Published (2025) + Directions"
+    status_class: published
+    lens: PublicSector
+    url: "https://www.protectivesecurity.gov.au/"
+    why: "AU Commonwealth protective security; frequent Directions (tech bans, stocktakes) carry assurance impact."
+  - designation: "AIUC-1 — AI Usage Controls"
+    area: "130-control AI usage framework"
+    status: "Published (2026)"
+    status_class: published
+    lens: ResponsibleAI
+    url: "https://www.aiuc-1.com/"
+    why: "Control-level AI usage framework with mandatory/supplemental classifications and evidence guidance."
+  - designation: "NSW AI Assurance Framework"
+    area: "State-government AI assessment"
+    status: "Published"
+    status_class: published
+    lens: PublicSector
+    url: "https://www.digital.nsw.gov.au/policy/artificial-intelligence"
+    why: "Leading Australian sub-national AI assurance model; reference point for public-sector AI assessments."
+  - designation: "Victorian Protective Data Security Standards (VPDSS) v3.7"
+    area: "Victorian gov information security"
+    status: "Published"
+    status_class: published
+    lens: PublicSector
+    url: "https://ovic.vic.gov.au/information-security/standards/"
+    why: "12-standard OVIC control framework; relevant to Victorian public-sector clients."
+  - designation: "CSIRO Responsible AI Pattern Catalogue"
+    area: "Design patterns for trustworthy AI"
+    status: "Published"
+    status_class: published
+    lens: ResponsibleAI
+    url: "https://research.csiro.au/ss/science/projects/responsible-ai-pattern-catalogue/"
+    why: "Practical AI design patterns; useful for operationalising responsible AI controls."
+  - designation: "OAIC Australian Privacy Principles Guidelines"
+    area: "Interpretation of the 13 APPs"
+    status: "Published (consolidated 2026)"
+    status_class: published
+    lens: Privacy
+    url: "https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines"
+    why: "Authoritative APP interpretation under the Privacy Act 1988; watch for privacy-reform updates."

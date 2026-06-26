@@ -92,5 +92,144 @@
   "58e8a99997d1d6a5": {
     "vote": "down",
     "at": "2026-06-26T15:32:44+10:00"
+  },
+  "f8c9a2e404dd0615": {
+    "vote": "up",
+    "at": "2026-06-26T15:38:50+10:00",
+    "item": {
+      "id": "f8c9a2e404dd0615",
+      "title": "Latest release in the quantum technology primer series: Sensing",
+      "source": "ASD ACSC — News",
+      "source_type": "government",
+      "published_date": "2026-06-24",
+      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "url": "https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing",
+      "priority": "Critical",
+      "relevance_score": 5,
+      "lens": "CyberResilience",
+      "summary": "The latest in the quantum technology primer series explores quantum sensing and its potential applications, capabilities and key cyber security considerations.",
+      "why_it_matters": "Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.",
+      "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
+      "newsletter_candidate": true,
+      "tags": [
+        "cyber",
+        "security"
+      ],
+      "is_new": true,
+      "enriched_by": "deterministic",
+      "vote": ""
+    }
+  },
+  "9b6c16a04a8fbe61": {
+    "vote": "up",
+    "at": "2026-06-26T15:38:55+10:00",
+    "item": {
+      "id": "9b6c16a04a8fbe61",
+      "title": "Five Eyes cyber security agencies statement",
+      "source": "ASD ACSC — News",
+      "source_type": "government",
+      "published_date": "2026-06-22",
+      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "url": "https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement",
+      "priority": "Critical",
+      "relevance_score": 5,
+      "lens": "CyberResilience",
+      "summary": "Our joint Five Eyes statement highlights AI is rapidly increasing cyber risk, urging leaders to act now to strengthen resilience, adopt secure practices, and integrate cyber security into core strategy.",
+      "why_it_matters": "Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.",
+      "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
+      "newsletter_candidate": true,
+      "tags": [
+        "resilience",
+        "cyber",
+        "security"
+      ],
+      "is_new": true,
+      "enriched_by": "deterministic",
+      "vote": ""
+    }
+  },
+  "8d3bb393b1af330e": {
+    "vote": "up",
+    "at": "2026-06-26T15:39:01+10:00",
+    "item": {
+      "id": "8d3bb393b1af330e",
+      "title": "Consultation on evolution of Essential Eight",
+      "source": "ASD ACSC — News",
+      "source_type": "government",
+      "published_date": "2026-06-15",
+      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "url": "https://www.cyber.gov.au/about-us/view-all-content/news/consultation-on-evolution-of-essential-eight",
+      "priority": "Critical",
+      "relevance_score": 5,
+      "lens": "CyberResilience",
+      "summary": "We’re consulting ASD network partners on evolving the Essential Eight cyber security framework to increase flexibility and support stronger cyber resilience.",
+      "why_it_matters": "Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.",
+      "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
+      "newsletter_candidate": true,
+      "tags": [
+        "essential eight",
+        "resilience",
+        "cyber",
+        "security"
+      ],
+      "is_new": true,
+      "enriched_by": "deterministic",
+      "vote": ""
+    }
+  },
+  "d1230fe571401997": {
+    "vote": "up",
+    "at": "2026-06-26T15:39:09+10:00",
+    "item": {
+      "id": "d1230fe571401997",
+      "title": "Software supply chain attacks: check your dependencies",
+      "source": "UK NCSC — All updates",
+      "source_type": "government",
+      "published_date": "2026-06-04",
+      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "url": "https://www.ncsc.gov.uk/blogs/software-supply-chain-attacks-check-your-dependencies",
+      "priority": "High",
+      "relevance_score": 4,
+      "lens": "CyberResilience",
+      "summary": "UK NCSC warns that attackers are compromising open-source packages to spread malware and asks defenders to review their dependencies to reduce risk.",
+      "why_it_matters": "Dependency integrity is core to ISO/IEC 27001 supplier and secure development controls and to managing software supply chain risk in regulated environments.",
+      "suggested_action": "Inventory and verify third-party dependencies, pinning and monitoring trusted versions.",
+      "newsletter_candidate": true,
+      "tags": [
+        "supply chain",
+        "cyber",
+        "malware"
+      ],
+      "is_new": false,
+      "enriched_by": "pro-plan",
+      "vote": ""
+    }
+  },
+  "414b3462b319fad0": {
+    "vote": "up",
+    "at": "2026-06-26T15:39:24+10:00",
+    "item": {
+      "id": "414b3462b319fad0",
+      "title": "Using AI to strengthen cyber defence",
+      "source": "ASD ACSC — News",
+      "source_type": "government",
+      "published_date": "2026-05-27",
+      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "url": "https://www.cyber.gov.au/about-us/view-all-content/news/using-ai-to-strengthen-cyber-defence",
+      "priority": "High",
+      "relevance_score": 4,
+      "lens": "CyberResilience",
+      "summary": "Our latest publication explains how and where organisations can use AI to strengthen their cyber security while mitigating associated risks.",
+      "why_it_matters": "Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.",
+      "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
+      "newsletter_candidate": true,
+      "tags": [
+        "cyber",
+        "security"
+      ],
+      "is_new": true,
+      "enriched_by": "deterministic",
+      "vote": ""
+    }
   }
 }

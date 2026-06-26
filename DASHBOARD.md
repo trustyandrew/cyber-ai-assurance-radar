@@ -1,34 +1,23 @@
 # Cyber & Responsible AI Assurance Radar
 
-_Updated 2026-06-26T15:36:17+10:00 (Australia/Melbourne)._  
-**35** signals · **12** new · **24** newsletter candidates · **32** standards tracked · sources 12/24 ok (1 failed).
+_Updated 2026-06-26T15:53:47+10:00 (Australia/Melbourne)._  
+**35** signals · **0** new · **24** newsletter candidates · **43** standards tracked · sources 12/25 ok (1 failed).
 
 ## 🆕 New since last run
 
-- 🆕 **[Latest release in the quantum technology primer series: Sensing](https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing)** — ASD ACSC — News · CyberResilience · Critical (5/5)
-- 🆕 **[Quantum technology primer: Sensing](https://www.cyber.gov.au/business-government/secure-design/quantum/quantum-technology-primer-sensing)** — ASD ACSC — Publications (ISM, Essential Eight, guidance) · CyberResilience · Critical (5/5)
-- 🆕 **[Five Eyes cyber security agencies statement](https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement)** — ASD ACSC — News · CyberResilience · Critical (5/5)
-- 🆕 **[Consultation on evolution of Essential Eight](https://www.cyber.gov.au/about-us/view-all-content/news/consultation-on-evolution-of-essential-eight)** — ASD ACSC — News · CyberResilience · Critical (5/5)
-- 🆕 **[Using AI to strengthen cyber defence](https://www.cyber.gov.au/about-us/view-all-content/news/using-ai-to-strengthen-cyber-defence)** — ASD ACSC — News · CyberResilience · High (4/5)
-- 🆕 **[ClickFix distributing Vidar Stealer via WordPress targeting Australian infrastructure](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/clickfix-distributing-vidar-stealer-via-wordpress-targeting-australian-infrastructure)** — ASD ACSC — Advisories · CyberResilience · High (4/5)
-- 🆕 **[Frontier AI models and their impact on cyber security](https://www.cyber.gov.au/about-us/view-all-content/news/frontier-models-and-their-impact-on-cyber-security-update)** — ASD ACSC — News · CyberResilience · High (4/5)
-- 🆕 **[Joint advisory released on China-nexus covert networks of compromised devices](https://www.cyber.gov.au/about-us/view-all-content/news/joint-advisory-released-on-china-nexus-covert-networks-of-compromised-devices)** — ASD ACSC — News · CyberResilience · High (4/5)
-- 🆕 **[Frontier models and their impact on cyber security](https://www.cyber.gov.au/about-us/view-all-content/news/frontier-models-and-their-impact-on-cyber-security)** — ASD ACSC — News · CyberResilience · High (4/5)
-- 🆕 **[Opportunities for AI in cyber defence](https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/opportunities-for-ai-in-cyber-defence)** — ASD ACSC — Publications (ISM, Essential Eight, guidance) · ResponsibleAI · High (4/5)
-- 🆕 **[New joint guidance provides mitigations for careful adoption of agentic AI services](https://www.cyber.gov.au/about-us/view-all-content/news/new-joint-guidance-provides-mitigations-for-cautious-adoption-of-agentic-ai)** — ASD ACSC — News · ResponsibleAI · High (4/5)
-- 🆕 **[Defending against China-nexus covert networks of compromised devices](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/defending-against-china-nexus-covert-networks-of-compromised-devices)** — ASD ACSC — Advisories · CyberResilience · Medium (3/5)
+_Nothing new since the last run — all current signals carried over._
 
 ## Current signals
 
-- 🆕 **[Latest release in the quantum technology primer series: Sensing](https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing)** — ASD ACSC — News · 2026-06-24 · Critical (5/5)
+- **[Latest release in the quantum technology primer series: Sensing](https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing)** — ASD ACSC — News · 2026-06-24 · Critical (5/5)
   The latest in the quantum technology primer series explores quantum sensing and its potential applications, capabilities and key cyber security considerations.
   *Why it matters:* Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
   *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
-- 🆕 **[Quantum technology primer: Sensing](https://www.cyber.gov.au/business-government/secure-design/quantum/quantum-technology-primer-sensing)** — ASD ACSC — Publications (ISM, Essential Eight, guidance) · 2026-06-23 · Critical (5/5)
+- **[Quantum technology primer: Sensing](https://www.cyber.gov.au/business-government/secure-design/quantum/quantum-technology-primer-sensing)** — ASD ACSC — Publications (ISM, Essential Eight, guidance) · 2026-06-23 · Critical (5/5)
   Discover quantum sensing to understand its applications, capabilities, and key cyber security considerations.
   *Why it matters:* Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
   *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
-- 🆕 **[Five Eyes cyber security agencies statement](https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement)** — ASD ACSC — News · 2026-06-22 · Critical (5/5)
+- **[Five Eyes cyber security agencies statement](https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement)** — ASD ACSC — News · 2026-06-22 · Critical (5/5)
   Our joint Five Eyes statement highlights AI is rapidly increasing cyber risk, urging leaders to act now to strengthen resilience, adopt secure practices, and integrate cyber security into core strategy.
   *Why it matters:* Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
   *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
@@ -40,7 +29,7 @@ _Updated 2026-06-26T15:36:17+10:00 (Australia/Melbourne)._
   NCSC CEO Dr Richard Horne told RUSI's Annual Security Lecture that hostile states are linked to roughly three-quarters of cyber attacks affecting the UK's critical infrastructure.
   *Why it matters:* State-linked targeting of critical infrastructure underscores SOCI Act obligations and risk-based assurance expectations for Australian critical infrastructure operators.
   *Action:* Reassess critical infrastructure threat models against state-sponsored adversary capabilities.
-- 🆕 **[Consultation on evolution of Essential Eight](https://www.cyber.gov.au/about-us/view-all-content/news/consultation-on-evolution-of-essential-eight)** — ASD ACSC — News · 2026-06-15 · Critical (5/5)
+- **[Consultation on evolution of Essential Eight](https://www.cyber.gov.au/about-us/view-all-content/news/consultation-on-evolution-of-essential-eight)** — ASD ACSC — News · 2026-06-15 · Critical (5/5)
   We’re consulting ASD network partners on evolving the Essential Eight cyber security framework to increase flexibility and support stronger cyber resilience.
   *Why it matters:* Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
   *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
@@ -56,7 +45,7 @@ _Updated 2026-06-26T15:36:17+10:00 (Australia/Melbourne)._
   UK NCSC warns that attackers are compromising open-source packages to spread malware and asks defenders to review their dependencies to reduce risk.
   *Why it matters:* Dependency integrity is core to ISO/IEC 27001 supplier and secure development controls and to managing software supply chain risk in regulated environments.
   *Action:* Inventory and verify third-party dependencies, pinning and monitoring trusted versions.
-- 🆕 **[Using AI to strengthen cyber defence](https://www.cyber.gov.au/about-us/view-all-content/news/using-ai-to-strengthen-cyber-defence)** — ASD ACSC — News · 2026-05-27 · High (4/5)
+- **[Using AI to strengthen cyber defence](https://www.cyber.gov.au/about-us/view-all-content/news/using-ai-to-strengthen-cyber-defence)** — ASD ACSC — News · 2026-05-27 · High (4/5)
   Our latest publication explains how and where organisations can use AI to strengthen their cyber security while mitigating associated risks.
   *Why it matters:* Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.
   *Action:* Review the source and decide whether it changes advisory positioning, control design or client guidance.
@@ -106,6 +95,22 @@ _Updated 2026-06-26T15:36:17+10:00 (Australia/Melbourne)._
 | [ISO/IEC CD TS 25568](https://www.iso.org/standard/90754.html) | Guidance on risks in generative AI systems | Under development (CD) | Track for agentic AI, public LLMs, prompt injection, model governance and procurement advice. |
 | [ISO/IEC AWI 25870](https://www.iso.org/standard/91804.html) | Data elements for reporting AI system incidents | Under development (AWI) | Connects AI governance with incident, breach, safety and regulator reporting; early stage. |
 | [ISO/IEC AWI TS 25864](https://www.iso.org/standard/91831.html) | Resilience assessment of AI systems | Under development (AWI) | Model/system resilience framing alongside cyber resilience; early stage (SC 42/WG 3). |
+
+## Global & national frameworks
+
+| Standard / work item | Area | Status | Why watch it |
+|---|---|---|---|
+| [NIST CSF 2.0](https://www.nist.gov/cyberframework) | Cybersecurity framework (Govern…Recover) | Published (2024) | The dominant cross-walk framework for cyber governance; CSF 2.0 added GOVERN. Maps to ISM and ISO 27001. |
+| [NIST AI RMF 1.0 (AI 100-1)](https://www.nist.gov/itl/ai-risk-management-framework) | AI risk management (+ Generative AI Profile) | Published (2023; GenAI profile 2024) | Voluntary AI RMF (Govern/Map/Measure/Manage); the US counterpart to ISO/IEC 42001 for AI governance. |
+| [EU AI Act (Reg 2024/1689)](https://artificialintelligenceact.eu/) | AI regulation — risk tiers, GPAI, high-risk obligations | In force, phased to 2027 | Extraterritorial AI law; GPAI obligations and the Code of Practice are live. Shapes AI assurance globally. |
+| [ASD Information Security Manual (ISM)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism) | Australian gov technical cyber controls | Published (updated ~quarterly) | Core Australian control framework; watch quarterly releases and new AI/PQC controls. |
+| [ASD Essential Eight (Maturity Model)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight) | Baseline mitigation strategies | Published (under consultation) | The baseline most AU assurance work references; an 'evolution of Essential Eight' consultation is open. |
+| [PSPF Release 2025](https://www.protectivesecurity.gov.au/) | Whole-of-government protective security | Published (2025) + Directions | AU Commonwealth protective security; frequent Directions (tech bans, stocktakes) carry assurance impact. |
+| [AIUC-1 — AI Usage Controls](https://www.aiuc-1.com/) | 130-control AI usage framework | Published (2026) | Control-level AI usage framework with mandatory/supplemental classifications and evidence guidance. |
+| [NSW AI Assurance Framework](https://www.digital.nsw.gov.au/policy/artificial-intelligence) | State-government AI assessment | Published | Leading Australian sub-national AI assurance model; reference point for public-sector AI assessments. |
+| [Victorian Protective Data Security Standards (VPDSS) v3.7](https://ovic.vic.gov.au/information-security/standards/) | Victorian gov information security | Published | 12-standard OVIC control framework; relevant to Victorian public-sector clients. |
+| [CSIRO Responsible AI Pattern Catalogue](https://research.csiro.au/ss/science/projects/responsible-ai-pattern-catalogue/) | Design patterns for trustworthy AI | Published | Practical AI design patterns; useful for operationalising responsible AI controls. |
+| [OAIC Australian Privacy Principles Guidelines](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines) | Interpretation of the 13 APPs | Published (consolidated 2026) | Authoritative APP interpretation under the Privacy Act 1988; watch for privacy-reform updates. |
 
 ## Newsletter candidates
 
@@ -160,6 +165,7 @@ _Updated 2026-06-26T15:36:17+10:00 (Australia/Melbourne)._
 - RESEARCH — ENISA — News & publications: no feed — covered by the daily routine's web research
 - OK — Schneier on Security: 10 items
 - RESEARCH — OECD.AI — Policy observatory: no feed — covered by the daily routine's web research
+- RESEARCH — EU AI Act — developments: no feed — covered by the daily routine's web research
 
 ---
 

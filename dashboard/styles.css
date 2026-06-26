@@ -129,6 +129,9 @@ a { color:var(--ink); font-weight:850; text-decoration:none; }
 table { width:100%; border-collapse:collapse; font-size:13px; }
 th { text-align:left; color:var(--muted); font-size:11px; letter-spacing:.08em; text-transform:uppercase; padding:12px 10px; border-bottom:1px solid var(--line); white-space:nowrap; }
 td { padding:14px 10px; border-bottom:1px solid #edf1ee; vertical-align:top; line-height:1.4; }
+.chg { font-size:10px; font-weight:900; letter-spacing:.04em; padding:2px 6px; border-radius:999px; vertical-align:middle; }
+.chg.new { background:var(--lime); color:var(--ink); }
+.chg.upd { background:var(--amber); color:var(--ink); }
 .state.published { background:var(--green); }
 .state.dev { background:var(--blue); }
 .state.ok { background:var(--green); }

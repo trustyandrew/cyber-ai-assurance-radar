@@ -1,0 +1,217 @@
+{
+  "ISO/IEC 27000:2018": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 27001:2022 (+ Amd 1:2024)": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 27002:2022": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 27004:2016": {
+    "status": "Published (revision underway)",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 27005:2022": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 27006-1:2024": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 27007:2020": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 27017:2015": {
+    "status": "Published (2nd ed. at FDIS)",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 27018:2025": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 27035-1:2023": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 27701:2025": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 27565:2026": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 15408 series:2026": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 22989:2022": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 23894:2023": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 5338:2023": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 42001:2023": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC AWI 42003": {
+    "status": "Under development (AWI)",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 42005:2025": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 42006:2025": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC DIS 42007": {
+    "status": "Under development (DIS)",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC TS 42119-2:2025": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC DTS 42119-3.2": {
+    "status": "Under development (DTS)",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 5259-5:2025": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC TR 5259-6:2026": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC 12792:2025": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC TS 6254:2025": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC TR 5469:2024": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC DIS 42105": {
+    "status": "Under development (DIS)",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC CD TS 25568": {
+    "status": "Under development (CD)",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC AWI 25870": {
+    "status": "Under development (AWI)",
+    "changed_at": null,
+    "change": ""
+  },
+  "ISO/IEC AWI TS 25864": {
+    "status": "Under development (AWI)",
+    "changed_at": null,
+    "change": ""
+  },
+  "NIST CSF 2.0": {
+    "status": "Published (2024)",
+    "changed_at": null,
+    "change": ""
+  },
+  "NIST AI RMF 1.0 (AI 100-1)": {
+    "status": "Published (2023; GenAI profile 2024)",
+    "changed_at": null,
+    "change": ""
+  },
+  "EU AI Act (Reg 2024/1689)": {
+    "status": "In force, phased to 2027",
+    "changed_at": null,
+    "change": ""
+  },
+  "ASD Information Security Manual (ISM)": {
+    "status": "Published (updated ~quarterly)",
+    "changed_at": null,
+    "change": ""
+  },
+  "ASD Essential Eight (Maturity Model)": {
+    "status": "Published (under consultation)",
+    "changed_at": null,
+    "change": ""
+  },
+  "PSPF Release 2025": {
+    "status": "Published (2025) + Directions",
+    "changed_at": null,
+    "change": ""
+  },
+  "AIUC-1 — AI Usage Controls": {
+    "status": "Published (2026)",
+    "changed_at": null,
+    "change": ""
+  },
+  "NSW AI Assurance Framework": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "Victorian Protective Data Security Standards (VPDSS) v3.7": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "CSIRO Responsible AI Pattern Catalogue": {
+    "status": "Published",
+    "changed_at": null,
+    "change": ""
+  },
+  "OAIC Australian Privacy Principles Guidelines": {
+    "status": "Published (consolidated 2026)",
+    "changed_at": null,
+    "change": ""
+  }
+}

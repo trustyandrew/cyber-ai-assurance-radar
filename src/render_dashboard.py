@@ -11,11 +11,23 @@ from __future__ import annotations
 
 import json
 
+from datetime import date
+
 from radar_common import (
     ROOT, CACHE, DATA, DAILY, DASHBOARD, DASHBOARD_JSON, FEEDBACK_FILE, HEALTH_FILE,
     HISTORY, SOURCES_YAML, STANDARDS_YAML,
-    load_json, load_yaml, log, now_iso, save_json, today_str, vote_of,
+    load_json, load_yaml, log, now, now_iso, save_json, today_str, vote_of,
 )
+
+
+def _within(date_str: str, days: int) -> bool:
+    if not date_str:
+        return False
+    try:
+        y, m, d = (int(x) for x in date_str.split("-"))
+        return 0 <= (now().date() - date(y, m, d)).days <= days
+    except (ValueError, AttributeError):
+        return False
 
 CTA = ("If your organisation is preparing for ISO/IEC 27001, ISO/IEC 42001, cyber "
        "assurance or responsible AI governance, I can help you separate what matters "
@@ -111,7 +123,14 @@ def build() -> dict:
     # Curated standards register + source-queue (rendered as tables in the mock-up).
     standards = load_yaml(STANDARDS_YAML) or {}
     source_queue = (load_yaml(SOURCES_YAML) or {}).get("search_strategy", [])
-    standards_tracked = len(standards.get("sc27", [])) + len(standards.get("sc42", []))
+    # Badge register entries that changed recently (from the standards-radar snapshot).
+    std_seen = load_json(DATA / "standards_seen.json", {})
+    for group in standards.values():
+        if isinstance(group, list):
+            for e in group:
+                rec = std_seen.get(e.get("designation", ""), {})
+                e["change"] = rec.get("change", "") if _within(rec.get("changed_at"), 14) else ""
+    standards_tracked = sum(len(v) for v in standards.values() if isinstance(v, list))
 
     # Lead theme = dominant lens among newsletter candidates (fallback: current signals).
     pool = newsletter_candidates or current_signals
@@ -167,7 +186,8 @@ def _md_std_table(rows: list[dict]) -> str:
         return "_None tracked._"
     out = ["| Standard / work item | Area | Status | Why watch it |", "|---|---|---|---|"]
     for r in rows:
-        out.append(f"| [{r['designation']}]({r['url']}) | {r['area']} | "
+        mark = "🆕 " if r.get("change") == "new" else ("✳️ " if r.get("change") == "updated" else "")
+        out.append(f"| {mark}[{r['designation']}]({r['url']}) | {r['area']} | "
                    f"{r['status']} | {r['why']} |")
     return "\n".join(out)
 
@@ -202,6 +222,7 @@ def _write_markdown_dashboard(d: dict) -> None:
     L += [_md_item(it) for it in d["current_signals"]] or ["_No material signals._"]
     L += ["", "## SC 27 / 27000 family register", "", _md_std_table(d["standards"].get("sc27", []))]
     L += ["", "## SC 42 / 42000 & AI assurance register", "", _md_std_table(d["standards"].get("sc42", []))]
+    L += ["", "## Global & national frameworks", "", _md_std_table(d["standards"].get("frameworks", []))]
     L += ["", "## Newsletter candidates", ""]
     L += [f"- [{it['title']}]({it['url']}) — {it['source']} ({it['priority']})"
           for it in d["newsletter_candidates"]] or ["_None this run._"]

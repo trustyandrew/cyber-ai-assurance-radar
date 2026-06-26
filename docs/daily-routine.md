@@ -28,6 +28,12 @@ Run from the repo root: `C:\Users\AndrewRobinson\source\repos\cyber-ai-assurance
    Home Affairs / CISC (critical infrastructure), ENISA, OECD.AI, Standards Australia.
    (OAIC, ACMA, DTA and digital.gov.au are now auto-fetched via RSS — no manual work.)
 
+   **Standards register:** if your research finds an ISO/IEC SC 27 / SC 42 stage change
+   (e.g. DIS→FDIS), a new edition, or a framework update (NIST, EU AI Act, ISM, PSPF…),
+   edit `standards.yaml` (designation/status). The run then auto-emits a "Standards
+   radar" signal card and badges the register row NEW/UPDATED — which you can 👍 into a
+   newsletter. Keep `standards.yaml` aligned with the reference vault's tracked frameworks.
+
 2. **Collect + score (deterministic):**
    ```bash
    python src/run.py daily

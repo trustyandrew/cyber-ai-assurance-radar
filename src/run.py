@@ -11,6 +11,7 @@ from __future__ import annotations
 import sys
 
 import fetch_sources
+import standards_radar
 import normalise_items
 import score_items
 import summarise_items
@@ -38,6 +39,7 @@ def run_daily() -> int:
     ensure_dirs()
     log("=== DAILY RUN START ===")
     fetch_sources.fetch_all()
+    standards_radar.detect()          # emit signals for new/updated standards
     normalise_items.normalise()
     score_items.score_all()
     summarise_items.enrich()

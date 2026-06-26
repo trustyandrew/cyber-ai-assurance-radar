@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-26T15:36:17+10:00",
+  "generated_at": "2026-06-26T15:53:47+10:00",
   "generated_date": "2026-06-26",
   "timezone": "Australia/Melbourne",
   "run_type": "daily",
   "counts": {
-    "sources_checked": 24,
+    "sources_checked": 25,
     "sources_ok": 12,
     "sources_failed": 1,
-    "sources_research": 11,
+    "sources_research": 12,
     "items_scored": 69,
     "items_material": 35,
-    "items_new": 12,
+    "items_new": 0,
     "items_ignored": 28,
     "newsletter_candidates": 24,
-    "standards_tracked": 32
+    "standards_tracked": 43
   },
   "current_signals": [
     {
@@ -22,7 +22,7 @@
       "source": "ASD ACSC — News",
       "source_type": "government",
       "published_date": "2026-06-24",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing",
       "priority": "Critical",
       "relevance_score": 5,
@@ -35,9 +35,9 @@
         "cyber",
         "security"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "c8a009d9dd4ec48f",
@@ -45,7 +45,7 @@
       "source": "ASD ACSC — Publications (ISM, Essential Eight, guidance)",
       "source_type": "government",
       "published_date": "2026-06-23",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/business-government/secure-design/quantum/quantum-technology-primer-sensing",
       "priority": "Critical",
       "relevance_score": 5,
@@ -58,7 +58,7 @@
         "cyber",
         "security"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
       "vote": ""
     },
@@ -68,7 +68,7 @@
       "source": "ASD ACSC — News",
       "source_type": "government",
       "published_date": "2026-06-22",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement",
       "priority": "Critical",
       "relevance_score": 5,
@@ -82,9 +82,9 @@
         "cyber",
         "security"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "b3526f078f3c5a01",
@@ -92,7 +92,7 @@
       "source": "UK NCSC — All updates",
       "source_type": "government",
       "published_date": "2026-06-22",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now",
       "priority": "Critical",
       "relevance_score": 5,
@@ -114,7 +114,7 @@
       "source": "UK NCSC — All updates",
       "source_type": "government",
       "published_date": "2026-06-17",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks",
       "priority": "Critical",
       "relevance_score": 5,
@@ -138,7 +138,7 @@
       "source": "ASD ACSC — News",
       "source_type": "government",
       "published_date": "2026-06-15",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/news/consultation-on-evolution-of-essential-eight",
       "priority": "Critical",
       "relevance_score": 5,
@@ -153,9 +153,9 @@
         "cyber",
         "security"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "6b03dec649841343",
@@ -163,7 +163,7 @@
       "source": "Schneier on Security",
       "source_type": "research",
       "published_date": "2026-06-24",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html",
       "priority": "High",
       "relevance_score": 4,
@@ -185,7 +185,7 @@
       "source": "Schneier on Security",
       "source_type": "research",
       "published_date": "2026-06-19",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.schneier.com/blog/archives/2026/06/anthropics-fable-and-the-state-of-ai.html",
       "priority": "High",
       "relevance_score": 4,
@@ -208,7 +208,7 @@
       "source": "UK NCSC — All updates",
       "source_type": "government",
       "published_date": "2026-06-04",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.ncsc.gov.uk/blogs/software-supply-chain-attacks-check-your-dependencies",
       "priority": "High",
       "relevance_score": 4,
@@ -224,7 +224,7 @@
       ],
       "is_new": false,
       "enriched_by": "pro-plan",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "414b3462b319fad0",
@@ -232,7 +232,7 @@
       "source": "ASD ACSC — News",
       "source_type": "government",
       "published_date": "2026-05-27",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/news/using-ai-to-strengthen-cyber-defence",
       "priority": "High",
       "relevance_score": 4,
@@ -245,9 +245,9 @@
         "cyber",
         "security"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "836093ee3cff4a19",
@@ -255,7 +255,7 @@
       "source": "Schneier on Security",
       "source_type": "research",
       "published_date": "2026-06-25",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.schneier.com/blog/archives/2026/06/ai-and-liability.html",
       "priority": "Medium",
       "relevance_score": 3,
@@ -278,7 +278,7 @@
         "source": "ASD ACSC — News",
         "source_type": "government",
         "published_date": "2026-06-24",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing",
         "priority": "Critical",
         "relevance_score": 5,
@@ -291,9 +291,9 @@
           "cyber",
           "security"
         ],
-        "is_new": true,
+        "is_new": false,
         "enriched_by": "deterministic",
-        "vote": ""
+        "vote": "up"
       },
       {
         "id": "c8a009d9dd4ec48f",
@@ -301,7 +301,7 @@
         "source": "ASD ACSC — Publications (ISM, Essential Eight, guidance)",
         "source_type": "government",
         "published_date": "2026-06-23",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.cyber.gov.au/business-government/secure-design/quantum/quantum-technology-primer-sensing",
         "priority": "Critical",
         "relevance_score": 5,
@@ -314,7 +314,7 @@
           "cyber",
           "security"
         ],
-        "is_new": true,
+        "is_new": false,
         "enriched_by": "deterministic",
         "vote": ""
       },
@@ -324,7 +324,7 @@
         "source": "ASD ACSC — News",
         "source_type": "government",
         "published_date": "2026-06-22",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement",
         "priority": "Critical",
         "relevance_score": 5,
@@ -338,9 +338,9 @@
           "cyber",
           "security"
         ],
-        "is_new": true,
+        "is_new": false,
         "enriched_by": "deterministic",
-        "vote": ""
+        "vote": "up"
       },
       {
         "id": "6c75dee5fc404218",
@@ -348,7 +348,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-06-17",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks",
         "priority": "Critical",
         "relevance_score": 5,
@@ -372,7 +372,7 @@
         "source": "ASD ACSC — News",
         "source_type": "government",
         "published_date": "2026-06-15",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.cyber.gov.au/about-us/view-all-content/news/consultation-on-evolution-of-essential-eight",
         "priority": "Critical",
         "relevance_score": 5,
@@ -387,9 +387,9 @@
           "cyber",
           "security"
         ],
-        "is_new": true,
+        "is_new": false,
         "enriched_by": "deterministic",
-        "vote": ""
+        "vote": "up"
       },
       {
         "id": "d1230fe571401997",
@@ -397,7 +397,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-06-04",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/blogs/software-supply-chain-attacks-check-your-dependencies",
         "priority": "High",
         "relevance_score": 4,
@@ -413,7 +413,7 @@
         ],
         "is_new": false,
         "enriched_by": "pro-plan",
-        "vote": ""
+        "vote": "up"
       },
       {
         "id": "414b3462b319fad0",
@@ -421,7 +421,7 @@
         "source": "ASD ACSC — News",
         "source_type": "government",
         "published_date": "2026-05-27",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.cyber.gov.au/about-us/view-all-content/news/using-ai-to-strengthen-cyber-defence",
         "priority": "High",
         "relevance_score": 4,
@@ -434,9 +434,9 @@
           "cyber",
           "security"
         ],
-        "is_new": true,
+        "is_new": false,
         "enriched_by": "deterministic",
-        "vote": ""
+        "vote": "up"
       },
       {
         "id": "d4c0edf7b7f63a47",
@@ -444,7 +444,7 @@
         "source": "ASD ACSC — Advisories",
         "source_type": "government",
         "published_date": "2026-05-07",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/clickfix-distributing-vidar-stealer-via-wordpress-targeting-australian-infrastructure",
         "priority": "High",
         "relevance_score": 4,
@@ -457,7 +457,7 @@
           "threat",
           "malware"
         ],
-        "is_new": true,
+        "is_new": false,
         "enriched_by": "deterministic",
         "vote": ""
       },
@@ -467,7 +467,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-05-01",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave",
         "priority": "High",
         "relevance_score": 4,
@@ -490,7 +490,7 @@
         "source": "ASD ACSC — News",
         "source_type": "government",
         "published_date": "2026-04-30",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.cyber.gov.au/about-us/view-all-content/news/frontier-models-and-their-impact-on-cyber-security-update",
         "priority": "High",
         "relevance_score": 4,
@@ -503,7 +503,7 @@
           "cyber",
           "security"
         ],
-        "is_new": true,
+        "is_new": false,
         "enriched_by": "deterministic",
         "vote": ""
       },
@@ -513,7 +513,7 @@
         "source": "ASD ACSC — News",
         "source_type": "government",
         "published_date": "2026-04-24",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.cyber.gov.au/about-us/view-all-content/news/joint-advisory-released-on-china-nexus-covert-networks-of-compromised-devices",
         "priority": "High",
         "relevance_score": 4,
@@ -525,7 +525,7 @@
         "tags": [
           "cyber"
         ],
-        "is_new": true,
+        "is_new": false,
         "enriched_by": "deterministic",
         "vote": ""
       },
@@ -535,7 +535,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-04-21",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/news/cyber-chief-uk-faces-perfect-storm-for-cyber-security",
         "priority": "High",
         "relevance_score": 4,
@@ -558,7 +558,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-04-20",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/blogs/preparing-for-severe-cyber-threat-why-leaders-must-act-now",
         "priority": "High",
         "relevance_score": 4,
@@ -582,7 +582,7 @@
         "source": "ASD ACSC — News",
         "source_type": "government",
         "published_date": "2026-04-09",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.cyber.gov.au/about-us/view-all-content/news/frontier-models-and-their-impact-on-cyber-security",
         "priority": "High",
         "relevance_score": 4,
@@ -596,7 +596,7 @@
           "cyber",
           "security"
         ],
-        "is_new": true,
+        "is_new": false,
         "enriched_by": "deterministic",
         "vote": ""
       },
@@ -606,7 +606,7 @@
         "source": "ASD ACSC — Alerts",
         "source_type": "government",
         "published_date": "2025-09-19",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories",
         "priority": "High",
         "relevance_score": 4,
@@ -631,7 +631,7 @@
         "source": "Schneier on Security",
         "source_type": "research",
         "published_date": "2026-06-25",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.schneier.com/blog/archives/2026/06/interesting-paper-exploring-prompt-injection.html",
         "priority": "Medium",
         "relevance_score": 3,
@@ -653,7 +653,7 @@
         "source": "Schneier on Security",
         "source_type": "research",
         "published_date": "2026-06-19",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.schneier.com/blog/archives/2026/06/friday-squid-blogging-victims-of-unregulated-squid-fishing.html",
         "priority": "Medium",
         "relevance_score": 3,
@@ -675,7 +675,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-06-18",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/news/advice-following-global-targeting-of-fortinet-firewalls-and-vpn-gateways",
         "priority": "Medium",
         "relevance_score": 3,
@@ -695,7 +695,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-04-27",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/blogs/could-your-choice-of-metrics-be-harming-your-soc",
         "priority": "Medium",
         "relevance_score": 3,
@@ -717,7 +717,7 @@
         "source": "ASD ACSC — Advisories",
         "source_type": "government",
         "published_date": "2026-04-24",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/defending-against-china-nexus-covert-networks-of-compromised-devices",
         "priority": "Medium",
         "relevance_score": 3,
@@ -729,7 +729,7 @@
         "tags": [
           "cyber"
         ],
-        "is_new": true,
+        "is_new": false,
         "enriched_by": "deterministic",
         "vote": ""
       },
@@ -739,7 +739,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-04-23",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/news/international-cyber-agencies-fresh-advice-defend-against-china-linked-covert-networks",
         "priority": "Medium",
         "relevance_score": 3,
@@ -761,7 +761,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-04-23",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/news/executive-summary-defending-against-china-nexus-covert-networks-of-compromised-devices",
         "priority": "Medium",
         "relevance_score": 3,
@@ -786,7 +786,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-06-22",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now",
         "priority": "Critical",
         "relevance_score": 5,
@@ -808,7 +808,7 @@
         "source": "Schneier on Security",
         "source_type": "research",
         "published_date": "2026-06-24",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html",
         "priority": "High",
         "relevance_score": 4,
@@ -830,7 +830,7 @@
         "source": "Schneier on Security",
         "source_type": "research",
         "published_date": "2026-06-19",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.schneier.com/blog/archives/2026/06/anthropics-fable-and-the-state-of-ai.html",
         "priority": "High",
         "relevance_score": 4,
@@ -853,7 +853,7 @@
         "source": "ASD ACSC — Publications (ISM, Essential Eight, guidance)",
         "source_type": "government",
         "published_date": "2026-05-27",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/opportunities-for-ai-in-cyber-defence",
         "priority": "High",
         "relevance_score": 4,
@@ -865,7 +865,7 @@
         "tags": [
           "cyber"
         ],
-        "is_new": true,
+        "is_new": false,
         "enriched_by": "deterministic",
         "vote": ""
       },
@@ -875,7 +875,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-05-15",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai",
         "priority": "High",
         "relevance_score": 4,
@@ -897,7 +897,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-05-11",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/blogs/10-questions-ask-using-ai-models-find-vulnerabilities",
         "priority": "High",
         "relevance_score": 4,
@@ -920,7 +920,7 @@
         "source": "ASD ACSC — News",
         "source_type": "government",
         "published_date": "2026-05-01",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.cyber.gov.au/about-us/view-all-content/news/new-joint-guidance-provides-mitigations-for-cautious-adoption-of-agentic-ai",
         "priority": "High",
         "relevance_score": 4,
@@ -933,7 +933,7 @@
           "agentic",
           "security"
         ],
-        "is_new": true,
+        "is_new": false,
         "enriched_by": "deterministic",
         "vote": ""
       },
@@ -943,7 +943,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-04-23",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/blogs/supporting-ai-adoption-for-uk-cyber-defence",
         "priority": "High",
         "relevance_score": 4,
@@ -965,7 +965,7 @@
         "source": "Schneier on Security",
         "source_type": "research",
         "published_date": "2026-06-25",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.schneier.com/blog/archives/2026/06/ai-and-liability.html",
         "priority": "Medium",
         "relevance_score": 3,
@@ -985,7 +985,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-06-18",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/blogs/the-vibe-coding-spectrum-approach-to-ai-assisted-software-development",
         "priority": "Medium",
         "relevance_score": 3,
@@ -1005,7 +1005,7 @@
         "source": "Schneier on Security",
         "source_type": "research",
         "published_date": "2026-06-18",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis.html",
         "priority": "Medium",
         "relevance_score": 3,
@@ -1027,7 +1027,7 @@
         "source": "Schneier on Security",
         "source_type": "research",
         "published_date": "2026-06-17",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.schneier.com/blog/archives/2026/06/ai-use-by-the-us-government.html",
         "priority": "Medium",
         "relevance_score": 3,
@@ -1051,7 +1051,7 @@
         "source": "UK NCSC — All updates",
         "source_type": "government",
         "published_date": "2026-04-21",
-        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "retrieved_at": "2026-06-26T15:53:46+10:00",
         "url": "https://www.ncsc.gov.uk/blogs/new-cross-domain-guidance-for-government-industry-and-the-wider-security-community",
         "priority": "High",
         "relevance_score": 4,
@@ -1086,7 +1086,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/73906.html",
-        "why": "Defines the vocabulary for the whole ISMS family — the normative terms used in 27001 audits and certification scope statements (free from ISO)."
+        "why": "Defines the vocabulary for the whole ISMS family — the normative terms used in 27001 audits and certification scope statements (free from ISO).",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 27001:2022 (+ Amd 1:2024)",
@@ -1094,7 +1095,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/27001",
-        "why": "Core assurance anchor. Amendment 1 (2024) adds climate-action considerations to clauses 4.1/4.2; base edition remains 2022."
+        "why": "Core assurance anchor. Amendment 1 (2024) adds climate-action considerations to clauses 4.1/4.2; base edition remains 2022.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 27002:2022",
@@ -1102,7 +1104,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/75652.html",
-        "why": "Control library (93 controls, 4 themes) for ISO 27001 Annex A interpretation, policy rationalisation and audit evidence."
+        "why": "Control library (93 controls, 4 themes) for ISO 27001 Annex A interpretation, policy rationalisation and audit evidence.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 27004:2016",
@@ -1110,7 +1113,8 @@
         "status": "Published (revision underway)",
         "status_class": "published",
         "url": "https://www.iso.org/standard/64120.html",
-        "why": "Guidance for ISO 27001 clause 9.1 performance evaluation — the metrics and effectiveness evidence auditors look for. A DIS revision is in progress."
+        "why": "Guidance for ISO 27001 clause 9.1 performance evaluation — the metrics and effectiveness evidence auditors look for. A DIS revision is in progress.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 27005:2022",
@@ -1118,7 +1122,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/80585.html",
-        "why": "Risk-process bridge between the ISMS, cyber resilience, supplier risk and AI-enabled system risk; aligned to 27001:2022 and ISO 31000."
+        "why": "Risk-process bridge between the ISMS, cyber resilience, supplier risk and AI-enabled system risk; aligned to 27001:2022 and ISO 31000.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 27006-1:2024",
@@ -1126,7 +1131,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/82908.html",
-        "why": "Certification-integrity baseline for audit bodies; the two-year transition concluded around March 2026."
+        "why": "Certification-integrity baseline for audit bodies; the two-year transition concluded around March 2026.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 27007:2020",
@@ -1134,7 +1140,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/77802.html",
-        "why": "How-to for planning and conducting ISMS audits (first/second party); complements the 27006-1 third-party certification requirements."
+        "why": "How-to for planning and conducting ISMS audits (first/second party); complements the 27006-1 third-party certification requirements.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 27017:2015",
@@ -1142,7 +1149,8 @@
         "status": "Published (2nd ed. at FDIS)",
         "status_class": "published",
         "url": "https://www.iso.org/standard/43757.html",
-        "why": "Current in-force edition is 2015; the 2nd edition is at FDIS (publication expected 2026). Watch for alignment to current cloud/SaaS/sovereign-cloud assurance."
+        "why": "Current in-force edition is 2015; the 2nd edition is at FDIS (publication expected 2026). Watch for alignment to current cloud/SaaS/sovereign-cloud assurance.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 27018:2025",
@@ -1150,7 +1158,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/88150.html",
-        "why": "3rd edition (Aug 2025), aligned to 27002:2022 with a new Annex B; useful for SaaS privacy, processor obligations and customer assurance packs."
+        "why": "3rd edition (Aug 2025), aligned to 27002:2022 with a new Annex B; useful for SaaS privacy, processor obligations and customer assurance packs.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 27035-1:2023",
@@ -1158,7 +1167,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/78973.html",
-        "why": "Underpins 27001/27002 incident controls; the detect/report/respond/learn process assessed in audits and expected under DORA, GDPR and APRA CPS 234."
+        "why": "Underpins 27001/27002 incident controls; the detect/report/respond/learn process assessed in audits and expected under DORA, GDPR and APRA CPS 234.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 27701:2025",
@@ -1166,7 +1176,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/27701.html",
-        "why": "2nd edition (Oct 2025) — now a standalone, independently certifiable PIMS (no longer a 27001 extension). Bridges ISMS, privacy and Privacy Act reform. Transition ~Oct 2028."
+        "why": "2nd edition (Oct 2025) — now a standalone, independently certifiable PIMS (no longer a 27001 extension). Bridges ISMS, privacy and Privacy Act reform. Transition ~Oct 2028.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 27565:2026",
@@ -1174,7 +1185,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/80398.html",
-        "why": "Edition 1 (Feb 2026). Relevant to PETs, digital identity, verifiable credentials and sensitive AI use cases."
+        "why": "Edition 1 (Feb 2026). Relevant to PETs, digital identity, verifiable credentials and sensitive AI use cases.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 15408 series:2026",
@@ -1182,7 +1194,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/88134.html",
-        "why": "5th edition, parts published Apr-May 2026 (superseding the 2022 edition). SC 27-relevant for formal product/security assurance and Common Criteria certificates."
+        "why": "5th edition, parts published Apr-May 2026 (superseding the 2022 edition). SC 27-relevant for formal product/security assurance and Common Criteria certificates.",
+        "change": ""
       }
     ],
     "sc42": [
@@ -1192,7 +1205,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/74296.html",
-        "why": "Foundational AI vocabulary normatively referenced across SC 42 (incl. 42001); consistent definitions for AI assurance. (Gen-AI amendment in progress.)"
+        "why": "Foundational AI vocabulary normatively referenced across SC 42 (incl. 42001); consistent definitions for AI assurance. (Gen-AI amendment in progress.)",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 23894:2023",
@@ -1200,7 +1214,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/77304.html",
-        "why": "The AI-specific companion to ISO 31000 and the de-facto reference for AI risk management; underpins risk treatment in ISO/IEC 42001 audits."
+        "why": "The AI-specific companion to ISO 31000 and the de-facto reference for AI risk management; underpins risk treatment in ISO/IEC 42001 audits.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 5338:2023",
@@ -1208,7 +1223,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/81118.html",
-        "why": "Defines the AI system life cycle (built on 15288/12207) — the process backbone that V&V, data-quality and impact-assessment work hang off."
+        "why": "Defines the AI system life cycle (built on 15288/12207) — the process backbone that V&V, data-quality and impact-assessment work hang off.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 42001:2023",
@@ -1216,7 +1232,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/42001",
-        "why": "Anchor for responsible AI governance — internal audit, management review and continual improvement. World's first AI management system standard."
+        "why": "Anchor for responsible AI governance — internal audit, management review and continual improvement. World's first AI management system standard.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC AWI 42003",
@@ -1224,7 +1241,8 @@
         "status": "Under development (AWI)",
         "status_class": "dev",
         "url": "https://www.iso.org/standard/91021.html",
-        "why": "Practical AIMS implementation guidance; early stage (preparatory). Likely a key implementation playbook once published."
+        "why": "Practical AIMS implementation guidance; early stage (preparatory). Likely a key implementation playbook once published.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 42005:2025",
@@ -1232,7 +1250,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/42005",
-        "why": "Maps directly to use-case triage, impact assessment, benefits/harms and risk evidence; Annex A maps to ISO/IEC 42001."
+        "why": "Maps directly to use-case triage, impact assessment, benefits/harms and risk evidence; Annex A maps to ISO/IEC 42001.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 42006:2025",
@@ -1240,7 +1259,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/42006",
-        "why": "Published (Jul 2025) — turns AI management systems into a certification and assessor-competence conversation. Builds on ISO/IEC 17021-1."
+        "why": "Published (Jul 2025) — turns AI management systems into a certification and assessor-competence conversation. Builds on ISO/IEC 17021-1.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC DIS 42007",
@@ -1248,7 +1268,8 @@
         "status": "Under development (DIS)",
         "status_class": "dev",
         "url": "https://www.iso.org/standard/89967.html",
-        "why": "DIS ballot registered Jun 2026. May shape AI assurance market models beyond management-system certification; supplementary to ISO/IEC 17067."
+        "why": "DIS ballot registered Jun 2026. May shape AI assurance market models beyond management-system certification; supplementary to ISO/IEC 17067.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC TS 42119-2:2025",
@@ -1256,7 +1277,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/84127.html",
-        "why": "First publication in the AI-testing series; relevant to model/system validation, QA, safety, robustness and assurance evidence."
+        "why": "First publication in the AI-testing series; relevant to model/system validation, QA, safety, robustness and assurance evidence.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC DTS 42119-3.2",
@@ -1264,7 +1286,8 @@
         "status": "Under development (DTS)",
         "status_class": "dev",
         "url": "https://www.iso.org/standard/85072.html",
-        "why": "High value for model assurance and AI lifecycle testing once published; currently at draft TS ballot."
+        "why": "High value for model assurance and AI lifecycle testing once published; currently at draft TS ballot.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 5259-5:2025",
@@ -1272,7 +1295,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/84150.html",
-        "why": "Useful for AI data governance, training-data quality and auditability."
+        "why": "Useful for AI data governance, training-data quality and auditability.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC TR 5259-6:2026",
@@ -1280,7 +1304,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/86532.html",
-        "why": "Technical Report (May 2026); useful where AI data observability or reporting is in scope."
+        "why": "Technical Report (May 2026); useful where AI data observability or reporting is in scope.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC 12792:2025",
@@ -1288,7 +1313,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/84111.html",
-        "why": "Relevant to explainability, transparency statements, public-sector AI and user-facing disclosure (e.g. EU AI Act Art. 13)."
+        "why": "Relevant to explainability, transparency statements, public-sector AI and user-facing disclosure (e.g. EU AI Act Art. 13).",
+        "change": ""
       },
       {
         "designation": "ISO/IEC TS 6254:2025",
@@ -1296,7 +1322,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/82148.html",
-        "why": "Technical Specification (Sep 2025); objectives and approaches for explainability — useful for responsible AI control design and assurance language."
+        "why": "Technical Specification (Sep 2025); objectives and approaches for explainability — useful for responsible AI control design and assurance language.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC TR 5469:2024",
@@ -1304,7 +1331,8 @@
         "status": "Published",
         "status_class": "published",
         "url": "https://www.iso.org/standard/81283.html",
-        "why": "Bridges AI with classical functional safety (IEC 61508, ISO 26262); high value for clients deploying AI in safety-related functions."
+        "why": "Bridges AI with classical functional safety (IEC 61508, ISO 26262); high value for clients deploying AI in safety-related functions.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC DIS 42105",
@@ -1312,7 +1340,8 @@
         "status": "Under development (DIS)",
         "status_class": "dev",
         "url": "https://www.iso.org/standard/86902.html",
-        "why": "High newsletter value; aligns with public-sector responsible AI and EU-style control expectations. (iso.org shows DIS; a national mirror shows FDIS — re-check.)"
+        "why": "High newsletter value; aligns with public-sector responsible AI and EU-style control expectations. (iso.org shows DIS; a national mirror shows FDIS — re-check.)",
+        "change": ""
       },
       {
         "designation": "ISO/IEC CD TS 25568",
@@ -1320,7 +1349,8 @@
         "status": "Under development (CD)",
         "status_class": "dev",
         "url": "https://www.iso.org/standard/90754.html",
-        "why": "Track for agentic AI, public LLMs, prompt injection, model governance and procurement advice."
+        "why": "Track for agentic AI, public LLMs, prompt injection, model governance and procurement advice.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC AWI 25870",
@@ -1328,7 +1358,8 @@
         "status": "Under development (AWI)",
         "status_class": "dev",
         "url": "https://www.iso.org/standard/91804.html",
-        "why": "Connects AI governance with incident, breach, safety and regulator reporting; early stage."
+        "why": "Connects AI governance with incident, breach, safety and regulator reporting; early stage.",
+        "change": ""
       },
       {
         "designation": "ISO/IEC AWI TS 25864",
@@ -1336,7 +1367,120 @@
         "status": "Under development (AWI)",
         "status_class": "dev",
         "url": "https://www.iso.org/standard/91831.html",
-        "why": "Model/system resilience framing alongside cyber resilience; early stage (SC 42/WG 3)."
+        "why": "Model/system resilience framing alongside cyber resilience; early stage (SC 42/WG 3).",
+        "change": ""
+      }
+    ],
+    "frameworks": [
+      {
+        "designation": "NIST CSF 2.0",
+        "area": "Cybersecurity framework (Govern…Recover)",
+        "status": "Published (2024)",
+        "status_class": "published",
+        "lens": "CyberResilience",
+        "url": "https://www.nist.gov/cyberframework",
+        "why": "The dominant cross-walk framework for cyber governance; CSF 2.0 added GOVERN. Maps to ISM and ISO 27001.",
+        "change": ""
+      },
+      {
+        "designation": "NIST AI RMF 1.0 (AI 100-1)",
+        "area": "AI risk management (+ Generative AI Profile)",
+        "status": "Published (2023; GenAI profile 2024)",
+        "status_class": "published",
+        "lens": "ResponsibleAI",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "why": "Voluntary AI RMF (Govern/Map/Measure/Manage); the US counterpart to ISO/IEC 42001 for AI governance.",
+        "change": ""
+      },
+      {
+        "designation": "EU AI Act (Reg 2024/1689)",
+        "area": "AI regulation — risk tiers, GPAI, high-risk obligations",
+        "status": "In force, phased to 2027",
+        "status_class": "dev",
+        "lens": "ResponsibleAI",
+        "url": "https://artificialintelligenceact.eu/",
+        "why": "Extraterritorial AI law; GPAI obligations and the Code of Practice are live. Shapes AI assurance globally.",
+        "change": ""
+      },
+      {
+        "designation": "ASD Information Security Manual (ISM)",
+        "area": "Australian gov technical cyber controls",
+        "status": "Published (updated ~quarterly)",
+        "status_class": "published",
+        "lens": "ASD",
+        "url": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism",
+        "why": "Core Australian control framework; watch quarterly releases and new AI/PQC controls.",
+        "change": ""
+      },
+      {
+        "designation": "ASD Essential Eight (Maturity Model)",
+        "area": "Baseline mitigation strategies",
+        "status": "Published (under consultation)",
+        "status_class": "dev",
+        "lens": "ASD",
+        "url": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight",
+        "why": "The baseline most AU assurance work references; an 'evolution of Essential Eight' consultation is open.",
+        "change": ""
+      },
+      {
+        "designation": "PSPF Release 2025",
+        "area": "Whole-of-government protective security",
+        "status": "Published (2025) + Directions",
+        "status_class": "published",
+        "lens": "PublicSector",
+        "url": "https://www.protectivesecurity.gov.au/",
+        "why": "AU Commonwealth protective security; frequent Directions (tech bans, stocktakes) carry assurance impact.",
+        "change": ""
+      },
+      {
+        "designation": "AIUC-1 — AI Usage Controls",
+        "area": "130-control AI usage framework",
+        "status": "Published (2026)",
+        "status_class": "published",
+        "lens": "ResponsibleAI",
+        "url": "https://www.aiuc-1.com/",
+        "why": "Control-level AI usage framework with mandatory/supplemental classifications and evidence guidance.",
+        "change": ""
+      },
+      {
+        "designation": "NSW AI Assurance Framework",
+        "area": "State-government AI assessment",
+        "status": "Published",
+        "status_class": "published",
+        "lens": "PublicSector",
+        "url": "https://www.digital.nsw.gov.au/policy/artificial-intelligence",
+        "why": "Leading Australian sub-national AI assurance model; reference point for public-sector AI assessments.",
+        "change": ""
+      },
+      {
+        "designation": "Victorian Protective Data Security Standards (VPDSS) v3.7",
+        "area": "Victorian gov information security",
+        "status": "Published",
+        "status_class": "published",
+        "lens": "PublicSector",
+        "url": "https://ovic.vic.gov.au/information-security/standards/",
+        "why": "12-standard OVIC control framework; relevant to Victorian public-sector clients.",
+        "change": ""
+      },
+      {
+        "designation": "CSIRO Responsible AI Pattern Catalogue",
+        "area": "Design patterns for trustworthy AI",
+        "status": "Published",
+        "status_class": "published",
+        "lens": "ResponsibleAI",
+        "url": "https://research.csiro.au/ss/science/projects/responsible-ai-pattern-catalogue/",
+        "why": "Practical AI design patterns; useful for operationalising responsible AI controls.",
+        "change": ""
+      },
+      {
+        "designation": "OAIC Australian Privacy Principles Guidelines",
+        "area": "Interpretation of the 13 APPs",
+        "status": "Published (consolidated 2026)",
+        "status_class": "published",
+        "lens": "Privacy",
+        "url": "https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines",
+        "why": "Authoritative APP interpretation under the Privacy Act 1988; watch for privacy-reform updates.",
+        "change": ""
       }
     ]
   },
@@ -1457,7 +1601,7 @@
       "source": "ASD ACSC — News",
       "source_type": "government",
       "published_date": "2026-06-24",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing",
       "priority": "Critical",
       "relevance_score": 5,
@@ -1470,9 +1614,9 @@
         "cyber",
         "security"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "c8a009d9dd4ec48f",
@@ -1480,7 +1624,7 @@
       "source": "ASD ACSC — Publications (ISM, Essential Eight, guidance)",
       "source_type": "government",
       "published_date": "2026-06-23",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/business-government/secure-design/quantum/quantum-technology-primer-sensing",
       "priority": "Critical",
       "relevance_score": 5,
@@ -1493,7 +1637,7 @@
         "cyber",
         "security"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
       "vote": ""
     },
@@ -1503,7 +1647,7 @@
       "source": "ASD ACSC — News",
       "source_type": "government",
       "published_date": "2026-06-22",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement",
       "priority": "Critical",
       "relevance_score": 5,
@@ -1517,9 +1661,9 @@
         "cyber",
         "security"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "b3526f078f3c5a01",
@@ -1527,7 +1671,7 @@
       "source": "UK NCSC — All updates",
       "source_type": "government",
       "published_date": "2026-06-22",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now",
       "priority": "Critical",
       "relevance_score": 5,
@@ -1549,7 +1693,7 @@
       "source": "UK NCSC — All updates",
       "source_type": "government",
       "published_date": "2026-06-17",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks",
       "priority": "Critical",
       "relevance_score": 5,
@@ -1573,7 +1717,7 @@
       "source": "ASD ACSC — News",
       "source_type": "government",
       "published_date": "2026-06-15",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/news/consultation-on-evolution-of-essential-eight",
       "priority": "Critical",
       "relevance_score": 5,
@@ -1588,9 +1732,9 @@
         "cyber",
         "security"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "6b03dec649841343",
@@ -1598,7 +1742,7 @@
       "source": "Schneier on Security",
       "source_type": "research",
       "published_date": "2026-06-24",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html",
       "priority": "High",
       "relevance_score": 4,
@@ -1620,7 +1764,7 @@
       "source": "Schneier on Security",
       "source_type": "research",
       "published_date": "2026-06-19",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.schneier.com/blog/archives/2026/06/anthropics-fable-and-the-state-of-ai.html",
       "priority": "High",
       "relevance_score": 4,
@@ -1643,7 +1787,7 @@
       "source": "UK NCSC — All updates",
       "source_type": "government",
       "published_date": "2026-06-04",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.ncsc.gov.uk/blogs/software-supply-chain-attacks-check-your-dependencies",
       "priority": "High",
       "relevance_score": 4,
@@ -1659,7 +1803,7 @@
       ],
       "is_new": false,
       "enriched_by": "pro-plan",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "414b3462b319fad0",
@@ -1667,7 +1811,7 @@
       "source": "ASD ACSC — News",
       "source_type": "government",
       "published_date": "2026-05-27",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/news/using-ai-to-strengthen-cyber-defence",
       "priority": "High",
       "relevance_score": 4,
@@ -1680,9 +1824,9 @@
         "cyber",
         "security"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
-      "vote": ""
+      "vote": "up"
     },
     {
       "id": "2e89f13198387237",
@@ -1690,7 +1834,7 @@
       "source": "ASD ACSC — Publications (ISM, Essential Eight, guidance)",
       "source_type": "government",
       "published_date": "2026-05-27",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/opportunities-for-ai-in-cyber-defence",
       "priority": "High",
       "relevance_score": 4,
@@ -1702,7 +1846,7 @@
       "tags": [
         "cyber"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
       "vote": ""
     },
@@ -1712,7 +1856,7 @@
       "source": "UK NCSC — All updates",
       "source_type": "government",
       "published_date": "2026-05-15",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai",
       "priority": "High",
       "relevance_score": 4,
@@ -1734,7 +1878,7 @@
       "source": "UK NCSC — All updates",
       "source_type": "government",
       "published_date": "2026-05-11",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.ncsc.gov.uk/blogs/10-questions-ask-using-ai-models-find-vulnerabilities",
       "priority": "High",
       "relevance_score": 4,
@@ -1757,7 +1901,7 @@
       "source": "ASD ACSC — Advisories",
       "source_type": "government",
       "published_date": "2026-05-07",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/clickfix-distributing-vidar-stealer-via-wordpress-targeting-australian-infrastructure",
       "priority": "High",
       "relevance_score": 4,
@@ -1770,7 +1914,7 @@
         "threat",
         "malware"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
       "vote": ""
     },
@@ -1780,7 +1924,7 @@
       "source": "ASD ACSC — News",
       "source_type": "government",
       "published_date": "2026-05-01",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/news/new-joint-guidance-provides-mitigations-for-cautious-adoption-of-agentic-ai",
       "priority": "High",
       "relevance_score": 4,
@@ -1793,7 +1937,7 @@
         "agentic",
         "security"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
       "vote": ""
     },
@@ -1803,7 +1947,7 @@
       "source": "UK NCSC — All updates",
       "source_type": "government",
       "published_date": "2026-05-01",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave",
       "priority": "High",
       "relevance_score": 4,
@@ -1826,7 +1970,7 @@
       "source": "ASD ACSC — News",
       "source_type": "government",
       "published_date": "2026-04-30",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/news/frontier-models-and-their-impact-on-cyber-security-update",
       "priority": "High",
       "relevance_score": 4,
@@ -1839,7 +1983,7 @@
         "cyber",
         "security"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
       "vote": ""
     },
@@ -1849,7 +1993,7 @@
       "source": "ASD ACSC — News",
       "source_type": "government",
       "published_date": "2026-04-24",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/news/joint-advisory-released-on-china-nexus-covert-networks-of-compromised-devices",
       "priority": "High",
       "relevance_score": 4,
@@ -1861,7 +2005,7 @@
       "tags": [
         "cyber"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
       "vote": ""
     },
@@ -1871,7 +2015,7 @@
       "source": "UK NCSC — All updates",
       "source_type": "government",
       "published_date": "2026-04-23",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.ncsc.gov.uk/blogs/supporting-ai-adoption-for-uk-cyber-defence",
       "priority": "High",
       "relevance_score": 4,
@@ -1893,7 +2037,7 @@
       "source": "UK NCSC — All updates",
       "source_type": "government",
       "published_date": "2026-04-21",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.ncsc.gov.uk/news/cyber-chief-uk-faces-perfect-storm-for-cyber-security",
       "priority": "High",
       "relevance_score": 4,
@@ -1916,7 +2060,7 @@
       "source": "UK NCSC — All updates",
       "source_type": "government",
       "published_date": "2026-04-21",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.ncsc.gov.uk/blogs/new-cross-domain-guidance-for-government-industry-and-the-wider-security-community",
       "priority": "High",
       "relevance_score": 4,
@@ -1939,7 +2083,7 @@
       "source": "UK NCSC — All updates",
       "source_type": "government",
       "published_date": "2026-04-20",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.ncsc.gov.uk/blogs/preparing-for-severe-cyber-threat-why-leaders-must-act-now",
       "priority": "High",
       "relevance_score": 4,
@@ -1963,7 +2107,7 @@
       "source": "ASD ACSC — News",
       "source_type": "government",
       "published_date": "2026-04-09",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/news/frontier-models-and-their-impact-on-cyber-security",
       "priority": "High",
       "relevance_score": 4,
@@ -1977,7 +2121,7 @@
         "cyber",
         "security"
       ],
-      "is_new": true,
+      "is_new": false,
       "enriched_by": "deterministic",
       "vote": ""
     },
@@ -1987,7 +2131,7 @@
       "source": "ASD ACSC — Alerts",
       "source_type": "government",
       "published_date": "2025-09-19",
-      "retrieved_at": "2026-06-26T15:34:36+10:00",
+      "retrieved_at": "2026-06-26T15:53:46+10:00",
       "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories",
       "priority": "High",
       "relevance_score": 4,
@@ -2008,7 +2152,7 @@
     }
   ],
   "source_health": {
-    "checked_at": "2026-06-26T15:34:33+10:00",
+    "checked_at": "2026-06-26T15:53:43+10:00",
     "sources": [
       {
         "id": "acsc-alerts",
@@ -2249,13 +2393,23 @@
         "status": "research",
         "items": 0,
         "detail": "no feed — covered by the daily routine's web research"
+      },
+      {
+        "id": "eu-ai-act",
+        "name": "EU AI Act — developments",
+        "tier": 1,
+        "source_type": "regulator",
+        "lens": "ResponsibleAI",
+        "status": "research",
+        "items": 0,
+        "detail": "no feed — covered by the daily routine's web research"
       }
     ],
     "summary": {
       "ok": 12,
       "fail": 1,
-      "research": 11,
-      "total": 24
+      "research": 12,
+      "total": 25
     }
   },
   "feedback": {
@@ -2352,6 +2506,145 @@
     "58e8a99997d1d6a5": {
       "vote": "down",
       "at": "2026-06-26T15:32:44+10:00"
+    },
+    "f8c9a2e404dd0615": {
+      "vote": "up",
+      "at": "2026-06-26T15:38:50+10:00",
+      "item": {
+        "id": "f8c9a2e404dd0615",
+        "title": "Latest release in the quantum technology primer series: Sensing",
+        "source": "ASD ACSC — News",
+        "source_type": "government",
+        "published_date": "2026-06-24",
+        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "url": "https://www.cyber.gov.au/about-us/view-all-content/news/latest-release-in-the-quantum-technology-primer-series-sensing",
+        "priority": "Critical",
+        "relevance_score": 5,
+        "lens": "CyberResilience",
+        "summary": "The latest in the quantum technology primer series explores quantum sensing and its potential applications, capabilities and key cyber security considerations.",
+        "why_it_matters": "Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.",
+        "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
+        "newsletter_candidate": true,
+        "tags": [
+          "cyber",
+          "security"
+        ],
+        "is_new": true,
+        "enriched_by": "deterministic",
+        "vote": ""
+      }
+    },
+    "9b6c16a04a8fbe61": {
+      "vote": "up",
+      "at": "2026-06-26T15:38:55+10:00",
+      "item": {
+        "id": "9b6c16a04a8fbe61",
+        "title": "Five Eyes cyber security agencies statement",
+        "source": "ASD ACSC — News",
+        "source_type": "government",
+        "published_date": "2026-06-22",
+        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "url": "https://www.cyber.gov.au/about-us/view-all-content/news/five-eyes-cyber-security-agencies-statement",
+        "priority": "Critical",
+        "relevance_score": 5,
+        "lens": "CyberResilience",
+        "summary": "Our joint Five Eyes statement highlights AI is rapidly increasing cyber risk, urging leaders to act now to strengthen resilience, adopt secure practices, and integrate cyber security into core strategy.",
+        "why_it_matters": "Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.",
+        "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
+        "newsletter_candidate": true,
+        "tags": [
+          "resilience",
+          "cyber",
+          "security"
+        ],
+        "is_new": true,
+        "enriched_by": "deterministic",
+        "vote": ""
+      }
+    },
+    "8d3bb393b1af330e": {
+      "vote": "up",
+      "at": "2026-06-26T15:39:01+10:00",
+      "item": {
+        "id": "8d3bb393b1af330e",
+        "title": "Consultation on evolution of Essential Eight",
+        "source": "ASD ACSC — News",
+        "source_type": "government",
+        "published_date": "2026-06-15",
+        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "url": "https://www.cyber.gov.au/about-us/view-all-content/news/consultation-on-evolution-of-essential-eight",
+        "priority": "Critical",
+        "relevance_score": 5,
+        "lens": "CyberResilience",
+        "summary": "We’re consulting ASD network partners on evolving the Essential Eight cyber security framework to increase flexibility and support stronger cyber resilience.",
+        "why_it_matters": "Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.",
+        "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
+        "newsletter_candidate": true,
+        "tags": [
+          "essential eight",
+          "resilience",
+          "cyber",
+          "security"
+        ],
+        "is_new": true,
+        "enriched_by": "deterministic",
+        "vote": ""
+      }
+    },
+    "d1230fe571401997": {
+      "vote": "up",
+      "at": "2026-06-26T15:39:09+10:00",
+      "item": {
+        "id": "d1230fe571401997",
+        "title": "Software supply chain attacks: check your dependencies",
+        "source": "UK NCSC — All updates",
+        "source_type": "government",
+        "published_date": "2026-06-04",
+        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "url": "https://www.ncsc.gov.uk/blogs/software-supply-chain-attacks-check-your-dependencies",
+        "priority": "High",
+        "relevance_score": 4,
+        "lens": "CyberResilience",
+        "summary": "UK NCSC warns that attackers are compromising open-source packages to spread malware and asks defenders to review their dependencies to reduce risk.",
+        "why_it_matters": "Dependency integrity is core to ISO/IEC 27001 supplier and secure development controls and to managing software supply chain risk in regulated environments.",
+        "suggested_action": "Inventory and verify third-party dependencies, pinning and monitoring trusted versions.",
+        "newsletter_candidate": true,
+        "tags": [
+          "supply chain",
+          "cyber",
+          "malware"
+        ],
+        "is_new": false,
+        "enriched_by": "pro-plan",
+        "vote": ""
+      }
+    },
+    "414b3462b319fad0": {
+      "vote": "up",
+      "at": "2026-06-26T15:39:24+10:00",
+      "item": {
+        "id": "414b3462b319fad0",
+        "title": "Using AI to strengthen cyber defence",
+        "source": "ASD ACSC — News",
+        "source_type": "government",
+        "published_date": "2026-05-27",
+        "retrieved_at": "2026-06-26T15:34:36+10:00",
+        "url": "https://www.cyber.gov.au/about-us/view-all-content/news/using-ai-to-strengthen-cyber-defence",
+        "priority": "High",
+        "relevance_score": 4,
+        "lens": "CyberResilience",
+        "summary": "Our latest publication explains how and where organisations can use AI to strengthen their cyber security while mitigating associated risks.",
+        "why_it_matters": "Affects cyber-resilience posture; weigh against attack-surface, patching, IAM and incident-response controls.",
+        "suggested_action": "Review the source and decide whether it changes advisory positioning, control design or client guidance.",
+        "newsletter_candidate": true,
+        "tags": [
+          "cyber",
+          "security"
+        ],
+        "is_new": true,
+        "enriched_by": "deterministic",
+        "vote": ""
+      }
     }
   }
 }

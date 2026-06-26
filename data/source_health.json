@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-06-26T15:34:33+10:00",
+  "checked_at": "2026-06-26T15:53:43+10:00",
   "sources": [
     {
       "id": "acsc-alerts",
@@ -240,12 +240,22 @@
       "status": "research",
       "items": 0,
       "detail": "no feed — covered by the daily routine's web research"
+    },
+    {
+      "id": "eu-ai-act",
+      "name": "EU AI Act — developments",
+      "tier": 1,
+      "source_type": "regulator",
+      "lens": "ResponsibleAI",
+      "status": "research",
+      "items": 0,
+      "detail": "no feed — covered by the daily routine's web research"
     }
   ],
   "summary": {
     "ok": 12,
     "fail": 1,
-    "research": 11,
-    "total": 24
+    "research": 12,
+    "total": 25
   }
 }

@@ -275,3 +275,12 @@ sources:
     source_type: research
     lens: ResponsibleAI
     enabled: true
+
+  - id: eu-ai-act
+    name: EU AI Act — developments
+    fetch: manual
+    url: https://artificialintelligenceact.eu/
+    tier: 1
+    source_type: regulator
+    lens: ResponsibleAI
+    enabled: true
