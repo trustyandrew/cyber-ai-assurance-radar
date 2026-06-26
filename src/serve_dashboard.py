@@ -13,8 +13,7 @@ from __future__ import annotations
 
 import json
 import os
-import socketserver
-from http.server import SimpleHTTPRequestHandler
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -77,7 +76,7 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer(("127.0.0.1", PORT), Handler) as srv:
+    ThreadingHTTPServer.allow_reuse_address = True
+    with ThreadingHTTPServer(("127.0.0.1", PORT), Handler) as srv:
         print(f"Radar dashboard on http://localhost:{PORT}/  (feedback enabled)")
         srv.serve_forever()
