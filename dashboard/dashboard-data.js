@@ -1,5 +1,5 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-06-26T11:38:09+10:00",
+  "generated_at": "2026-06-26T12:19:57+10:00",
   "generated_date": "2026-06-26",
   "timezone": "Australia/Melbourne",
   "run_type": "daily",

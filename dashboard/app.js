@@ -11,12 +11,26 @@
     "cyber assurance or responsible AI governance, I can help you separate what " +
     "matters from what is noise — and build an evidence-based path forward.";
   var PRI_CLASS = { Critical: "critical", High: "high", Medium: "medium", Watch: "watch", Low: "low" };
-  var state = { priority: "All" };
+  var state = { filter: "All" };
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
-  function passes(it) { return state.priority === "All" || it.priority === state.priority; }
+  function passes(it) {
+    if (state.filter === "All") return true;
+    if (state.filter === "New") return !!it.is_new;
+    return it.priority === state.filter;
+  }
+
+  function allMaterial() {
+    var out = [], seen = {};
+    Object.keys(D.sections || {}).forEach(function (k) {
+      (D.sections[k] || []).forEach(function (it) {
+        if (!seen[it.id]) { seen[it.id] = 1; out.push(it); }
+      });
+    });
+    return out;
+  }
 
   function signalCard(it) {
     var tags = (it.tags || []).slice(0, 4).map(function (t) { return '<span class="tag">' + esc(t) + "</span>"; }).join("");
@@ -68,14 +82,19 @@
   }
 
   function signalsSection() {
-    var opts = ["All", "Critical", "High", "Medium", "Watch"];
+    var opts = ["All", "New", "Critical", "High", "Medium", "Watch"];
     var pills = opts.map(function (o) {
-      return '<button data-p="' + o + '" aria-pressed="' + (state.priority === o) + '">' + o + "</button>";
+      return '<button data-p="' + o + '" aria-pressed="' + (state.filter === o) + '">' + o + "</button>";
     }).join("");
-    var items = (D.current_signals || []).filter(passes);
+    var source = state.filter === "New" ? allMaterial() : (D.current_signals || []);
+    var items = source.filter(passes).sort(function (a, b) {
+      return (b.relevance_score || 0) - (a.relevance_score || 0);
+    });
     var cards = items.length
       ? items.map(signalCard).join("")
-      : '<p class="empty">No signals at this priority.</p>';
+      : '<p class="empty">' +
+        (state.filter === "New" ? "Nothing new since the last run." : "No signals at this priority.") +
+        "</p>";
     return (
       '<section id="signals">' +
         '<div class="section-head">' +
@@ -182,7 +201,7 @@
         "AI management systems, impact assessment, testing, data quality, transparency and incident reporting.", s.sc42) +
       sourceQueue() + sourceHealth() + newsletterSection() + footer();
     app.querySelectorAll(".controls button").forEach(function (b) {
-      b.addEventListener("click", function () { state.priority = b.dataset.p; render(); });
+      b.addEventListener("click", function () { state.filter = b.dataset.p; render(); });
     });
   }
 

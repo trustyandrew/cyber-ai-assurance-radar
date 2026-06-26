@@ -164,9 +164,19 @@ def _write_markdown_dashboard(d: dict) -> None:
         f"sources {c['sources_ok']}/{c['sources_checked']} ok "
         f"({c['sources_failed']} failed).",
         "",
-        "## Current signals",
-        "",
     ]
+    new_items = sorted(
+        [it for sec in d["sections"].values() for it in sec if it.get("is_new")],
+        key=lambda x: x.get("relevance_score", 0), reverse=True,
+    )
+    L += ["## 🆕 New since last run", ""]
+    if new_items:
+        L += [f"- 🆕 **[{it['title']}]({it['url']})** — {it['source']} · "
+              f"{it['lens']} · {it['priority']} ({it['relevance_score']}/5)"
+              for it in new_items]
+    else:
+        L += ["_Nothing new since the last run — all current signals carried over._"]
+    L += ["", "## Current signals", ""]
     L += [_md_item(it) for it in d["current_signals"]] or ["_No material signals._"]
     L += ["", "## SC 27 / 27000 family register", "", _md_std_table(d["standards"].get("sc27", []))]
     L += ["", "## SC 42 / 42000 & AI assurance register", "", _md_std_table(d["standards"].get("sc42", []))]
@@ -187,7 +197,8 @@ def _write_data_js(dashboard: dict) -> None:
 
 
 def _md_item(it: dict) -> str:
-    bits = [f"- **[{it['title']}]({it['url']})** "
+    flag = "🆕 " if it.get("is_new") else ""
+    bits = [f"- {flag}**[{it['title']}]({it['url']})** "
             f"— {it['source']} · {it.get('published_date') or 'n/d'} "
             f"· {it['priority']} ({it['relevance_score']}/5)"]
     if it.get("summary"):
