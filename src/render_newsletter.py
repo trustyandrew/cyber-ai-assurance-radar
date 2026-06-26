@@ -11,7 +11,7 @@ from __future__ import annotations
 from collections import Counter
 from datetime import timedelta
 
-from radar_common import HISTORY, WEEKLY, load_json, log, now, today_str
+from radar_common import DATA, HISTORY, WEEKLY, load_json, log, now, today_str
 
 CTA = (
     "If your organisation is preparing for ISO/IEC 27001, ISO/IEC 42001, cyber "
@@ -43,7 +43,8 @@ def _load_window(days: int = 7) -> list[dict]:
             cur = by_id.get(it["id"])
             if cur is None or it.get("relevance_score", 0) > cur.get("relevance_score", 0):
                 by_id[it["id"]] = it
-    return list(by_id.values())
+    votes = load_json(DATA / "feedback.json", {})
+    return [it for it in by_id.values() if votes.get(it["id"]) != "down"]
 
 
 def _select(items: list[dict]) -> list[dict]:

@@ -1,6 +1,6 @@
 # Cyber & Responsible AI Assurance Radar
 
-_Updated 2026-06-26T12:55:05+10:00 (Australia/Melbourne)._  
+_Updated 2026-06-26T13:15:21+10:00 (Australia/Melbourne)._  
 **49** signals · **12** new · **4** newsletter candidates · **32** standards tracked · sources 9/21 ok (1 failed).
 
 ## 🆕 New since last run

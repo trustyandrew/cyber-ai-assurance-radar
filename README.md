@@ -87,8 +87,11 @@ reference vault) — no GitHub Actions, no paid API:
 https://github.com/trustyandrew/cyber-ai-assurance-radar/blob/main/DASHBOARD.md
 ```
 
-The rich HTML dashboard (`dashboard/index.html`) stays for local viewing. GitHub Pages
-is not used — free Pages requires a public repo.
+The rich HTML dashboard stays for local viewing. Run `python src/serve_dashboard.py`
+and open `http://localhost:4178/` — this server also powers the **👍/👎 triage**: 👍
+marks a signal as a newsletter candidate, 👎 dismisses it (hidden everywhere and
+excluded from the newsletter). Votes are stored in `data/feedback.json` and honoured by
+the pipeline on every run. GitHub Pages is not used — free Pages requires a public repo.
 
 ## Design
 

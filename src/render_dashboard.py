@@ -12,7 +12,7 @@ from __future__ import annotations
 import json
 
 from radar_common import (
-    ROOT, CACHE, DAILY, DASHBOARD, DASHBOARD_JSON, HEALTH_FILE, HISTORY,
+    ROOT, CACHE, DATA, DAILY, DASHBOARD, DASHBOARD_JSON, HEALTH_FILE, HISTORY,
     SOURCES_YAML, STANDARDS_YAML,
     load_json, load_yaml, log, now_iso, save_json, today_str,
 )
@@ -37,7 +37,7 @@ THEME_LABELS = {
 ITEM_FIELDS = [
     "id", "title", "source", "source_type", "published_date", "retrieved_at",
     "url", "priority", "relevance_score", "lens", "summary", "why_it_matters",
-    "suggested_action", "newsletter_candidate", "tags", "is_new", "enriched_by",
+    "suggested_action", "newsletter_candidate", "tags", "is_new", "enriched_by", "vote",
 ]
 
 # Dashboard section -> lenses that feed it.
@@ -71,6 +71,14 @@ def build() -> dict:
         key=lambda x: (x["relevance_score"], x.get("published_date") or ""),
         reverse=True,
     )
+
+    # Apply 👍/👎 feedback: drop dismissed items everywhere; force 👍 as candidates.
+    votes = load_json(DATA / "feedback.json", {})
+    items = [it for it in items if votes.get(it["id"]) != "down"]
+    for it in items:
+        it["vote"] = votes.get(it["id"], "")
+        if it["vote"] == "up":
+            it["newsletter_candidate"] = True
 
     sections = {key: [] for key in SECTION_LENSES}
     for it in items:
@@ -128,6 +136,7 @@ def build() -> dict:
         "action_queue": action_queue,
         "newsletter_candidates": newsletter_candidates,
         "source_health": health,
+        "feedback": votes,
     }
 
     save_json(DASHBOARD_JSON, dashboard)

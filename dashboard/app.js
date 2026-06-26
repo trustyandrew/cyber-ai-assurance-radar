@@ -12,11 +12,23 @@
     "matters from what is noise — and build an evidence-based path forward.";
   var PRI_CLASS = { Critical: "critical", High: "high", Medium: "medium", Watch: "watch", Low: "low" };
   var state = { filter: "All" };
+  var votes = D.feedback || {};  // {id: "up"|"down"} — overridden by live GET if served
+
+  function postVote(id, vote) {
+    if (vote === "none") { delete votes[id]; } else { votes[id] = vote; }
+    fetch("/feedback", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id: id, vote: vote })
+    }).catch(function () {});  // file:// has no server — UI still updates for the session
+    render();
+  }
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
   function passes(it) {
+    if (votes[it.id] === "down") return false;
     if (state.filter === "All") return true;
     if (state.filter === "New") return !!it.is_new;
     return it.priority === state.filter;
@@ -50,7 +62,15 @@
         why + action +
         '<div class="card-meta"><span>' + esc(it.source) + "</span><span>" + esc(it.published_date || "—") + "</span></div>" +
         '<div class="tags">' + tags + "</div>" +
-        '<a href="' + esc(it.url) + '" target="_blank" rel="noopener">Open source →</a>' +
+        '<div class="card-actions">' +
+          '<a href="' + esc(it.url) + '" target="_blank" rel="noopener">Open source →</a>' +
+          '<span class="votes">' +
+            '<button class="vote up' + (votes[it.id] === "up" ? " active" : "") + '" data-id="' + esc(it.id) +
+              '" data-vote="up" title="Mark as newsletter candidate" aria-label="Thumbs up">👍</button>' +
+            '<button class="vote down" data-id="' + esc(it.id) +
+              '" data-vote="down" title="Dismiss and exclude" aria-label="Thumbs down">👎</button>' +
+          "</span>" +
+        "</div>" +
       "</article>"
     );
   }
@@ -203,8 +223,20 @@
     app.querySelectorAll(".controls button").forEach(function (b) {
       b.addEventListener("click", function () { state.filter = b.dataset.p; render(); });
     });
+    app.querySelectorAll(".vote").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var id = b.dataset.id, vote = b.dataset.vote;
+        if (vote === "up" && votes[id] === "up") vote = "none";  // click 👍 again to clear
+        postVote(id, vote);
+      });
+    });
   }
 
-  renderMeta();
-  render();
+  function init() { renderMeta(); render(); }
+  init();  // render immediately from baked feedback — never block render on the network
+  // then refresh live votes from the local server (best-effort) and re-render if changed
+  fetch("/feedback.json", { cache: "no-store" })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (live) { if (live && typeof live === "object") { votes = live; render(); } })
+    .catch(function () {});
 })();

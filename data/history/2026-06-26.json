@@ -19,7 +19,8 @@
       "vulnerability"
     ],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "78e47568529ad914",
@@ -41,7 +42,8 @@
       "patch"
     ],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "d0bc636fd27fbc36",
@@ -63,7 +65,8 @@
       "resilience"
     ],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "e96386b842920f36",
@@ -85,7 +88,8 @@
       "threat"
     ],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "1e995fdeb15ded28",
@@ -107,7 +111,8 @@
       "government"
     ],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "e9d757e534f1f0d2",
@@ -128,7 +133,8 @@
       "acsc"
     ],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "6c75dee5fc404218",
@@ -149,7 +155,8 @@
       "critical infrastructure"
     ],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "d1230fe571401997",
@@ -170,7 +177,8 @@
       "supply chain"
     ],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "e3cf8ffebab07a87",
@@ -191,7 +199,8 @@
       "digital transformation"
     ],
     "is_new": true,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "395560d6009eee7a",
@@ -212,7 +221,8 @@
       "agentic"
     ],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "1736b123361f4d57",
@@ -233,7 +243,8 @@
       "threat"
     ],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "f20549bc96ecdc16",
@@ -254,7 +265,8 @@
       "government"
     ],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "b3526f078f3c5a01",
@@ -273,7 +285,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "049c8ea23448cce1",
@@ -292,7 +305,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "7149933a07e4fd46",
@@ -311,7 +325,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "2c7f806049783451",
@@ -330,7 +345,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "ad8704866c5f4a17",
@@ -351,7 +367,8 @@
       "privacy"
     ],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "8e875ec5110fcaba",
@@ -370,7 +387,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "c6f2968cc3cb337f",
@@ -389,7 +407,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "327fdbfc07b8c48c",
@@ -410,7 +429,8 @@
       "government"
     ],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "72c95cc1ca5f710a",
@@ -429,7 +449,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": true,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "db030d1451835fef",
@@ -448,7 +469,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": true,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "4209ded7f2318687",
@@ -467,7 +489,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": true,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "b1afd7ff1062b817",
@@ -486,7 +509,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": true,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "0e020e8b8d921b41",
@@ -505,7 +529,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": true,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "82ddfcc8f5334bc2",
@@ -524,7 +549,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "abf32211a4ca1d15",
@@ -543,7 +569,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "125b04a81133445d",
@@ -562,7 +589,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "9c2dfefe34efdb90",
@@ -581,7 +609,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "3a15d74ca7828779",
@@ -600,7 +629,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "ec85bef7dd58a151",
@@ -619,7 +649,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "619dd774b9976035",
@@ -638,7 +669,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "7dd4688249a9273a",
@@ -657,7 +689,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": true,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "786917af18759b0c",
@@ -676,7 +709,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": true,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "a34e5bfa96fafa05",
@@ -695,7 +729,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "66f1b08410ca4e21",
@@ -714,7 +749,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "dbc0e3f164b2e239",
@@ -733,7 +769,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "5419f3a314e214b7",
@@ -752,7 +789,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "pro-plan"
+    "enriched_by": "pro-plan",
+    "vote": ""
   },
   {
     "id": "430b2b4ae76bc199",
@@ -771,7 +809,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "74043fb374ce90f7",
@@ -790,7 +829,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "b4d2cddf82eb0fe3",
@@ -809,7 +849,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "f3d20af9d2daee2f",
@@ -828,7 +869,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "7a367612debf8e2a",
@@ -847,7 +889,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "3c6f9659ebd97f53",
@@ -866,7 +909,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "13b8f39d41e90cc0",
@@ -885,7 +929,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": false,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "f5d4fcc12c8051c5",
@@ -904,7 +949,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": true,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "803f57116797bcd9",
@@ -923,7 +969,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": true,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "a02dec37beddbb0c",
@@ -942,7 +989,8 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": true,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   },
   {
     "id": "58e8a99997d1d6a5",
@@ -961,6 +1009,7 @@
     "newsletter_candidate": false,
     "tags": [],
     "is_new": true,
-    "enriched_by": "deterministic"
+    "enriched_by": "deterministic",
+    "vote": ""
   }
 ]
